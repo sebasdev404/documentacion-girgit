@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "1435e56472e84c45",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a293975c1d6b8b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df772e3571fd862f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e4e613a678ba9d79",
+    "type": "split",
+    "children": [
+      {
+        "id": "8704923bc756485f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ddd466596986fae",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "3cdb80b6dc183fef",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "93c33fb0e37f45e4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "28416ee5ff46fb15",
+    "type": "split",
+    "children": [
+      {
+        "id": "33ee4dbaa9d4f443",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "740815898d839f8e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "cbd73db22760373f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "b5a2294ff722f114",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "fb879f757e5263cc",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "eee79433c2108dcc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "df772e3571fd862f",
+  "lastOpenFiles": [
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/08-estudiante-y-acudiente.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/07-director-de-grupo.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/02-coordinador-academico.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/04-coordinador-academico-y-convivencia.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/05-secretaria-academica.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/03-coordinador-convivencia.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/06-docente.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/00-superadministrador-plataforma.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/01-rector-administrador-colegio.md",
+    "roles.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/coordinador-academico-y-convivencia.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/coordinador-convivencia.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/coordinador-academico.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/reglas-transversales-de-roles.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/estudiante-y-acudiente.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/director-de-grupo.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/docente.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/secretaria-academica.md",
+    "Logica del negocio/00-indice.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles.md",
+    "Logica del negocio/06-monetizacion-y-pagos/pasarelas-de-pago.md",
+    "coordinador-academico-y-convivencia.md"
+  ]
+}
