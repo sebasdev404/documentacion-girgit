@@ -73,5 +73,5 @@ El sistema **bloquea** la creación de la entrada en conflicto e informa al usua
 
 ## Notas y pendientes
 
-- Definir si el sistema soporta excepciones puntuales (ej. una clase movida a otro aula solo este viernes) o si solo soporta horarios recurrentes semanales.
-- Definir si el horario soporta "semanas A / semanas B" (rotación quincenal).
+- **[Decisión tomada]** El sistema **soporta excepciones puntuales** (ej. una clase movida a otro aula solo un día específico) sobre el horario recurrente. Regla: **RN-HR-040 — Excepciones puntuales sobre horario recurrente con auditoría y notificación al docente y al grupo**.
+- **[Decisión tomada]** El sistema **soporta rotación quincenal "semanas A / semanas B"**. Regla: **RN-HR-041 — Rotación quincenal A/B opcional por colegio**.

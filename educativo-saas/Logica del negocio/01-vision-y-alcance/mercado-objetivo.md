@@ -16,9 +16,10 @@ tags: [mercado, segmentacion]
 
 ## Geografía
 
-- **Mercado inicial:** Colombia.
-- **Razones:** marco normativo conocido (Ministerio de Educación Nacional, resolución, NIT, integración con DIAN para facturación electrónica), dos calendarios académicos oficiales (A y B), y mercado fragmentado donde los colegios actualmente usan herramientas dispersas.
-- **Ampliación futura:** otros países de Latinoamérica con calendarios y normativas similares.
+- **Mercado inicial (fase 1):** colegios **privados** de Colombia + colegios **privados** de un segundo país piloto de Latinoamérica (candidatos: Ecuador o Perú).
+- **Razones para Colombia:** marco normativo conocido (Ministerio de Educación Nacional, resolución, NIT, integración con DIAN para facturación electrónica), dos calendarios académicos oficiales (A y B), y mercado fragmentado donde los colegios actualmente usan herramientas dispersas.
+- **Razones para el segundo país piloto:** validar tempranamente que la arquitectura multi-tenant y el modelo de configuración por colegio sirven en una segunda jurisdicción antes de escalar a más países.
+- **Fase 2:** colegios **públicos / oficiales** de Colombia y ampliación a más países de Latinoamérica con calendarios y normativas similares.
 
 ## Tamaño de los colegios (rangos de estudiantes)
 
@@ -52,5 +53,6 @@ tags: [mercado, segmentacion]
 
 ## Notas y pendientes
 
-- Validar segmentación de planes con datos reales de colegios piloto.
-- Definir si se incluye el segmento de colegios públicos en el lanzamiento o solo en una segunda fase.
+- **[Pendiente — requiere datos de piloto]** Validar segmentación de planes con datos reales de colegios piloto (revisar si los rangos 50–300 / 300–800 / 800–2000 reflejan los puntos de quiebre reales de funcionalidades y precio).
+- **[Decisión tomada]** Colegios públicos quedan fuera del lanzamiento (fase 1). Entran en fase 2 una vez validado el modelo con privados.
+- **[Decisión pendiente]** Selección final del segundo país piloto (Ecuador vs. Perú): depende de relaciones comerciales, marco normativo de facturación y disponibilidad de pasarelas de pago locales.

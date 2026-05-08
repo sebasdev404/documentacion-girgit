@@ -49,5 +49,5 @@ tags: [propuesta-valor, estrategia]
 
 ## Notas y pendientes
 
-- Cuantificar ahorro promedio en horas/mes para un colegio de 500 estudiantes.
-- Validar percepción de valor con colegios piloto.
+- **[Pendiente — requiere datos de piloto]** Cuantificar ahorro promedio en horas/mes para un colegio de 500 estudiantes. La cifra se incorporará al material comercial una vez termine el primer ciclo con colegios piloto.
+- **[Pendiente — requiere datos de piloto]** Validar percepción de valor con colegios piloto mediante encuesta NPS y entrevistas estructuradas al rector y al coordinador.

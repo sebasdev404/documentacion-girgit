@@ -130,5 +130,5 @@ Planificado → Abierto → Cerrado
 
 ## Notas y pendientes
 
-- Definir la antigüedad exacta a partir de la cual un año lectivo pasa de `Cerrado` a `Archivado`.
-- Validar el comportamiento de la "ventana de corrección" tras cierre del periodo: máximo permitido, expiración, alertas.
+- **[Configurable por colegio]** Antigüedad para que un año lectivo pase automáticamente de `Cerrado` a `Archivado`. Sugerencia inicial de la plataforma: 24 meses tras el cierre, modificable por el colegio.
+- **[Resuelto en calificaciones.md]** La ventana de corrección tras cierre del periodo es configurable por colegio (activable, duración y alertas). Ver `RN-CL-030`.

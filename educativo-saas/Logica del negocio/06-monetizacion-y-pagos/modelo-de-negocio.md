@@ -61,9 +61,10 @@ Ambos flujos son independientes pero se facturan a través del mismo tenant.
 
 - **RN-MN-001 — Doble flujo separable:** los ingresos por suscripción y por comisiones se reportan por separado al colegio.
 - **RN-MN-002 — Comisiones transparentes:** el desglose de comisiones se muestra al pagador antes de confirmar el pago.
-- **RN-MN-003 — Quien asume comisión configurable:** cada colegio define si las comisiones de la pasarela las asume el colegio o el padre.
+- **RN-MN-003 — Quien asume comisión configurable:** cada colegio define si las comisiones de la pasarela las asume el colegio o el padre. El valor por defecto **aún no está definido** y debe configurarse explícitamente durante el onboarding del colegio.
 
 ## Notas y pendientes
 
-- Definir las bandas exactas de precios por estudiante para el go-to-market inicial.
-- Validar tope máximo de comisión B2B2C aceptado por colegios pilotos.
+- **[Decisión externa pendiente — Marketing]** Definir las bandas exactas de precios por estudiante para el go-to-market inicial. Hipótesis de trabajo: 3 bandas (0–300, 301–800, 801+), pero los valores monetarios se fijan tras el estudio comercial.
+- **[Decisión externa pendiente — Comercial]** Validar tope máximo de comisión B2B2C aceptado por colegios pilotos. No hay aún un porcentaje objetivo confirmado; se definirá con el resultado de los pilotos.
+- **[Decisión pendiente]** Default de quién asume la comisión de la pasarela (colegio vs. acudiente). Mientras no haya default, cada colegio lo decide en onboarding.

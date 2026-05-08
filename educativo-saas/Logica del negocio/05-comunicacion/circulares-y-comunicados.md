@@ -74,5 +74,5 @@ Borrador → Programado (con fecha de envío) → Enviado
 
 ## Notas y pendientes
 
-- Definir límite de tamaño de adjuntos por comunicado (recomendado: igual al de publicaciones).
-- Validar si el sistema soporta plantillas reutilizables de comunicados.
+- **[Decisión tomada]** Límites de adjuntos en comunicados: **20 MB por adjunto** y **50 MB totales** por comunicado. Mismos límites en publicaciones de agenda. Regla: **RN-CC-160 — Límite 20MB/adjunto y 50MB/total por comunicado**.
+- **[Decisión tomada]** El sistema soporta **plantillas reutilizables de comunicados** por colegio desde el lanzamiento (encabezado, cuerpo con variables `{{nombre_estudiante}}`, `{{grupo}}`, etc., y configuración de destinatarios por defecto). Regla: **RN-CC-161 — Plantillas reutilizables por colegio**.

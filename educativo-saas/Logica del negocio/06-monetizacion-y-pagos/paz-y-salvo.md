@@ -70,5 +70,9 @@ El colegio define qué alcances usa.
 
 ## Notas y pendientes
 
-- Definir si el paz y salvo se genera automáticamente al pagar la última cuota o requiere solicitud.
-- Validar el flujo cuando un acudiente paga una deuda en mora justo antes de solicitar el paz y salvo (asegurar que el sistema detecte el pago antes de validar).
+- **[Decisión tomada]** **Generación del paz y salvo es configurable por colegio**. Modalidades soportadas:
+  1. **Generación automática** al detectar saldo cero, descargable por el acudiente cuando lo necesite.
+  2. **Bajo solicitud explícita** del acudiente, opcionalmente con **aprobación administrativa**.
+  3. **Pago previo del costo del certificado**: si el colegio cobra por el documento de paz y salvo, el acudiente debe primero pagar ese cargo. **Mientras exista deuda principal, ni siquiera puede generarse el cargo del certificado**, evitando que se pague el certificado sobre una cuenta morosa.
+  Regla: **RN-PYS-150 — Tres modalidades de generación configurables por colegio (automática, por solicitud, con pago previo del certificado)**.
+- **[Decisión tomada]** **Conciliación previa obligatoria**: antes de emitir el paz y salvo, el sistema **valida que el último pago esté efectivamente conciliado** con la pasarela o banco. Si está pendiente de confirmación: el documento queda en estado **"pendiente de conciliación"** o se emite con **advertencia temporal**, configurable por colegio. Esto evita emitir paz y salvos sobre pagos reversables. Regla: **RN-PYS-151 — Validación de conciliación efectiva antes de emitir paz y salvo**.

@@ -65,7 +65,7 @@ Tras el cierre se preservan:
 | Coordinación | Total, todos los años para los que estuvo activa. |
 | Docente | Sus propios datos: grupos en los que enseñó, observaciones que registró. |
 | Director de grupo | Datos del grupo dirigido en cada año. |
-| Estudiante / acudiente | Datos del estudiante: notas, asistencia, boletines, pagos. |
+| Estudiante (operado por su acudiente) | Datos del estudiante: notas, asistencia, boletines, pagos. |
 | Egresado | Acceso al portal con sus datos históricos (boletines y certificados). |
 
 ## Egresados
@@ -85,5 +85,8 @@ Tras el cierre se preservan:
 
 ## Notas y pendientes
 
-- Definir la ventana mínima entre el cierre y la reapertura (ej. no reabrir tras 5 años).
-- Definir si los egresados pagan por solicitudes especiales de certificados o si se incluyen en el modelo del colegio.
+- **[Decisión tomada]** **Reapertura tras cierre**:
+  - Un **periodo académico** puede reabrirse dentro de una **ventana configurable** definida por rectoría o coordinación académica (sugerencia inicial: **15 días** posteriores al cierre del periodo).
+  - Una vez el **año lectivo completo** se cierra de forma **definitiva**, **no se permite reapertura operativa**, salvo **intervención extraordinaria del superadministrador de plataforma** con auditoría y trazabilidad completa.
+  Regla: **RN-HC-280 — Reapertura intra-ventana por rol con permiso; reapertura post-cierre anual solo por superadmin con auditoría**.
+- **[Decisión tomada]** **Solicitudes de certificados de egresados**: el sistema soporta **cobro por certificado** a egresados, **configurable por colegio** (precio y modalidad: incluido en convenio, cobrado al egresado, o gratuito). Regla: **RN-HC-281 — Certificados de egresados con tarifa y modalidad configurables por colegio**.

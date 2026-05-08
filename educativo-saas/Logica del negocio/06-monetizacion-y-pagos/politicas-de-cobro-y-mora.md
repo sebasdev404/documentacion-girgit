@@ -67,5 +67,5 @@ Cada colegio puede ajustar la cadencia.
 
 ## Notas y pendientes
 
-- Definir la lista exacta de servicios que el colegio puede restringir por cartera, evitando los protegidos por ley.
-- Validar la política para estudiantes nuevos vs antiguos en mora.
+- **[Decisión tomada]** **Servicios restringibles por cartera**: el sistema mantiene una **lista predefinida** de servicios que pueden o no restringirse por mora, alineada con la normativa local (ej. acceso al material académico esencial siempre permitido). Cada colegio puede **ajustar dentro de ese catálogo legal permitido** qué restringe efectivamente. Regla: **RN-PCM-140 — Catálogo legal predefinido + ajuste del colegio dentro del catálogo**.
+- **[Decisión tomada]** **Política de mora**: la misma para estudiantes nuevos y antiguos por defecto. Cada colegio puede **diferenciar** si quiere (ej. más estricta los primeros meses para un estudiante nuevo). Regla: **RN-PCM-141 — Diferenciación nuevos/antiguos opcional por colegio**.

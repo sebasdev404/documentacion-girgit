@@ -90,6 +90,6 @@ Los estudiantes que terminan el último grado del colegio (típicamente Undécim
 
 ## Notas y pendientes
 
-- Definir las reglas exactas de promoción que ofrece el sistema como plantillas (ej. "máximo 2 materias perdidas", "ninguna materia con nota inferior a X").
-- Definir el flujo de "reapertura" del cierre por error material (debería requerir intervención del superadmin con auditoría).
-- Validar el comportamiento si un estudiante egresado quiere matricularse nuevamente al colegio en años futuros.
+- **[Decisión tomada]** El sistema ofrece **plantillas predefinidas de reglas de promoción** (ej. "máximo N materias perdidas", "ninguna materia con nota inferior a X", "promedio mínimo Y") y permite a cada colegio definir una **regla custom** combinable. Regla: **RN-PR-100 — Plantillas predefinidas + regla custom por colegio**.
+- **[Decisión tomada]** La **reapertura del cierre académico** por error material la puede ejecutar **cualquier rol con el permiso `cierre.reabrir`** (rector, coordinador académico, secretaria u otro definido por la matriz de permisos del colegio), siempre con **justificación obligatoria** y **log inmutable** de auditoría. No se restringe al superadmin de plataforma. Regla: **RN-PR-101 — Reapertura por permiso, no por rol fijo, con justificación y log inmutable**.
+- **[Pendiente — producto]** Comportamiento si un estudiante egresado quiere matricularse nuevamente al colegio: debería reactivarse su expediente histórico (no crearse uno nuevo) y matricularlo en el grado correspondiente, conservando todo el historial.

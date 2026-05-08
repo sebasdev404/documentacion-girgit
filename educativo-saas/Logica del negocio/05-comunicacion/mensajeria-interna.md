@@ -70,5 +70,5 @@ Los mensajes dentro del hilo siguen una estructura simple: autor, contenido, fec
 
 ## Notas y pendientes
 
-- Validar si una segunda fase incluirá mensajería libre con moderación automática.
-- Definir si la "solicitud de cita" del portal genera automáticamente un hilo de mensajería asociado.
+- **[Decisión tomada]** **No habrá chat ni mensajería libre incorporada** en la plataforma, ni siquiera con moderación automática. La comunicación se mantiene **estructurada** (comunicados, publicaciones de agenda, citaciones, notificaciones de eventos del sistema). Regla: **RN-MI-180 — Sin mensajería libre; comunicación exclusivamente estructurada**.
+- **[Decisión tomada]** Una **solicitud de cita** se trata como un **evento agendable** independiente; **no genera un hilo de mensajería asociado**. Los detalles de la cita se manejan presencialmente o por canal externo del colegio. Regla: **RN-MI-181 — Cita = evento, sin hilo asociado**.

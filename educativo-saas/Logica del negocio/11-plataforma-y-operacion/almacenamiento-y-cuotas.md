@@ -78,5 +78,9 @@ Las funcionalidades críticas (matrícula, boletín final) avisan al usuario que
 
 ## Notas y pendientes
 
-- Definir tamaños máximos por tipo (en alineación con UX y costos).
-- Validar política de retención y borrado físico de archivos huérfanos.
+- **[Decisión tomada]** **Tamaños máximos por tipo de archivo configurables por plan** (Esencial / Estándar / Premium), con valores base por tipo: documentos, imágenes, video y audio. Las cuotas se ajustan para controlar costos de almacenamiento, rendimiento y experiencia de usuario. Los valores específicos por plan quedan en discusión hasta confirmar costos del proveedor. Regla: **RN-AC-250 — Tamaños máximos por tipo y por plan**.
+- **[Decisión tomada]** **Política de retención y borrado físico**:
+  - **Soft-delete** con marca y periodo de **cuarentena** antes del borrado físico definitivo.
+  - Antes de ejecutar **purgas definitivas**, el sistema **notifica a los superadministradores de plataforma** para permitir validaciones, respaldos adicionales o recuperaciones manuales.
+  - **Archivos huérfanos** o sin referencias activas se **purgan periódicamente** (ej. trimestralmente) para optimizar almacenamiento y costos.
+  Regla: **RN-AC-251 — Soft-delete + cuarentena + notificación al superadmin antes de purga + purga periódica de huérfanos**.

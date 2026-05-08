@@ -3,12 +3,12 @@ titulo: Portal del estudiante
 modulo: usuarios-roles-y-permisos
 tipo: referencia
 estado: borrador
-tags: [portal, estudiante, acudiente]
+tags: [portal, estudiante]
 ---
 
 # Portal del estudiante
 
-Espacio web por el cual el estudiante (y opcionalmente el acudiente) consume y gestiona la información que le pertenece dentro del colegio.
+Espacio web por el cual el estudiante (en la práctica, operado por su acudiente) consume y gestiona la información que le pertenece dentro del colegio. La cuenta es única del estudiante (`RN-TU-410`); el acudiente **no tiene credenciales propias** y opera la cuenta del menor con los datos de acceso de éste.
 
 ## Acceso
 
@@ -39,17 +39,16 @@ Espacio web por el cual el estudiante (y opcionalmente el acudiente) consume y g
 - Solo consume y gestiona lo que le pertenece directamente.
 - Toda acción del estudiante (justificación de inasistencia, confirmación de boletín, pago, solicitud de cita) queda registrada.
 
-## Acceso del acudiente
+## Acceso del acudiente operativo
 
-- El acudiente accede al portal del colegio con sus propias credenciales.
-- Ve los datos del estudiante (o estudiantes) que tiene vinculados.
-- Las funcionalidades disponibles para el acudiente las define el colegio en la matriz de permisos. Por defecto: ver notas, asistencia, observador, boletines, comunicados y pagos del estudiante a su cargo.
-- El acudiente **no puede** modificar datos académicos ni disciplinarios.
+- El acudiente **no tiene credenciales propias en la plataforma** (`RN-TU-410`): opera la cuenta del estudiante con los datos de acceso de éste.
+- Para acudientes con varios estudiantes en el mismo colegio, el portal puede ofrecer un **selector de estudiante** cuando el correo registrado en cada cuenta coincide, sin fusionar expedientes ni permisos (`RN-CP-002`).
+- El acudiente, al operar la cuenta del estudiante, **no puede** modificar datos académicos ni disciplinarios.
 
 ## Reglas de negocio
 
 - **RN-PE-001 — Acceso desactivable:** el colegio puede desactivar el portal del estudiante completamente desde su configuración. Si está desactivado, los estudiantes no pueden iniciar sesión.
-- **RN-PE-002 — Solo lectura para datos académicos y disciplinarios:** el estudiante y el acudiente nunca pueden modificar notas, asistencia ni observador.
+- **RN-PE-002 — Solo lectura para datos académicos y disciplinarios:** el usuario del estudiante (operado por el acudiente o no) nunca puede modificar notas, asistencia ni observador.
 - **RN-PE-003 — Bloqueo de documentos por paz y salvo:** la descarga de boletines, certificados y constancias puede estar bloqueada según la configuración de paz y salvo del colegio (ver [[../06-monetizacion-y-pagos/paz-y-salvo|Paz y salvo]]).
 - **RN-PE-004 — Confirmación de boletín auditada:** la confirmación digital de un boletín registra fecha, hora e IP, y queda asociada al usuario que la realizó.
 - **RN-PE-005 — Justificaciones requieren revisión:** una inasistencia justificada por el estudiante queda en estado pendiente hasta que el docente o coordinador la apruebe o rechace.
@@ -69,5 +68,5 @@ Detalle en [[../05-comunicacion/notificaciones|Notificaciones]].
 
 ## Notas y pendientes
 
-- Definir si el portal soporta sesión multi-estudiante para acudientes con varios hijos en el mismo colegio (recomendado: sí, con selector de estudiante).
+- Definir si el portal soporta **selector multi-estudiante** para acudientes operativos con varios hijos en el mismo colegio (recomendado: sí, sobre la base de correo en común, sin fusionar permisos). **Funcionalidad futura.**
 - Validar accesibilidad para usuarios con conexión limitada (uso de datos, modo offline parcial).

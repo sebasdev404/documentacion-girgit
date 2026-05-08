@@ -52,5 +52,5 @@ Los logros aparecen en el boletín del estudiante junto a las notas, agrupados p
 
 ## Notas y pendientes
 
-- Definir si el colegio puede configurar más estados además de "alcanzado / no alcanzado" (ej. niveles cualitativos: superior, alto, básico, bajo).
-- Definir si los logros pueden ser ponderados para incidir en la nota final (recomendado: no en el lanzamiento, mantenerlos como información cualitativa).
+- **[Decisión tomada]** Los estados de los logros e indicadores son **totalmente configurables por colegio**: cada colegio puede usar el modo binario (alcanzado/no alcanzado), cualitativo (superior/alto/básico/bajo) o incluso cuantitativo. Regla: **RN-LI-050 — Modos de evaluación de logros configurables (binario, cualitativo, cuantitativo)**.
+- **[Decisión tomada]** Por defecto los logros son **cualitativos y no inciden directamente en la nota final** (la nota se la pone el docente según los logros alcanzados). Cada colegio puede optar por activar **ponderación directa** si su modelo lo requiere. Regla: **RN-LI-051 — Ponderación de logros opcional por colegio**.

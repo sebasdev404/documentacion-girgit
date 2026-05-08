@@ -77,5 +77,5 @@ Estos reportes son útiles para el seguimiento de casos recurrentes y para la pr
 
 ## Notas y pendientes
 
-- Definir si el observador soporta etiquetas o categorías personalizadas por colegio (ej. "bullying", "rendimiento", "salud mental").
-- Definir si las anotaciones tienen visibilidad selectiva (ej. una observación interna entre coordinadores que no aparece al estudiante).
+- **[Decisión tomada]** El observador del estudiante incluye un **catálogo base de categorías** mantenido por la plataforma (ej. académico, convivencia, salud, citación) y cada colegio puede **añadir categorías propias** (ej. "bullying", "salud mental", "liderazgo"). Regla: **RN-OB-080 — Catálogo base + categorías custom por colegio**.
+- **[Decisión tomada]** Cada anotación tiene **visibilidad configurable** en 3 niveles: **pública** (visible al estudiante y al acudiente), **docentes** (solo personal docente y administrativo) e **interna** (solo coordinación y rector). El docente o coordinador eligen el nivel al crear la anotación. Regla: **RN-OB-081 — Visibilidad por anotación con tres niveles (pública / docentes / interna)**.

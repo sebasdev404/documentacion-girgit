@@ -75,5 +75,5 @@ Capacidad de la plataforma para **crear, almacenar, versionar, firmar y emitir**
 
 ## Notas y pendientes
 
-- Definir si la firma electrónica avanzada se contrata en fase 1 o queda para fase 2.
-- Definir el flujo de \"documento vencido\" (ej. certificado de afiliación EPS) y su renovación periódica.
+- **[Decisión tomada]** **Firma electrónica avanzada queda para fase 2.** En fase 1 los certificados oficiales aceptan **firma escaneada del rector** cargada por el colegio.
+- **[Decisión tomada]** Los **documentos cargados por el estudiante o su acudiente operativo** pasan por un **flujo de revisión administrativa**: el responsable autorizado (secretaría, coordinación, rectoría u otro rol con permiso) los **aprueba o rechaza**. Si el documento es **rechazado o vence**, el sistema **notifica automáticamente** al usuario para corrección o renovación. El bloqueo de servicios por documento vencido es **opcional** y configurable por colegio. Regla: **RN-GD-270 — Flujo de revisión con aprobación/rechazo + notificación automática al vencimiento**.

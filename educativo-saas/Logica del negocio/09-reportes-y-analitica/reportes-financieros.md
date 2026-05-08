@@ -14,7 +14,7 @@ tags: [reportes, finanzas]
 | --- | --- | --- | --- |
 | Cartera (deudores) | Rector, secretaría, contabilidad. | Diario / mensual. | Estudiantes con deuda, monto, días de mora, contacto. |
 | Recaudo | Rector, contabilidad. | Diario / mensual. | Pagos confirmados por concepto, sede, método, pasarela. |
-| Estado de cuenta por estudiante | Acudiente, secretaría. | Bajo demanda. | Cuotas generadas, pagos, saldo, mora. |
+| Estado de cuenta por estudiante | Estudiante (acudiente operativo), secretaría. | Bajo demanda. | Cuotas generadas, pagos, saldo, mora. |
 | Conciliación con pasarelas | Contabilidad, rector. | Diaria. | Transacciones reportadas vs registradas, diferencias. |
 | Comisiones de pasarela | Rector, contabilidad. | Mensual. | Comisión descontada por pasarela y por mes. |
 | Conceptos cobrados | Contabilidad. | Mensual / anual. | Distribución del recaudo por concepto. |
@@ -31,7 +31,6 @@ tags: [reportes, finanzas]
 - Concepto (matrícula, pensión, transporte, etc.).
 - Pasarela / método de pago.
 - Estado del cobro (pendiente, confirmado, en mora, anulado).
-- Acudiente.
 
 ## Formatos de exportación
 
@@ -47,5 +46,5 @@ tags: [reportes, finanzas]
 
 ## Notas y pendientes
 
-- Definir formato exacto del export hacia software contable (Siigo, World Office, etc.).
-- Validar si la proyección de ingresos considera escenarios con tasa de mora histórica.
+- **[Decisión tomada]** El sistema soporta **exportaciones financieras genéricas** (CSV/Excel u otros formatos estándar) con **plan de cuentas adaptable por colegio**. Las **integraciones específicas con softwares contables** (Siigo, World Office, etc.) se incorporan posteriormente mediante **adaptadores o conectores** según necesidades comerciales y evolución de la plataforma. Regla: **RN-RF-320 — Export genérico con plan de cuentas configurable; conectores específicos como evolución**.
+- **[Decisión tomada]** **Proyecciones financieras y escenarios de mora quedan fuera del MVP.** La plataforma incorporará posteriormente análisis predictivo y proyección de ingresos basados en históricos de recaudo y comportamiento de cartera.

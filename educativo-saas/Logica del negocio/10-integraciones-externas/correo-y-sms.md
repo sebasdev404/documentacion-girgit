@@ -55,5 +55,5 @@ Ver catálogo en [[../05-comunicacion/notificaciones|Notificaciones]].
 
 ## Notas y pendientes
 
-- Validar costo unitario de WhatsApp business y reflejarlo en el modelo comercial.
-- Definir SLA de entrega esperado por canal.
+- **[Pendiente — comercial]** Costos asociados a **WhatsApp Business** quedan como **definición comercial futura**. La plataforma podrá contemplar límites, consumo incluido por plan o cobro adicional por uso según el proveedor seleccionado. La **arquitectura ya queda preparada** para soportar el canal.
+- **[Decisión tomada]** **Tiempos de entrega por canal**: durante las etapas iniciales la plataforma opera bajo esquema **"best effort"**. La definición de **SLAs formales** queda sujeta a futuras decisiones de infraestructura, volumen y acuerdos con proveedores externos. Regla: **RN-CS-330 — Best effort por canal en fase 1; SLA formal en fase posterior**.

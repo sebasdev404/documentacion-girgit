@@ -100,5 +100,5 @@ Ver [[../09-reportes-y-analitica/reportes-academicos|Reportes académicos]].
 
 ## Notas y pendientes
 
-- Definir si las tardes se acumulan dentro del mismo periodo (ej. 3 tardes = 1 inasistencia) y si esa regla es configurable por colegio.
-- Validar el flujo de "asistencia por toma rápida" para grupos grandes (ej. marcar todo presente y solo individualizar los ausentes).
+- **[Decisión tomada]** La acumulación de tardes/llegadas tarde como inasistencia es **configurable por colegio**: cada colegio define cuántas tardes equivalen a una inasistencia (puede dejarlo en cero si no quiere acumular). Regla: **RN-AS-020 — Acumulación de tardes configurable por colegio**.
+- **[Pendiente UX]** Validar el flujo de "asistencia por toma rápida" para grupos grandes (marcar todo presente y solo individualizar ausentes) durante el piloto.

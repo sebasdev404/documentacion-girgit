@@ -43,7 +43,7 @@ Definiciones de términos del dominio. Usar este glosario como fuente única de 
 | Matrícula | Proceso de inscripción de un aspirante a un grado de un año lectivo. | Inicia con un pago y genera un PIN. |
 | PIN de matrícula | Código único asociado a un pago de matrícula que da acceso al formulario de inscripción. | Tiene vigencia configurable por el colegio. |
 | Aspirante | Persona en proceso de matrícula que aún no es estudiante del colegio. | No tiene usuario en el sistema hasta el cierre del proceso. |
-| Acudiente | Padre, madre o tutor responsable del estudiante. | Tipo de usuario distinto al estudiante; puede compartir rol. |
+| Acudiente | Padre, madre o tutor responsable del estudiante. | **No es un tipo de usuario** (`RN-TU-410`). Sus datos viven en la ficha del estudiante; opera de hecho la cuenta del menor. |
 | Pensión | Cobro recurrente (mensual u otra periodicidad) que el estudiante paga al colegio durante el año lectivo. | |
 | Concepto cobrable | Cualquier valor que el colegio cobra a través de la plataforma (matrícula, pensión, certificado, constancia, carné, otros). | |
 | Paz y salvo | Estado del estudiante respecto a sus obligaciones de pago y entrega de documentos. | Puede bloquear documentos según configuración del colegio. |

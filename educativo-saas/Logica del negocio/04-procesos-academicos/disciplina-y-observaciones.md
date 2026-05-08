@@ -85,5 +85,5 @@ Registrada → Pendiente de confirmación → Confirmada
 
 ## Notas y pendientes
 
-- Definir si una sanción de suspensión bloquea automáticamente el acceso al portal del estudiante durante su vigencia.
-- Definir si las anotaciones positivas (felicitaciones) también requieren confirmación.
+- **[Configurable por colegio]** Comportamiento del portal del estudiante durante una sanción de suspensión: bloqueo total, lectura limitada o sin restricción. Por defecto: lectura limitada (consulta de notas y comunicados, sin participación en agenda ni mensajería).
+- **[Configurable por colegio]** Si las anotaciones positivas (felicitaciones) requieren confirmación del acudiente o estudiante. Por defecto: solo notificación, sin confirmación requerida.

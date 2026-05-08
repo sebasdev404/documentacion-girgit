@@ -66,5 +66,5 @@ Los datos del pagador se capturan durante la matrícula y se reutilizan en cada 
 
 ## Notas y pendientes
 
-- Definir el proveedor tecnológico DIAN para Colombia (decisión comercial).
-- Definir flujo cuando una factura electrónica es rechazada por la DIAN (notificar al colegio, reintentar).
+- **[Decisión externa pendiente — Comercial]** Selección del **proveedor tecnológico DIAN** para Colombia. La integración se diseña en abstracto (`FacturadorElectronico` con adaptador por país y por proveedor) para no acoplar la decisión.
+- **[Pendiente — producto]** No se ha definido aún el detalle del flujo de **facturación electrónica** (rechazos DIAN, reintentos, corrección manual, notas crédito y débito). Se documenta a profundidad cuando se confirme el proveedor y el segundo país piloto.

@@ -18,12 +18,12 @@ tags: [rol, secretaria, administrativo, matricula, simat, tenant]
 
 ## Descripción
 
-Gestiona los **procesos administrativos del colegio**: matrícula, registro de estudiantes y acudientes, emisión de documentos oficiales, control de documentos pendientes y reporte SIMAT. No tiene acceso a registrar ni editar notas.
+Gestiona los **procesos administrativos del colegio**: matrícula, registro de estudiantes (con sus datos de acudiente operativo como contacto), emisión de documentos oficiales, control de documentos pendientes y reporte SIMAT. No tiene acceso a registrar ni editar notas.
 
 ## Responsabilidades
 
-### Estudiantes y acudientes
-- Registrar y actualizar la información de estudiantes y acudientes.
+### Estudiantes y datos de acudiente operativo
+- Registrar y actualizar la información del estudiante, incluyendo los **datos del / los acudientes operativos** dentro de la ficha del estudiante (`RN-TU-410`: el acudiente no es un usuario).
 - Mantener el directorio de contactos del colegio.
 
 ### Matrícula
@@ -40,22 +40,22 @@ Gestiona los **procesos administrativos del colegio**: matrícula, registro de e
 
 ## Scope / alcance de visibilidad
 
-- Ve **todos los estudiantes y acudientes del tenant**.
+- Ve **todos los estudiantes del tenant**, con sus datos de acudiente operativo asociados.
 - Ve la información de matrícula y documentos por estudiante.
 - **No ve notas como datos editables** — solo las puede leer en formato de certificado/consolidado para emitir documentos.
 - No ve datos de otros tenants.
 
 ## Permisos estructurales (no modificables)
 
-| Permiso | Detalle |
-| --- | --- |
-| Crear y editar estudiantes | Datos personales, contacto, ficha de matrícula |
-| Crear y editar acudientes | Vincularlos a estudiantes |
-| Asignar estudiante a grupo | Como parte del proceso de matrícula |
-| Cargar documentos de matrícula | Y marcarlos como recibidos / pendientes |
-| Generar constancias y certificados | Con consecutivo y trazabilidad |
-| Emitir paz y salvos | Cuando aplica |
-| Reportar a SIMAT | Generar archivos / formatos requeridos |
+| Permiso                            | Detalle                                        |
+| ---------------------------------- | ---------------------------------------------- |
+| Crear y editar estudiantes         | Datos personales, contacto, ficha de matrícula |
+| Editar datos de acudiente operativo | Como información de contacto dentro de la ficha del estudiante (no es un usuario) |
+| Asignar estudiante a grupo         | Como parte del proceso de matrícula            |
+| Cargar documentos de matrícula     | Y marcarlos como recibidos / pendientes        |
+| Generar constancias y certificados | Con consecutivo y trazabilidad                 |
+| Emitir paz y salvos                | Cuando aplica                                  |
+| Reportar a SIMAT                   | Generar archivos / formatos requeridos         |
 
 ## Permisos configurables por el colegio
 

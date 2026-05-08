@@ -74,5 +74,5 @@ Los rangos exactos pueden ajustarse por plan o por colegio.
 
 ## Notas y pendientes
 
-- Definir el proveedor exacto de almacenamiento secundario (otra región / otro proveedor).
-- Definir la frecuencia exacta de pruebas de restauración (sugerido trimestral) y publicar reporte resumido al cliente.
+- **[Decisión tomada]** **Almacenamiento secundario de backups**: queda como **decisión de infraestructura pendiente**. Hipótesis inicial: la plataforma opera sobre **VPS Linux** y los respaldos se almacenan en almacenamiento secundario **dentro del mismo proveedor o región**, dejando abierta la incorporación de un **proveedor o región adicional** en fases futuras según crecimiento y requerimientos de resiliencia.
+- **[Decisión tomada]** **Pruebas de restauración** se realizan **trimestralmente** con registro interno; el **reporte resumido** queda **disponible al cliente bajo solicitud**. Regla: **RN-BR-260 — Pruebas trimestrales de restauración con reporte bajo solicitud**.

@@ -65,5 +65,6 @@ Al inactivar una asignación:
 
 ## Notas y pendientes
 
-- Definir si un docente puede tener una "co-titularidad" (dos docentes compartiendo una materia × grupo) o si siempre es uno solo.
-- Definir el comportamiento si un docente es eliminado mientras tiene asignaciones activas (recomendado: bloquear eliminación hasta reasignar).
+- **[Decisión tomada]** La co-titularidad (dos docentes compartiendo materia×grupo) es **configurable por colegio**. Por defecto un solo titular; el colegio puede activar co-titularidad y, en ese caso, ambos docentes registran notas y observador sobre el mismo grupo.
+- **[Decisión tomada]** Eliminación de un docente con asignaciones activas: se hace **soft-delete** — el docente queda desactivado, conserva todo el historial y la auditoría, pero sus asignaciones quedan **huérfanas** y deben reasignarse explícitamente. La plataforma alerta al coordinador académico la lista de asignaciones pendientes de reasignación.
+- Reglas asociadas: **RN-AD-010 — Co-titularidad configurable**; **RN-AD-011 — Soft-delete de docente con reasignación obligatoria de asignaciones huérfanas**.

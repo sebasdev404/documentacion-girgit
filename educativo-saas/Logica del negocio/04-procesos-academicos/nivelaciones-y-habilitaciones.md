@@ -77,6 +77,6 @@ Pendiente (autogenerado) → En proceso → Aprobada
 
 ## Notas y pendientes
 
-- Definir si una nivelación aprobada sustituye la nota original del periodo o se promedia con ella (depende de política del colegio; por defecto sustituye).
-- Definir si la habilitación tiene una fecha límite de ejecución antes del cierre definitivo del año.
-- Definir si un estudiante puede tener múltiples nivelaciones simultáneas (recomendado: sí, una por materia perdida).
+- **[Decisión tomada]** El tratamiento de la nota de nivelación aprobada es **configurable por colegio**: puede **sustituir** la nota original, **promediarse** con ella, o registrarse como **nota adicional sumable** según política del colegio. Regla: **RN-NH-070 — Tratamiento de la nota de nivelación configurable (sustitución, promedio o nota adicional)**.
+- **[Configurable por colegio]** Fecha límite de ejecución de la habilitación antes del cierre definitivo del año lectivo. La plataforma propone una fecha sugerida derivada del calendario, modificable por el colegio.
+- **[Decisión tomada]** La cantidad de nivelaciones simultáneas que puede tener un estudiante es **configurable por colegio**. Por defecto: una por cada materia perdida en paralelo. Regla: **RN-NH-071 — Nivelaciones simultáneas configurables**.

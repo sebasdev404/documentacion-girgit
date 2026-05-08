@@ -10,6 +10,8 @@ tags: [moc, indice]
 
 Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondiente.
 
+> **Lectura rápida:** [[00-resumen-ejecutivo|Resumen ejecutivo consolidado]] — toda la lógica del producto en un solo documento, con referencia a cada `RN-XX-NNN`.
+
 ## 01 — Visión y alcance
 
 - [[01-vision-y-alcance/vision-del-producto|Visión del producto]]
@@ -27,7 +29,7 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 - [[02-usuarios-roles-y-permisos/autenticacion|Autenticación]]
 - [[02-usuarios-roles-y-permisos/ciclo-de-vida-de-usuario|Ciclo de vida de usuario]]
 - [[02-usuarios-roles-y-permisos/onboarding-de-usuarios|Onboarding de usuarios]]
-- [[02-usuarios-roles-y-permisos/portal-del-estudiante|Portal del estudiante / acudiente]]
+- [[02-usuarios-roles-y-permisos/portal-del-estudiante|Portal del estudiante]]
 
 ### Detalle por rol (orden jerárquico)
 
@@ -39,7 +41,7 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 - [[02-usuarios-roles-y-permisos/roles/05-secretaria-academica|Secretaría Académica]]
 - [[02-usuarios-roles-y-permisos/roles/06-docente|Docente]]
 - [[02-usuarios-roles-y-permisos/roles/07-director-de-grupo|Director de Grupo (complemento)]]
-- [[02-usuarios-roles-y-permisos/roles/08-estudiante-y-acudiente|Estudiante / Acudiente]]
+- [[02-usuarios-roles-y-permisos/roles/08-estudiante-y-acudiente|Estudiante]]
 
 ## 03 — Multi-tenancy
 

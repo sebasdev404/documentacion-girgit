@@ -83,7 +83,7 @@ Enviado → Archivado (con motivo, conserva histórico)
 ### Observación disciplinaria
 
 ```
-Registrada → Notificada al acudiente → Confirmada por acudiente
+Registrada → Notificada al acudiente operativo → Confirmada por el acudiente operativo
 Registrada → En revisión (apelación) → Mantenida / Modificada / Retirada (con motivo)
 ```
 
@@ -116,5 +116,5 @@ Cerrado → Reabierto excepcionalmente → Cerrado nuevamente
 
 ## Notas y pendientes
 
-- Validar si conviene formalizar las máquinas de estado en código (con librería de FSM) o solo a nivel lógico.
-- Documentar diagramas en formato visual (PlantUML / Mermaid) en una entrega futura.
+- **[Decisión tomada]** **Implementación de máquinas de estado**: en fases iniciales los flujos críticos se manejan mediante **validaciones y reglas de estado en la lógica de negocio** (sin librería formal de FSM). La adopción de **librerías FSM** (XState, statecharts) se evalúa posteriormente según el crecimiento y complejidad operativa de los módulos.
+- **[Pendiente — documentación]** Diagramas visuales en formato **PlantUML / Mermaid** se incorporan en una entrega futura cuando se estabilicen las máquinas de estado de los flujos críticos.

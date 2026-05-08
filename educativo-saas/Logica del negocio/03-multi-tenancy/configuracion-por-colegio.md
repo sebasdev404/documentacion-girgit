@@ -154,5 +154,9 @@ Detalle en [[../05-comunicacion/agenda-y-publicaciones|Agenda y publicaciones]].
 
 ## Notas y pendientes
 
-- Definir lista exacta de eventos notificables y sus defaults.
-- Definir si el colegio puede tener múltiples logos (uno para portal, uno para boletines).
+- **[Decisión tomada]** El sistema mantiene un **catálogo base de eventos notificables por módulo** (académico, asistencia, pagos, comunicación, etc.). Cada colegio puede **activar, desactivar o ajustar** qué eventos se notifican y por **qué canales** (correo, push, portal). Regla: **RN-CC-220 — Catálogo base de eventos + matriz canal×evento configurable por colegio**.
+- **[Decisión tomada]** **Múltiples recursos de identidad visual por colegio**:
+  - Logo principal (header del portal, correos).
+  - Logo para documentos oficiales (boletines, certificados, paz y salvo).
+  - Isotipo / favicon cuadrado (pestaña del navegador, app).
+  Regla: **RN-CC-221 — Identidad visual con tres recursos (principal, oficial, isotipo)**.

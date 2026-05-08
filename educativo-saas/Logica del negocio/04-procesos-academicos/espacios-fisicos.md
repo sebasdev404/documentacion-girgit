@@ -43,4 +43,4 @@ Un mismo aula puede combinar ambos roles (sirve como salón fijo de un grupo, pe
 
 ## Notas y pendientes
 
-- Definir si el sistema gestiona reservas puntuales de aulas (ej. para una reunión de padres en el auditorio) o si solo soporta horarios recurrentes.
+- **[Decisión tomada — MVP]** El sistema **solo soporta horarios recurrentes** sobre los espacios físicos. Las reservas puntuales (ej. auditorio para reunión de padres en una fecha específica) **no entran en MVP** y se evalúan como funcionalidad futura.

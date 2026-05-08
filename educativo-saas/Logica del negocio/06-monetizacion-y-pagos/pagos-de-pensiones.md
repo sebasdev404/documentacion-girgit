@@ -95,5 +95,5 @@ Anulado (por nota crédito o ajuste)
 
 ## Notas y pendientes
 
-- Definir si la plataforma soporta cobros compartidos entre dos acudientes (split de pensión).
-- Validar el flujo de devolución parcial cuando un estudiante se retira a mitad de mes.
+- **[Decisión tomada]** **No hay split de pensión entre acudientes**: el sistema mantiene una **deuda única por estudiante**; quién pague no es asunto del sistema. El colegio sí puede dividir el cobro en **cuotas** (ej. matrícula o pensión a plazos) y cada cuota se refleja en el sistema como un cargo separado. Regla: **RN-PP-120 — Deuda única por estudiante; soporte de división en cuotas pero sin split entre pagadores**.
+- **[Decisión tomada]** **Retiro de un estudiante a mitad de mes**: el sistema permite **prorrateo por días** del cargo del mes en curso (configurable por colegio: algunos no devuelven nada). El sistema **no ejecuta devoluciones de dinero**: simplemente refleja la deuda recalculada y, si hubo sobrepago, lo deja como **saldo a favor**. La devolución efectiva se gestiona offline entre colegio y acudiente. El colegio suspende el usuario del estudiante. Regla: **RN-PP-121 — Prorrateo configurable sin devoluciones automáticas; sobrepago queda como saldo a favor**.

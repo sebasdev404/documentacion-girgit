@@ -72,5 +72,11 @@ Cada tipo de notificación puede activarse o desactivarse por configuración del
 
 ## Notas y pendientes
 
-- Definir la ventana exacta de agrupamiento (recomendado: 15 minutos para correo, inmediato para portal y push).
-- Definir el flujo si un correo rebota repetidamente (suspender canal correo y notificar al administrador del colegio).
+- **[Decisión tomada]** Ventanas de agrupamiento **configurables por colegio dentro de límites del sistema**:
+  - **Correo electrónico:** agrupamiento entre **5 y 15 minutos** (default 10 min) para evitar saturación de la bandeja del usuario.
+  - **Portal y push:** **entrega inmediata**, sin agrupamiento.
+  Regla: **RN-NT-190 — Agrupamiento configurable por canal con tope del sistema**.
+- **[Decisión tomada]** Comportamiento ante rebotes de correo:
+  - **Rebote temporal (4xx):** reintentar conforme a la política del proveedor SMTP, sin suspender el canal.
+  - **Rebote permanente (5xx) o 3 rebotes temporales consecutivos:** **suspender el canal correo** del usuario y **notificar al administrador del colegio** para corrección del email. El canal portal y push permanecen activos.
+  Regla: **RN-NT-191 — Suspensión automática del canal correo tras rebotes y notificación al administrador, distinguiendo rebotes temporales y permanentes**.

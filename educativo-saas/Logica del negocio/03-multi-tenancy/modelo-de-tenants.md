@@ -76,5 +76,8 @@ Ver [[../06-monetizacion-y-pagos/planes-y-suscripciones|Planes y suscripciones]]
 
 ## Notas y pendientes
 
-- Definir si el subdominio se puede liberar para reutilización cuando un tenant es eliminado o queda reservado para evitar suplantación.
-- Definir el flujo exacto de migración de plan (upgrade/downgrade) y su impacto en cuotas.
+- **[Decisión tomada]** **Subdominios de tenants eliminados** entran en un **periodo de cuarentena** antes de poder reutilizarse. La **reutilización posterior es controlada administrativamente** por el superadministrador de plataforma (no automática). Esto evita riesgos de suplantación, accesos a enlaces antiguos y confusión institucional. Regla: **RN-MT-240 — Cuarentena obligatoria + reutilización controlada por superadmin**.
+- **[Decisión tomada]** **Migración de plan**:
+  - **Upgrade:** efecto **inmediato** con **prorrateo** del valor por los días restantes del ciclo.
+  - **Downgrade:** efecto al **final del ciclo de facturación**, **previa validación de cuotas del nuevo plan** (sedes, almacenamiento, usuarios). Si hay excedentes, el cambio se **bloquea** hasta resolverlos.
+  Regla: **RN-MT-241 — Upgrade inmediato con prorrateo; downgrade fin de ciclo con validación de cuotas**.

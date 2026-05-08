@@ -164,6 +164,6 @@ Lista típica configurada por el colegio (varía por nivel):
 
 ## Notas y pendientes
 
-- Definir el máximo de reintentos por documento rechazado y si es configurable.
-- Validar el comportamiento si el aspirante quiere matricular hermanos: ¿un pago por hermano o agrupado?
-- Definir si el sistema soporta descuentos en matrícula (ver [[../06-monetizacion-y-pagos/descuentos-y-becas|Descuentos y becas]]).
+- **[Configurable por colegio]** Máximo de reintentos para volver a cargar un documento rechazado durante la matrícula. Por defecto sin límite técnico, pero el colegio puede definir uno y un periodo de bloqueo si se supera.
+- **[Decisión tomada]** **Cada estudiante es independiente** en pagos, información y matrícula, aun siendo hermanos en el mismo colegio o el mismo grupo. **No hay pago agrupado de matrícula entre hermanos**: un proceso, una factura y un expediente por estudiante. Regla: **RN-MT-060 — Matrícula y pagos individuales por estudiante, sin agrupación automática entre hermanos**.
+- **[Soportado]** Descuentos en matrícula: ver [[../06-monetizacion-y-pagos/descuentos-y-becas|Descuentos y becas]]. La plataforma soporta descuentos por estudiante; los descuentos por familia (si los hubiera) son una política del colegio aplicada manualmente a cada estudiante.

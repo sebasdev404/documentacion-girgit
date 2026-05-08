@@ -91,6 +91,6 @@ El acta se almacena asociada al año lectivo y consume cuota del tenant.
 
 ## Notas y pendientes
 
-- Definir el umbral exacto (en puntos por debajo de la nota mínima) para considerar "situación límite".
-- Definir si las decisiones requieren votación registrada o basta con el consenso documentado.
-- Validar firma digital del rector sobre el acta como funcionalidad futura.
+- **[Configurable por colegio]** Umbral en puntos por debajo de la nota mínima para considerar "situación límite". Cada colegio lo define en su configuración académica.
+- **[Configurable por colegio]** Modalidad de decisión del consejo: votación registrada o consenso documentado. La plataforma soporta ambos formatos en el acta.
+- **[Funcionalidad futura]** Firma digital del rector sobre el acta. Fuera de MVP.

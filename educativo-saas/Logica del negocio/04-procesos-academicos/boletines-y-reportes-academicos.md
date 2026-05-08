@@ -95,5 +95,5 @@ Ver [[../09-reportes-y-analitica/reportes-academicos|Reportes académicos]] y [[
 
 ## Notas y pendientes
 
-- Definir límites de personalización autoservicio (qué puede tocar el colegio sin servicio externo).
-- Validar firma digital adicional para certificados oficiales (firma del rector, sellos).
+- **[Pendiente — producto]** Definir límites de personalización autoservicio del boletin (encabezado, logo, texto institucional, orden de columnas) versus personalización profunda que requiera servicio profesional.
+- **[Pendiente — funcionalidad futura]** Firma digital sobre certificados oficiales y sellos del rector. No bloquea el lanzamiento; el certificado lleva firma escaneada del rector cargada por el colegio.

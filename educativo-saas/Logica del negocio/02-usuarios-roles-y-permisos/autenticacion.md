@@ -62,5 +62,5 @@ tags: [autenticacion, login, seguridad]
 
 ## Notas y pendientes
 
-- Definir valor exacto de la política de complejidad mínima.
-- Definir si el sistema soporta cuentas inactivas con caducidad automática.
+- **[Decisión tomada]** **Política de contraseñas seguras**: el sistema obliga **complejidad mínima** (longitud, mayúsculas, minúsculas, números y símbolos) y rechaza contraseñas comunes. Las cuentas creadas durante **matrícula o procesos administrativos** reciben una **contraseña temporal generada por el sistema**; el usuario debe **cambiarla obligatoriamente en el primer inicio de sesión**. Regla: **RN-AU-360 — Contraseña temporal obligatoria en primer login para cuentas creadas administrativamente**.
+- **[Decisión tomada]** **Sin caducidad automática de cuentas inactivas en MVP**. Los bloqueos por inactividad u otras causas se hacen **manualmente** por el rector u otro rol con permiso. La caducidad automática queda como funcionalidad futura.

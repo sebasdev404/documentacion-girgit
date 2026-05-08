@@ -91,5 +91,5 @@ Ver [[../03-multi-tenancy/modelo-de-tenants]], [[../03-multi-tenancy/aislamiento
 
 ## Notas y pendientes
 
-- Mantener este índice actualizado al agregar nuevas reglas en cualquier proceso.
-- Considerar generar este índice automáticamente extrayendo los `RN-XX-NNN` de cada archivo.
+- **[Operativo]** Mantener este índice actualizado al agregar nuevas reglas en cualquier proceso. **Mantenimiento manual**.
+- **[Decisión tomada]** **Sin generación automática del índice de reglas en MVP.** El índice se mantiene **manualmente**; la generación automática extrayendo `RN-XX-NNN` de cada archivo se evalúa como mejora de tooling de documentación posteriormente.

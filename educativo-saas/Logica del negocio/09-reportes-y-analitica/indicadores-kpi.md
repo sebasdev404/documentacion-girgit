@@ -54,5 +54,5 @@ Visibles para el rector y roles autorizados de cada colegio, restringidos a su t
 
 ## Notas y pendientes
 
-- Validar si el dashboard del rector incluye benchmark anónimo con otros colegios del mismo segmento.
-- Definir si MRR / ARR se publican externamente o solo se usan internamente.
+- **[Decisión tomada]** **Sin benchmark entre colegios.** Cada colegio visualiza únicamente su propia información, métricas e indicadores. No se contemplan comparaciones entre instituciones, **ni siquiera anónimas**, manteniendo aislamiento total entre tenants. Regla: **RN-KP-300 — Aislamiento estricto: cero benchmark cross-tenant**.
+- **[Decisión tomada]** Las **métricas financieras de la plataforma** (MRR, ARR y similares) son de **uso exclusivo interno** del proveedor SaaS. **No se publican** ni se exponen a los tenants. Regla: **RN-KP-301 — MRR/ARR uso interno; sin exposición pública ni a tenants**.

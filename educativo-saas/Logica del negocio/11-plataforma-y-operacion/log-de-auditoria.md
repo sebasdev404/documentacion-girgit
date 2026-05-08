@@ -82,5 +82,5 @@ Registro inmutable y consultable de todas las acciones relevantes que ocurren en
 
 ## Notas y pendientes
 
-- Definir el formato exacto de los `valorPrevio` / `valorNuevo` (JSON diff vs snapshot completo).
-- Validar herramienta de SIEM o equivalente para análisis a gran escala.
+- **[Decisión tomada]** **Formato de auditoría basado en diff JSON**: se registran los **campos modificados** con sus **valores previo y nuevo**. Para **eventos críticos o regulatorios** (cierre académico, emisión de certificados, cambios en notas tras cierre) se conserva adicionalmente una **referencia al snapshot completo** de la entidad. Regla: **RN-LA-290 — Diff JSON por defecto + snapshot referenciado en eventos críticos**.
+- **[Decisión tomada]** **SIEM y exportación avanzada de logs**: **fuera del alcance inicial**. La fase 1 mantiene **logs internos estructurados** y **auditoría básica** dentro de la plataforma. La integración con SIEM externo se evalúa en fases futuras según crecimiento e infraestructura.

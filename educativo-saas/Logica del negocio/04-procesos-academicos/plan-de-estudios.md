@@ -64,5 +64,5 @@ El plan de estudios debe existir **antes** de poder:
 
 ## Notas y pendientes
 
-- Definir si el sistema soporta materias optativas que el estudiante elige individualmente, o si todas las materias del grado son obligatorias para todo el grupo.
-- Definir si las áreas del conocimiento son catálogo cerrado del sistema o cada colegio define las suyas.
+- **[Pendiente — producto]** Soporte de materias **optativas elegibles individualmente por el estudiante** (electivas por estudiante, no por grupo). En MVP todas las materias del grado son obligatorias para todo el grupo; las electivas por estudiante quedan como funcionalidad futura.
+- **[Decisión tomada]** Las **áreas del conocimiento** son un **catálogo base del sistema** alineado al MEN colombiano y al país piloto, y **cada colegio puede añadir** áreas adicionales si su modelo pedagógico lo requiere. Regla: **RN-PE-090 — Catálogo base de áreas + extensión por colegio**.

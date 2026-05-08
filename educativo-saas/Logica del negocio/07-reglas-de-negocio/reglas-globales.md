@@ -42,5 +42,8 @@ Reglas que aplican transversalmente a todos los módulos del sistema, más allá
 
 ## Notas y pendientes
 
-- Validar plan de internacionalización cuando se entre a un segundo país.
-- Documentar el procedimiento de confirmación MFA para acciones críticas en el año 2.
+- **[Decisión tomada]** **Internacionalización**: la plataforma adopta desde el inicio una **arquitectura basada en catálogos de mensajes y soporte de locales**, evitando deuda técnica al expandirse. **Locale activo en MVP: `es-CO`**. Cuando se confirme el segundo país piloto se añade su locale (ej. `es-EC` o `es-PE`). Regla: **RN-RG-420 — Arquitectura i18n desde MVP; locales activos según país piloto**.
+- **[Decisión tomada]** **MFA**:
+  - **Obligatorio en MVP** para cuentas de **superadministración de plataforma** y **accesos de alto privilegio**.
+  - **Expansión progresiva** a rectoría, administración institucional y acciones críticas específicas (cierre académico, emisión de certificados, cambios de notas tras cierre, configuración de pagos) en **etapas posteriores** según evolución operativa y de seguridad.
+  Regla: **RN-RG-421 — MFA obligatorio para superadmin/alto privilegio en MVP; expansión progresiva a roles críticos del colegio**.

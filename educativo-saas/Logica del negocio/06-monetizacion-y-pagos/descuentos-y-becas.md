@@ -68,5 +68,5 @@ Aplicable a: matrícula, pensión, transporte, alimentación u otros conceptos s
 
 ## Notas y pendientes
 
-- Definir si las becas requieren reporte mensual al comité que las otorga.
-- Definir el flujo cuando un estudiante con beca cambia de colegio dentro del mismo grupo empresarial.
+- **[Decisión tomada]** El **reporte mensual de becas** al comité que las otorga es **configurable por colegio**: cada colegio (o cada beca) puede activar el envío automático mensual o desactivarlo. Regla: **RN-DB-110 — Reporte mensual de beca configurable por beca**.
+- **[Decisión tomada]** Cuando un estudiante con beca se traslada entre colegios del **mismo grupo empresarial**: la beca **no se traslada automáticamente**, pero el grupo empresarial puede definir una política de **"grupo"** que pre-aprueba ciertos tipos de beca al moverse entre sus colegios. Regla: **RN-DB-111 — Política de traslado de beca configurable a nivel de grupo empresarial; sin traslado automático por defecto**.

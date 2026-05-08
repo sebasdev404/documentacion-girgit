@@ -22,7 +22,7 @@ Un rol es un **conjunto de permisos** asignable a un usuario. Cada rol está doc
 | 05 | Secretaría Académica | Tenant | Principal | [[roles/05-secretaria-academica\|05-secretaria-academica.md]] |
 | 06 | Docente | Tenant | Principal | [[roles/06-docente\|06-docente.md]] |
 | 07 | Director de Grupo | Tenant | Complemento | [[roles/07-director-de-grupo\|07-director-de-grupo.md]] |
-| 08 | Estudiante / Acudiente | Tenant | Principal | [[roles/08-estudiante-y-acudiente\|08-estudiante-y-acudiente.md]] |
+| 08 | Estudiante | Tenant | Principal | [[roles/08-estudiante-y-acudiente\|08-estudiante-y-acudiente.md]] |
 
 ## Reglas de asignación
 
@@ -58,7 +58,7 @@ Tenant (dentro del colegio)
 ├── Secretaría Académica
 ├── Docente
 │   └── + Director de Grupo (complemento)
-└── Estudiante / Acudiente (solo consulta)
+└── Estudiante (solo consulta; cuenta operada por el acudiente según `RN-TU-410`)
 ```
 
 ## Notas y pendientes

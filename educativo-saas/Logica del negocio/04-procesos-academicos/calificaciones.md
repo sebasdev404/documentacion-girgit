@@ -127,5 +127,6 @@ Esta trazabilidad es **inviolable y no puede desactivarse**.
 
 ## Notas y pendientes
 
-- Definir el máximo de duración de una ventana de corrección y si requiere aprobación del rector.
-- Definir si las notas se pueden importar masivamente desde un archivo (recomendado para colegios grandes).
+- **[Decisión tomada]** La **ventana de corrección de notas** es totalmente **configurable por colegio**: el colegio decide si la activa, su duración máxima tras el cierre del periodo y las alertas asociadas. Regla: **RN-CL-030 — Ventana de corrección configurable por colegio (activable, duración y alertas)**.
+- **[Decisión tomada]** Una corrección de nota tras cierre de periodo **requiere aprobación** de un rol con el permiso correspondiente (rector, coordinador académico, secretaria u otro definido por la matriz de permisos del colegio). El docente solicita; el rol con permiso aprueba o rechaza con justificación. Regla: **RN-CL-031 — Corrección tras cierre con aprobación por permiso, no por rol fijo**.
+- **[Funcionalidad futura]** Importación masiva de notas desde archivo CSV/Excel. **Fuera de MVP**; se incorpora tras lanzamiento si los colegios piloto lo solicitan.

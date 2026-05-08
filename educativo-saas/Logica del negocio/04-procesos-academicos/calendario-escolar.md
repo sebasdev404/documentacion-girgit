@@ -65,5 +65,5 @@ Ver [[../05-comunicacion/notificaciones|Notificaciones]].
 
 ## Notas y pendientes
 
-- Definir si el sistema preprovisiona festivos nacionales por defecto y si se actualizan automáticamente.
-- Definir si el calendario soporta sincronización con calendarios externos (Google Calendar, iCal) como funcionalidad futura.
+- **[Pendiente — producto]** Preprovisión automática de festivos nacionales por país (Colombia + segundo país piloto) con actualización anual mantenida por la plataforma. El colegio puede añadir o desactivar festivos.
+- **[Funcionalidad futura]** Sincronización iCal/Google Calendar (suscripción de solo lectura). Fuera de MVP.

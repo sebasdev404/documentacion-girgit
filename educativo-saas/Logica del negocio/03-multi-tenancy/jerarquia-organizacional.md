@@ -48,5 +48,5 @@ Estructura interna de un colegio: sedes, jornadas, niveles, grados, grupos.
 
 ## Notas y pendientes
 
-- Definir si el colegio puede crear niveles educativos personalizados o si la lista es cerrada (Preescolar / Primaria / Secundaria / Media).
-- Validar si un estudiante puede repetir grado en una sede distinta dentro del mismo colegio.
+- **[Decisión tomada]** **Catálogo base de niveles educativos por país** (en Colombia: Preescolar / Primaria / Secundaria / Media). Cada colegio puede **agregar niveles o variantes propias** si su modelo pedagógico lo requiere (ej. Materno, Pre-jardín, Bachillerato Internacional). Regla: **RN-JO-230 — Catálogo base por país + niveles custom por colegio**.
+- **[Decisión tomada]** **Repetición de grado entre sedes del mismo colegio**: **configurable por colegio**. Por defecto se permite el **traslado interno entre sedes** bajo **autorización administrativa o rectoral**, manteniendo el **historial académico centralizado** del estudiante (no se duplica el expediente). Regla: **RN-JO-231 — Traslado entre sedes con autorización y expediente centralizado**.

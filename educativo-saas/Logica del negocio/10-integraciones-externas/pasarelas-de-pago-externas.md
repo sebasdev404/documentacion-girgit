@@ -68,5 +68,5 @@ La lista exacta es decisión comercial.
 
 ## Notas y pendientes
 
-- Definir matriz de pruebas de integración para cada pasarela en sandbox.
-- Documentar el flujo cuando una transacción queda en estado intermedio durante días (política de timeout).
+- **[Decisión tomada]** Cada integración con una pasarela cuenta con una **matriz básica de pruebas comunes** que cubre los escenarios críticos: **pago exitoso**, **rechazo**, **reverso**, **timeout**, **conciliación** y **manejo de webhooks duplicados / fuera de orden**. Regla: **RN-PE-350 — Matriz común de pruebas obligatoria por integración de pasarela**.
+- **[Decisión tomada]** Cuando una transacción permanezca en **estado intermedio** sin confirmación definitiva: el sistema la marca como **`pendiente_de_conciliacion`**, **alerta a finanzas/secretaría** del colegio y **reintenta validaciones con la pasarela** antes de asumir cancelación automática, evitando inconsistencias o pérdida de pagos válidos. La cancelación automática solo se aplica si la pasarela confirma la cancelación. Regla: **RN-PE-351 — Estado intermedio con alerta + reintento + sin cancelación automática unilateral**.

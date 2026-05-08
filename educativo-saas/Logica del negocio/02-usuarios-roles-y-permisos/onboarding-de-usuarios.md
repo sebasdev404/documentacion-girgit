@@ -46,17 +46,12 @@ Flujo alterno (carga masiva, ej. al migrar desde otro sistema):
 1. El administrador o secretaría sube un archivo plantilla con datos de estudiantes ya inscritos.
 2. El sistema valida formato y duplicados.
 3. Cada estudiante se crea en estado `Pendiente`.
-4. Los acudientes vinculados se crean también con sus datos de contacto.
-5. Notificación por correo a cada estudiante (y opcionalmente a sus acudientes) con credenciales temporales.
+4. Los **datos de acudiente operativo** se cargan **dentro de la ficha del estudiante** (no como usuarios aparte; `RN-TU-410`).
+5. Notificación por correo al **estudiante** con credenciales temporales; en la práctica el correo registrado suele ser el del acudiente operativo.
 
-## Onboarding de padres / acudientes
+## Notificación al acudiente operativo
 
-Los acudientes se crean **vinculados al estudiante** durante el proceso de matrícula o en la carga masiva.
-
-- Se les asigna el [[roles/08-estudiante-y-acudiente|rol Estudiante / Acudiente]] con el tipo de usuario "Acudiente".
-- Reciben credenciales por correo.
-- En el primer ingreso ven los datos del estudiante (o estudiantes) que tienen vinculados.
-- Un acudiente puede tener varios estudiantes a su cargo dentro del mismo colegio.
+El acudiente **no tiene cuenta propia en la plataforma** (`RN-TU-410`). Las comunicaciones dirigidas "al acudiente" se enrutan a los datos de contacto registrados en la ficha del estudiante (correo, teléfono) y/o se entregan vía el portal usando la cuenta del estudiante. No existe un onboarding separado para acudientes.
 
 ## Reglas de negocio
 
@@ -68,5 +63,8 @@ Los acudientes se crean **vinculados al estudiante** durante el proceso de matr�
 
 ## Notas y pendientes
 
-- Definir formato exacto de la plantilla de carga masiva (CSV / Excel, columnas, validaciones).
-- Definir si la carga masiva es transaccional o tolerante a errores parciales (recomendado: transaccional).
+- **[Decisión tomada]** **Formato de carga masiva**: soporta **CSV y Excel**. La plataforma provee una **plantilla descargable** con columnas fijas + columnas opcionales documentadas, y **valida cabeceras de forma estricta** antes de iniciar el procesamiento. Regla: **RN-OU-390 — CSV/Excel con plantilla y validación estricta de cabeceras**.
+- **[Decisión tomada]** **Modo de carga masiva dual**:
+  - **Transaccional (todo o nada)**: por defecto en procesos críticos que requieren integridad total (matrículas, planes de estudio).
+  - **Tolerante**: opcional, procesa registros válidos y reporta errores por fila para que el usuario corrija solo los errados.
+  Regla: **RN-OU-391 — Carga masiva dual transaccional/tolerante seleccionable por flujo y por usuario**.

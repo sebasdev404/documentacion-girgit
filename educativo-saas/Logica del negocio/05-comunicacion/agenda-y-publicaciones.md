@@ -87,6 +87,6 @@ Los adjuntos consumen cuota de almacenamiento del tenant.
 
 ## Notas y pendientes
 
-- Definir el límite recomendado de tamaño por publicación (cuerpo + adjuntos).
-- Validar si el sistema soportará menciones (`@grupo`, `@usuario`) en el cuerpo de la publicación.
-- Definir si el rector puede activar comentarios por excepción para publicaciones específicas.
+- **[Decisión tomada]** Límite de tamaño por publicación: **20 MB por adjunto** y **50 MB totales** (cuerpo + adjuntos). Mismo límite que comunicados. Regla: **RN-AP-200 — Límite 20MB/adjunto y 50MB/total por publicación**.
+- **[Decisión tomada]** **No habrá menciones tipo `@usuario` / `@grupo` estilo redes sociales en MVP.** En su lugar, el creador de la publicación selecciona **destinatarios explícitos** (grupos, salones, sedes, listas de estudiantes, listas de docentes, etc.) y la plataforma envía notificaciones automáticas según esa segmentación. Regla: **RN-AP-201 — Destinatarios explícitos por segmentación; sin menciones inline en MVP**.
+- **[Decisión tomada]** **Comentarios desactivados por defecto** en publicaciones y comunicados. Rectoría o coordinación con permiso pueden **habilitarlos por publicación** cuando se requiera retroalimentación controlada. Regla: **RN-AP-202 — Comentarios off por defecto, activables por excepción por publicación**.

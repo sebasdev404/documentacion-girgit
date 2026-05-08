@@ -49,5 +49,5 @@ Ver detalle en [[../06-monetizacion-y-pagos/facturacion-y-recibos|Facturación y
 
 ## Notas y pendientes
 
-- Definir prioridad y roadmap de integración con LMS y sistemas de control de acceso (fase 2).
-- Validar el proveedor tecnológico DIAN específico para Colombia.
+- **[Decisión tomada]** **Sin integraciones con LMS externos** en el roadmap actual. Las futuras funcionalidades académicas o virtuales se contemplan como **módulos nativos** desarrollados dentro del ecosistema de la aplicación, evitando dependencias de plataformas externas. Regla: **RN-OI-340 — LMS y aula virtual como módulos nativos, no integraciones externas**.
+- **[Decisión externa pendiente — Comercial]** Selección del **proveedor tecnológico DIAN** para Colombia (mismo pendiente referenciado en `facturacion-y-recibos.md`). El diseño queda en abstracto para no acoplar la decisión.

@@ -65,5 +65,5 @@ No se permiten transiciones desde `Eliminado`. La eliminación es definitiva.
 
 ## Notas y pendientes
 
-- Definir el periodo exacto de inactividad para pasar a `Inactivo`.
-- Definir si los usuarios `Inactivos` aparecen o no en listados operativos por defecto.
+- **[Decisión tomada]** **Sin transición automática a `Inactivo` por inactividad** en MVP. El estado `Inactivo` se asigna **manualmente** por un rol con permiso. La caducidad automática queda como funcionalidad futura.
+- **[Decisión tomada]** **Usuarios `Inactivos` permanecen en el sistema** por razones históricas y de auditoría, pero **quedan fuera de los listados operativos por defecto**. Su visualización requiere **filtro explícito** "incluir inactivos". Regla: **RN-CV-370 — Inactivos ocultos por defecto, visibles solo bajo filtro explícito**.

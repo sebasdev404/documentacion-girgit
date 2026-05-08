@@ -58,5 +58,5 @@ La comisión exacta de cada pasarela se gestiona como parámetro comercial actua
 
 ## Notas y pendientes
 
-- Definir el SLA esperado de la pasarela y el comportamiento ante caída prolongada.
-- Validar comisiones por método (PSE vs tarjeta) según pasarela.
+- **[Decisión tomada]** SLA esperado de la pasarela: **99.5% referencial**. Ante caída prolongada (más de 30 minutos), el sistema activa el **fallback de registro manual de pago offline** por la secretaría, marcado explícitamente como `pago_manual_pendiente_conciliacion`. También se documenta como **dependencia externa** en el contrato con el colegio. Regla: **RN-PG-130 — SLA 99.5% + fallback manual con conciliación posterior**.
+- **[Decisión tomada]** **Comisiones por método de pago configurables**: el colegio define para cada método (PSE, tarjeta, otros) quién asume la comisión de la pasarela. Regla por defecto sugerida: **el valor de la pensión debe llegar íntegro al colegio y la comisión la asume el acudiente**. El sistema muestra el desglose al pagador antes de confirmar. Regla: **RN-PG-131 — Comisiones por método configurables por colegio; default: comisión al acudiente, pensión íntegra al colegio**.
