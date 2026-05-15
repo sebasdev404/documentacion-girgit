@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4a293975c1d6b8b5",
+        "id": "33548a79d5cd4d44",
         "type": "tabs",
         "children": [
           {
-            "id": "df772e3571fd862f",
+            "id": "485f311bbd0ea5f6",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,29 +176,36 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "df772e3571fd862f",
+  "active": "485f311bbd0ea5f6",
   "lastOpenFiles": [
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/08-estudiante-y-acudiente.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/07-director-de-grupo.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/02-coordinador-academico.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/04-coordinador-academico-y-convivencia.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/05-secretaria-academica.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/03-coordinador-convivencia.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/06-docente.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/00-superadministrador-plataforma.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/01-rector-administrador-colegio.md",
-    "roles.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/coordinador-academico-y-convivencia.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/coordinador-convivencia.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/coordinador-academico.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/reglas-transversales-de-roles.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/estudiante-y-acudiente.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/director-de-grupo.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/docente.md",
-    "Logica del negocio/02-usuarios-roles-y-permisos/roles/secretaria-academica.md",
-    "Logica del negocio/00-indice.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/tipos-de-usuario.md",
     "Logica del negocio/02-usuarios-roles-y-permisos/roles.md",
-    "Logica del negocio/06-monetizacion-y-pagos/pasarelas-de-pago.md",
-    "coordinador-academico-y-convivencia.md"
+    "Logica del negocio/02-usuarios-roles-y-permisos/reglas-transversales-de-roles.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/portal-del-estudiante.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/onboarding-de-usuarios.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/matriz-de-permisos.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/01-rector-administrador-colegio.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/00-superadministrador-plataforma.md",
+    "roles.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/05-secretaria-academica.md",
+    "Logica del negocio/02-usuarios-roles-y-permisos/roles/08-estudiante-y-acudiente.md",
+    "Logica del negocio/11-plataforma-y-operacion/historico-y-anos-cerrados.md",
+    "Logica del negocio/03-multi-tenancy/configuracion-por-colegio.md",
+    "Logica del negocio/05-comunicacion/agenda-y-publicaciones.md",
+    "Logica del negocio/06-monetizacion-y-pagos/modelo-de-negocio.md",
+    "Logica del negocio/00-indice.md",
+    "Logica del negocio/_plantillas/plantilla-rol.md",
+    "Logica del negocio/_plantillas/plantilla-caso-de-uso.md",
+    "Logica del negocio/_plantillas/plantilla-proceso.md",
+    "Logica del negocio/08-casos-de-uso/CU-001-onboardear-nuevo-colegio.md",
+    "Logica del negocio/08-casos-de-uso/CU-015-reabrir-ano-cerrado.md",
+    "Logica del negocio/08-casos-de-uso/CU-014-cerrar-ano-lectivo.md",
+    "Logica del negocio/08-casos-de-uso/CU-013-crear-publicacion-agenda.md",
+    "Logica del negocio/08-casos-de-uso/CU-012-publicar-comunicado.md",
+    "Logica del negocio/08-casos-de-uso/CU-011-registrar-anotacion-observador.md",
+    "Logica del negocio/08-casos-de-uso/CU-010-emitir-paz-y-salvo.md",
+    "Logica del negocio/11-plataforma-y-operacion",
+    "Sin título.canvas",
+    "Sin título.base"
   ]
 }

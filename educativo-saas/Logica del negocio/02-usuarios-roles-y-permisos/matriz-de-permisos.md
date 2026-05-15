@@ -26,7 +26,7 @@ Abreviaturas de columna:
 - **SE** = Secretaría Académica
 - **DO** = Docente
 - **DG** = Director de Grupo (complemento sobre Docente)
-- **EA** = Estudiante / Acudiente
+- **EA** = Estudiante (cuenta del estudiante; el acudiente la opera de hecho según `RN-TU-410`)
 
 > Para los detalles de cada permiso ver el archivo del rol correspondiente en [[roles/|`roles/`]].
 
@@ -107,7 +107,7 @@ Abreviaturas de columna:
 
 | Acción | SA | R | CA | CC | CK | SE | DO | DG | EA |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Registrar / editar estudiantes y acudientes | — | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| Registrar / editar estudiantes y datos de acudiente operativo | — | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | Asignar estudiante a grupo (matrícula) | — | ✅ | ⚠️ | ❌ | ⚠️ | ✅ | ❌ | ❌ | ❌ |
 | Cambiar grupo de un estudiante después de matriculado | — | ✅ | ⚠️ | ❌ | ⚠️ | ⚠️ | ❌ | ❌ | ❌ |
 | Cargar y validar documentos de matrícula | — | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
@@ -151,6 +151,6 @@ Las reglas transversales (verificación frontend+backend, auditoría, aislamient
 
 ## Notas y pendientes
 
-- Ampliar la sección de Pagos / Cartera cuando se documente ese módulo (módulo `06-monetizacion-y-pagos`).
-- Ampliar la sección de Comunicaciones cuando se decida si la mensajería interna es 1 a 1, grupal, o ambas.
-- Confirmar comportamiento de "Editar notas de materias que no dicta" para el Director de Grupo (default sugerido: desactivado, configurable a activado).
+- **[Cubierto]** Sección de Pagos / Cartera: ya documentada en módulo `06-monetizacion-y-pagos` con sus reglas `RN-PP-*`, `RN-PG-*`, `RN-PCM-*`, `RN-PYS-*` y reglas de plan `RN-PS-*`.
+- **[Cubierto]** Sección de Comunicaciones: el modelo quedó definido como **estructurado, sin chat libre** (ver `RN-MI-180`); ya no hay decisión pendiente de "1 a 1 / grupal / ambas".
+- **[Decisión tomada]** **Director de Grupo**: por defecto **no puede modificar notas de materias que no dicta**. Cada colegio puede activar la capacidad bajo **autorización y responsabilidad administrativa**, manteniendo **auditoría completa** sobre cualquier modificación. Regla: **RN-MP-380 — Director de Grupo: edición cross-materia opt-in con auditoría obligatoria**.

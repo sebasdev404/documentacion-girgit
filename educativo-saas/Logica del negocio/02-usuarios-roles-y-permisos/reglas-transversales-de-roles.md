@@ -101,17 +101,21 @@ El acceso al sistema se hace siempre a través del **subdominio del colegio**.
 
 ## Resumen
 
-| ID | Regla | Alcance |
-| --- | --- | --- |
-| RT-1 | Aislamiento total entre tenants | Todos |
-| RT-2 | Verificación de permisos en frontend y backend | Todos |
-| RT-3 | Auditoría de acciones sensibles | Todos |
+| ID   | Regla                                                | Alcance          |
+| ---- | ---------------------------------------------------- | ---------------- |
+| RT-1 | Aislamiento total entre tenants                      | Todos            |
+| RT-2 | Verificación de permisos en frontend y backend       | Todos            |
+| RT-3 | Auditoría de acciones sensibles                      | Todos            |
 | RT-4 | Asignación de roles por el Administrador del Colegio | Roles del tenant |
-| RT-5 | Configurabilidad acotada de permisos | Roles del tenant |
-| RT-6 | Acceso por subdominio del colegio | Roles del tenant |
+| RT-5 | Configurabilidad acotada de permisos                 | Roles del tenant |
+| RT-6 | Acceso por subdominio del colegio                    | Roles del tenant |
+|      |                                                      |                  |
 
 ## Notas y pendientes
 
-- Definir el detalle del catálogo de "acciones sensibles" para auditoría (RT-3).
-- Definir política de retención de logs de auditoría.
-- Definir mecanismo de impersonación auditada (cuando aplica RT-1, excepción del Superadmin).
+- **[Decisión tomada]** **Catálogo base de "acciones sensibles"** (RT-3) con auditoría reforzada: cierre académico, emisión de certificados, modificación de notas tras cierre, eliminación de usuario, configuración de pagos, sesión de soporte del superadministrador, reapertura de cierre. Cada colegio puede **complementar el catálogo** con acciones adicionales según sus políticas internas. Regla: **RN-RT-400 — Catálogo base + extensión por colegio de acciones sensibles**.
+- **[Decisión tomada]** **Retención diferenciada de logs**:
+  - **Auditoría funcional** (académica, financiera, administrativa, acciones sensibles): **retención extendida** según normativa educativa aplicable y requerimientos operativos del colegio.
+  - **Logs técnicos** (operación, performance, errores no funcionales): **retención más corta** para optimizar almacenamiento y costos.
+  Regla: **RN-RT-401 — Retención diferenciada: funcional largo plazo / técnico corto plazo**.
+- **[Decisión tomada]** **Impersonación auditada**: solo el **superadministrador de plataforma** puede impersonar a un usuario, y únicamente con **ticket interno**, **justificación**, **expiración automática** y **banner permanente** "Impersonando a X". Toda acción queda **registrada con ambos identificadores** (superadmin real + usuario impersonado). El rector **no puede impersonar**. Regla: **RN-RT-402 — Impersonación exclusiva del superadmin con banner, expiración y doble identificador en logs**.

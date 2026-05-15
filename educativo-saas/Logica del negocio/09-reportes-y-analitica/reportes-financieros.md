@@ -12,15 +12,39 @@ tags: [reportes, finanzas]
 
 | Reporte | Audiencia | Frecuencia | Datos incluidos |
 | --- | --- | --- | --- |
-| Cartera (deudores) |  |  |  |
-| Recaudo |  |  |  |
-| Estado de cuenta por estudiante |  |  |  |
-| Conciliación con pasarelas |  |  |  |
+| Cartera (deudores) | Rector, secretaría, contabilidad. | Diario / mensual. | Estudiantes con deuda, monto, días de mora, contacto. |
+| Recaudo | Rector, contabilidad. | Diario / mensual. | Pagos confirmados por concepto, sede, método, pasarela. |
+| Estado de cuenta por estudiante | Estudiante (acudiente operativo), secretaría. | Bajo demanda. | Cuotas generadas, pagos, saldo, mora. |
+| Conciliación con pasarelas | Contabilidad, rector. | Diaria. | Transacciones reportadas vs registradas, diferencias. |
+| Comisiones de pasarela | Rector, contabilidad. | Mensual. | Comisión descontada por pasarela y por mes. |
+| Conceptos cobrados | Contabilidad. | Mensual / anual. | Distribución del recaudo por concepto. |
+| Becas y descuentos otorgados | Rector, comité. | Trimestral / anual. | Beneficios vigentes, monto total, distribución. |
+| Anulaciones y notas crédito | Rector, contabilidad. | Mensual. | Documentos anulados con motivo y autor. |
+| Pagos por pasarela | Contabilidad. | Diaria / mensual. | Detalle por pasarela y método. |
+| Acuerdos de pago vigentes | Cartera. | Semanal. | Acuerdos activos, cuotas, cumplimiento. |
+| Proyección de ingresos | Rector. | Mensual. | Estimación con base en cronograma de pensiones. |
 
 ## Filtros y parámetros disponibles
 
+- Sede / nivel / grado / grupo / estudiante.
+- Año lectivo / mes / rango de fechas.
+- Concepto (matrícula, pensión, transporte, etc.).
+- Pasarela / método de pago.
+- Estado del cobro (pendiente, confirmado, en mora, anulado).
+
 ## Formatos de exportación
+
+- PDF y Excel / CSV.
+- Reportes para contabilidad (formato compatible con software contable del colegio).
 
 ## Reglas de negocio
 
+- **RN-RF-001 — Acceso restringido:** los reportes financieros completos solo son visibles para roles autorizados (rector, contabilidad).
+- **RN-RF-002 — Históricos inmutables:** los reportes de meses cerrados no cambian; cualquier ajuste posterior queda como movimiento del periodo en el que se aplica.
+- **RN-RF-003 — Auditoría de exportación:** exportar reportes financieros queda en el log con autor y fecha.
+- **RN-RF-004 — Conciliación diaria:** el reporte de conciliación se genera automáticamente cada día.
+
 ## Notas y pendientes
+
+- **[Decisión tomada]** El sistema soporta **exportaciones financieras genéricas** (CSV/Excel u otros formatos estándar) con **plan de cuentas adaptable por colegio**. Las **integraciones específicas con softwares contables** (Siigo, World Office, etc.) se incorporan posteriormente mediante **adaptadores o conectores** según necesidades comerciales y evolución de la plataforma. Regla: **RN-RF-320 — Export genérico con plan de cuentas configurable; conectores específicos como evolución**.
+- **[Decisión tomada]** **Proyecciones financieras y escenarios de mora quedan fuera del MVP.** La plataforma incorporará posteriormente análisis predictivo y proyección de ingresos basados en históricos de recaudo y comportamiento de cartera.

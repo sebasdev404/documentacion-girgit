@@ -10,6 +10,8 @@ tags: [moc, indice]
 
 Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondiente.
 
+> **Lectura rápida:** [[00-resumen-ejecutivo|Resumen ejecutivo consolidado]] — toda la lógica del producto en un solo documento, con referencia a cada `RN-XX-NNN`.
+
 ## 01 — Visión y alcance
 
 - [[01-vision-y-alcance/vision-del-producto|Visión del producto]]
@@ -27,6 +29,7 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 - [[02-usuarios-roles-y-permisos/autenticacion|Autenticación]]
 - [[02-usuarios-roles-y-permisos/ciclo-de-vida-de-usuario|Ciclo de vida de usuario]]
 - [[02-usuarios-roles-y-permisos/onboarding-de-usuarios|Onboarding de usuarios]]
+- [[02-usuarios-roles-y-permisos/portal-del-estudiante|Portal del estudiante]]
 
 ### Detalle por rol (orden jerárquico)
 
@@ -38,7 +41,7 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 - [[02-usuarios-roles-y-permisos/roles/05-secretaria-academica|Secretaría Académica]]
 - [[02-usuarios-roles-y-permisos/roles/06-docente|Docente]]
 - [[02-usuarios-roles-y-permisos/roles/07-director-de-grupo|Director de Grupo (complemento)]]
-- [[02-usuarios-roles-y-permisos/roles/08-estudiante-y-acudiente|Estudiante / Acudiente]]
+- [[02-usuarios-roles-y-permisos/roles/08-estudiante-y-acudiente|Estudiante]]
 
 ## 03 — Multi-tenancy
 
@@ -49,20 +52,35 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 
 ## 04 — Procesos académicos
 
-- [[04-procesos-academicos/matriculas|Matrículas]]
+### Estructura académica
+
+- [[04-procesos-academicos/plan-de-estudios|Plan de estudios]]
+- [[04-procesos-academicos/asignacion-docentes|Asignación de docentes]]
+- [[04-procesos-academicos/horarios|Horarios]]
+- [[04-procesos-academicos/espacios-fisicos|Espacios físicos]]
+- [[04-procesos-academicos/logros-e-indicadores|Logros e indicadores]]
 - [[04-procesos-academicos/periodos-academicos|Períodos académicos]]
+- [[04-procesos-academicos/calendario-escolar|Calendario escolar]]
+
+### Procesos
+
+- [[04-procesos-academicos/matriculas|Matrículas]]
 - [[04-procesos-academicos/asistencia|Asistencia]]
 - [[04-procesos-academicos/calificaciones|Calificaciones]]
+- [[04-procesos-academicos/nivelaciones-y-habilitaciones|Nivelaciones y habilitaciones]]
 - [[04-procesos-academicos/boletines-y-reportes-academicos|Boletines y reportes académicos]]
 - [[04-procesos-academicos/disciplina-y-observaciones|Disciplina y observaciones]]
-- [[04-procesos-academicos/calendario-escolar|Calendario escolar]]
+- [[04-procesos-academicos/observador-del-estudiante|Observador del estudiante]]
+- [[04-procesos-academicos/consejo-academico|Consejo Académico]]
+- [[04-procesos-academicos/promocion-y-reprobacion|Promoción y reprobación]]
 
 ## 05 — Comunicación
 
-- [[05-comunicacion/mensajeria-interna|Mensajería interna]]
-- [[05-comunicacion/notificaciones|Notificaciones]]
+- [[05-comunicacion/agenda-y-publicaciones|Agenda y publicaciones]]
 - [[05-comunicacion/circulares-y-comunicados|Circulares y comunicados]]
+- [[05-comunicacion/notificaciones|Notificaciones]]
 - [[05-comunicacion/comunicacion-con-padres|Comunicación con padres]]
+- [[05-comunicacion/mensajeria-interna|Mensajería interna (limitada)]]
 
 ## 06 — Monetización y pagos
 
@@ -73,6 +91,7 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 - [[06-monetizacion-y-pagos/pasarelas-de-pago|Pasarelas de pago]]
 - [[06-monetizacion-y-pagos/politicas-de-cobro-y-mora|Políticas de cobro y mora]]
 - [[06-monetizacion-y-pagos/descuentos-y-becas|Descuentos y becas]]
+- [[06-monetizacion-y-pagos/paz-y-salvo|Paz y salvo]]
 
 ## 07 — Reglas de negocio
 
@@ -96,6 +115,14 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 - [[10-integraciones-externas/pasarelas-de-pago-externas|Pasarelas de pago externas]]
 - [[10-integraciones-externas/correo-y-sms|Correo y SMS]]
 - [[10-integraciones-externas/otras-integraciones|Otras integraciones]]
+
+## 11 — Plataforma y operación
+
+- [[11-plataforma-y-operacion/log-de-auditoria|Log de auditoría]]
+- [[11-plataforma-y-operacion/backups-y-restauracion|Backups y restauración]]
+- [[11-plataforma-y-operacion/almacenamiento-y-cuotas|Almacenamiento y cuotas]]
+- [[11-plataforma-y-operacion/historico-y-anos-cerrados|Histórico y años cerrados]]
+- [[11-plataforma-y-operacion/gestion-documental|Gestión documental]]
 
 ## Plantillas
 
