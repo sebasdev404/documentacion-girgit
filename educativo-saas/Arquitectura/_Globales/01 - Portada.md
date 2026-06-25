@@ -35,6 +35,9 @@ Los roles siguen el orden jerarquico de `Logica del negocio/02-usuarios-roles-y-
 | ROL-09 | Estudiante / Acudiente | Solo consulta. Acudiente ve datos del estudiante asociado | Tenant |
 | ROL-10 | Sistema | Automatizaciones del sistema (no es persona) | Plataforma |
 | ROL-11 | Administrador Tecnico | Gestion tecnica del tenant (en pausa) | Plataforma |
+| ROL-12 | Personal de Apoyo | Funcionario no docente de servicio (orientador/psicologo, enfermeria, bibliotecario, otros). Permisos minimos: ficha acotada del estudiante + aporte al observador | Tenant |
+
+> **Nota (D-07): ROL-10 y ROL-11 estan fuera de la matriz operativa por diseno.** ROL-10 (Sistema) no es persona: ejecuta automatizaciones (`Auto`) y no tiene columna en la matriz de permisos. ROL-11 (Administrador Tecnico) esta en pausa y no se implementa en el MVP. Ambos se documentan pero no llevan columna en [[06 - Matriz de Permisos|la matriz de permisos operativa]]. La matriz opera con ROL-01..ROL-09 + ROL-12.
 
 ---
 
@@ -48,6 +51,7 @@ Los roles siguen el orden jerarquico de `Logica del negocio/02-usuarios-roles-y-
 | Coordinacion de convivencia | ROL-04 o ROL-05 |
 | Administrativo | ROL-06 |
 | Operativo (aulas) | ROL-07 (+ complemento ROL-08) |
+| Servicio / bienestar | ROL-12 |
 | Consulta | ROL-09 |
 
 ---
@@ -61,6 +65,8 @@ Los roles siguen el orden jerarquico de `Logica del negocio/02-usuarios-roles-y-
 > **Coordinador combinado vs separados:** son mutuamente excluyentes. Un colegio elige el esquema, no ambos.
 >
 > **Director de Grupo** es complemento, no rol principal. Se asigna sobre ROL-07.
+>
+> **Personal de Apoyo (ROL-12)** es un rol principal de bajo privilegio, incompatible con Docente, Coordinador, Secretaria y Rector. Se especializa por perfil (orientador/psicologo, enfermeria, bibliotecario, otros) y opera solo su modulo de servicio + aporte al observador (`RN-TU-411`, `D-04`).
 
 ---
 

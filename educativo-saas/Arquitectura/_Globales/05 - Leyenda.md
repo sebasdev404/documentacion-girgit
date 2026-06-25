@@ -79,3 +79,6 @@ Convenciones de simbolos para la matriz de permisos y otros documentos de arquit
 | ROL-09 | Estudiante / Acudiente | `Arquitectura/08 - Estudiante y Acudiente/` |
 | ROL-10 | Sistema | No tiene carpeta (no es persona) |
 | ROL-11 | Administrador Tecnico | En pausa |
+| ROL-12 | Personal de Apoyo | `Arquitectura/09 - Personal de Apoyo/` |
+
+> **Nota (D-07): ROL-10 y ROL-11 estan fuera de la matriz de permisos operativa por diseno.** ROL-10 (Sistema) no es persona; sus acciones se marcan `Auto` y no tiene columna. ROL-11 (Administrador Tecnico) esta en pausa y no se implementa en el MVP. La matriz de permisos opera con columnas ROL-01..ROL-09 + ROL-12.

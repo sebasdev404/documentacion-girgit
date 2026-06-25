@@ -17,7 +17,7 @@ Estados por los que pasa una cuenta de usuario desde su creación hasta su baja.
 | Pendiente | Cuenta creada por el sistema o por un administrador, aún no ha activado su contraseña definitiva. La cuenta funciona con la contraseña temporal hasta el primer cambio. |
 | Activo | Cuenta operativa con todas las funcionalidades de su rol. |
 | Suspendido | Cuenta bloqueada temporalmente por decisión del administrador (problema disciplinario, financiero, o por bloqueo del tenant). El usuario no puede iniciar sesión. Los datos se mantienen. |
-| Inactivo | Cuenta sin actividad reciente (definida por el colegio). No bloquea el acceso pero aparece en reportes de uso para depuración. |
+| Inactivo | Cuenta marcada como inactiva por un rol con permiso (no automático en MVP). No bloquea el acceso pero queda fuera de los listados operativos por defecto (`RN-CV-370`). |
 | Eliminado | Cuenta dada de baja. El usuario ya no existe operativamente. Los datos históricos asociados (notas, asistencia, observador) se preservan. |
 
 ## Transiciones permitidas
@@ -26,8 +26,8 @@ Estados por los que pasa una cuenta de usuario desde su creación hasta su baja.
 Pendiente → Activo (al completar el primer cambio de contraseña)
 Activo → Suspendido (decisión del administrador o bloqueo del tenant)
 Suspendido → Activo (decisión del administrador)
-Activo → Inactivo (automático por inactividad prolongada)
-Inactivo → Activo (al iniciar sesión nuevamente)
+Activo → Inactivo (manual por rol con permiso; sin automatismo en MVP)
+Inactivo → Activo (manual por rol con permiso, o al iniciar sesión nuevamente)
 Activo → Eliminado (decisión del administrador)
 Suspendido → Eliminado (decisión del administrador)
 Inactivo → Eliminado (decisión del administrador o política de retención)
@@ -44,8 +44,8 @@ No se permiten transiciones desde `Eliminado`. La eliminación es definitiva.
 | Primer cambio de contraseña | `Pendiente → Activo` |
 | Bloqueo manual por administrador | `Activo → Suspendido` |
 | Reactivación manual por administrador | `Suspendido → Activo` |
-| Inactividad prolongada (configurable) | `Activo → Inactivo` |
-| Inicio de sesión tras inactividad | `Inactivo → Activo` |
+| Marcado manual como inactivo (rol con permiso) | `Activo → Inactivo` |
+| Reactivación manual o inicio de sesión | `Inactivo → Activo` |
 | Eliminación manual por administrador | `* → Eliminado` |
 | Suspensión del tenant (superadmin) | `Activo → Suspendido` (todos los usuarios del tenant) |
 

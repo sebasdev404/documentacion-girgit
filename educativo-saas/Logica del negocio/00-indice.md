@@ -42,6 +42,7 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 - [[02-usuarios-roles-y-permisos/roles/06-docente|Docente]]
 - [[02-usuarios-roles-y-permisos/roles/07-director-de-grupo|Director de Grupo (complemento)]]
 - [[02-usuarios-roles-y-permisos/roles/08-estudiante-y-acudiente|Estudiante]]
+- [[02-usuarios-roles-y-permisos/roles/09-personal-de-apoyo|Personal de apoyo (ROL-12)]]
 
 ## 03 — Multi-tenancy
 
@@ -64,6 +65,7 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 
 ### Procesos
 
+- [[04-procesos-academicos/admisiones|Admisiones]]
 - [[04-procesos-academicos/matriculas|Matrículas]]
 - [[04-procesos-academicos/asistencia|Asistencia]]
 - [[04-procesos-academicos/calificaciones|Calificaciones]]
@@ -73,6 +75,8 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 - [[04-procesos-academicos/observador-del-estudiante|Observador del estudiante]]
 - [[04-procesos-academicos/consejo-academico|Consejo Académico]]
 - [[04-procesos-academicos/promocion-y-reprobacion|Promoción y reprobación]]
+- [[04-procesos-academicos/tareas-y-actividades|Tareas y actividades]]
+- [[04-procesos-academicos/eventos-y-reservas|Eventos y reservas]]
 
 ## 05 — Comunicación
 
@@ -81,6 +85,7 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 - [[05-comunicacion/notificaciones|Notificaciones]]
 - [[05-comunicacion/comunicacion-con-padres|Comunicación con padres]]
 - [[05-comunicacion/mensajeria-interna|Mensajería interna (limitada)]]
+- [[05-comunicacion/encuestas|Encuestas]]
 
 ## 06 — Monetización y pagos
 
@@ -123,6 +128,31 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 - [[11-plataforma-y-operacion/almacenamiento-y-cuotas|Almacenamiento y cuotas]]
 - [[11-plataforma-y-operacion/historico-y-anos-cerrados|Histórico y años cerrados]]
 - [[11-plataforma-y-operacion/gestion-documental|Gestión documental]]
+
+## 12 — Bienestar y servicios
+
+- [[12-bienestar-y-servicios/salud-y-enfermeria|Salud y enfermería]]
+- [[12-bienestar-y-servicios/bienestar-y-orientacion|Bienestar y orientación]]
+- [[12-bienestar-y-servicios/biblioteca|Biblioteca]]
+- [[12-bienestar-y-servicios/transporte-escolar|Transporte escolar]]
+- [[12-bienestar-y-servicios/restaurante-y-comedor|Restaurante y comedor]]
+- [[12-bienestar-y-servicios/inventario-y-activos|Inventario y activos]]
+- [[12-bienestar-y-servicios/tienda-y-otros-cobros|Tienda y otros cobros]]
+
+## 13 — Cumplimiento Colombia
+
+- [[13-cumplimiento-colombia/convivencia-ley-1620|Convivencia escolar (Ley 1620)]]
+- [[13-cumplimiento-colombia/reportes-oficiales-men|Reportes oficiales MEN (SIMAT / DANE / Saber)]]
+- [[13-cumplimiento-colombia/habeas-data-y-consentimientos|Habeas Data y consentimientos (Ley 1581)]]
+
+## 14 — Talento humano
+
+- [[14-talento-humano/gestion-docente|Gestión docente / talento humano]]
+
+## 15 — Valor agregado
+
+- [[15-valor-agregado/catalogo-de-diferenciadores|Catálogo de diferenciadores (estándar)]]
+- [[15-valor-agregado/ia-aplicada|IA aplicada (IA selectiva)]]
 
 ## Plantillas
 

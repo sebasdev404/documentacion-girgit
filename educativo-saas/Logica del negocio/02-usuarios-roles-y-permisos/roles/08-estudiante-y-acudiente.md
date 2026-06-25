@@ -88,7 +88,7 @@ Rol de **solo consulta**. El estudiante (o, en la práctica, su acudiente operan
 
 ## Egresados
 
-- Al graduarse, el estudiante pasa al rol de [[14-egresado|Egresado]] y conserva acceso a su histórico (boletines, certificados, paz y salvo) según `RN-HC-281`.
+- Al graduarse, el estudiante pasa al estado **Egresado** y conserva acceso a su histórico (boletines, certificados, paz y salvo) según `RN-HC-281` (ver [[historico-y-anos-cerrados|Histórico y años cerrados]] y `RN-PR-007` en [[promocion-y-reprobacion|Promoción y reprobación]]).
 
 ## Notas y pendientes
 

@@ -157,6 +157,99 @@ Solo consulta.
 
 ---
 
+## Bienestar y Servicios
+
+Servicios de apoyo al estudiante. La mayoria son modulos configurables que el colegio activa segun su oferta. El Personal de Apoyo (ROL-12) opera Salud, Bienestar o Biblioteca segun su perfil.
+
+| ID | Requerimiento | Rol(es) | Prioridad |
+|---|---|---|---|
+| RF-51 | Gestionar ficha medica del estudiante | ROL-12, ROL-09 | Media |
+| RF-52 | Registrar atencion en enfermeria y suministro de medicamentos | ROL-12 | Media |
+| RF-53 | Generar remision a centro medico y notificar | ROL-12 | Media |
+| RF-54 | Gestionar expediente y citas de orientacion | ROL-12 | Media |
+| RF-55 | Gestionar remisiones y plan de apoyo con doble visibilidad | ROL-12 | Media |
+| RF-56 | Gestionar prestamos y devoluciones por ejemplar | ROL-12 | Baja |
+| RF-57 | Gestionar reservas y multas | ROL-12 | Baja |
+| RF-58 | Definir rutas, paradas y asignar estudiantes | ROL-06 | Baja |
+| RF-59 | Registrar abordajes y generar cobro recurrente | ROL-06 | Baja |
+| RF-60 | Configurar planes/menus y registrar consumo | ROL-06, ROL-12 | Baja |
+| RF-61 | Registrar activos y gestionar prestamos a docentes | ROL-06 | Baja |
+| RF-62 | Generar cobros puntuales o masivos a la cartera unica | ROL-06 | Media |
+
+---
+
+## Cumplimiento Colombia
+
+Modulos de obligatorio cumplimiento normativo: convivencia escolar (Ley 1620), reportes oficiales al MEN (SIMAT / DANE / Saber) y proteccion de datos (Habeas Data, Ley 1581).
+
+| ID | Requerimiento | Rol(es) | Prioridad |
+|---|---|---|---|
+| RF-63 | Reportar y clasificar casos (tipo I/II/III) | ROL-04, ROL-05 | Alta |
+| RF-64 | Ejecutar la Ruta de Atencion Integral y escalar tipo III | ROL-04, ROL-05, ROL-02 | Alta |
+| RF-65 | Generar y firmar actas del Comite de Convivencia | ROL-02 | Media |
+| RF-66 | Generar archivo de matricula SIMAT con validacion previa | ROL-06 | Alta |
+| RF-67 | Generar formato DANE C-600 e inscripcion Saber (ICFES) | ROL-06 | Media |
+| RF-68 | Capturar consentimientos granulares versionados | ROL-09, ROL-06 | Alta |
+| RF-69 | Gestionar solicitudes ARCO con plazos legales | ROL-06 | Media |
+
+---
+
+## Admisiones
+
+Proceso previo a la matricula. El aspirante no es usuario del sistema.
+
+| ID | Requerimiento | Rol(es) | Prioridad |
+|---|---|---|---|
+| RF-70 | Registrar aspirantes con formulario y documentos | ROL-06 | Media |
+| RF-71 | Agendar pruebas/entrevistas y decidir admision | ROL-06, ROL-03 | Media |
+| RF-72 | Gestionar lista de espera y conversion a matricula | ROL-06 | Media |
+
+---
+
+## Talento Humano
+
+Gestion del expediente y desempeno del personal docente.
+
+| ID | Requerimiento | Rol(es) | Prioridad |
+|---|---|---|---|
+| RF-73 | Gestionar hoja de vida y contrato del docente | ROL-06, ROL-02 | Media |
+| RF-74 | Gestionar evaluacion de desempeno y novedades laborales | ROL-02, ROL-03 | Media |
+
+---
+
+## Tareas, Encuestas y Eventos
+
+Procesos academicos y de comunicacion complementarios.
+
+| ID | Requerimiento | Rol(es) | Prioridad |
+|---|---|---|---|
+| RF-75 | Publicar tareas y recibir entregas versionadas | ROL-07 | Media |
+| RF-76 | Retroalimentar y proponer nota de la tarea | ROL-07 | Media |
+| RF-77 | Crear y consolidar encuestas institucionales | ROL-02, ROL-03 | Baja |
+| RF-78 | Crear eventos y reservar espacios sin doble ocupacion | ROL-02, ROL-03 | Baja |
+| RF-79 | Gestionar cupo, lista de espera y cobro del evento | ROL-02, ROL-03 | Baja |
+
+---
+
+## Valor Agregado
+
+Diferenciadores estandar (RF-80..86) y funciones con IA selectiva (RF-87..89, proveedor Claude/Anthropic). Toda salida de IA requiere aprobacion humana (RR-18).
+
+| ID | Requerimiento | Rol(es) | Prioridad |
+|---|---|---|---|
+| RF-80 | App / Portal de acudientes con push y vista multi-hijo | Multiples | Media |
+| RF-81 | Pagos sin friccion (medios locales + debito recurrente) | ROL-09 | Media |
+| RF-82 | WhatsApp como canal oficial | Multiples | Media |
+| RF-83 | Firma electronica de documentos | ROL-09, ROL-06 | Media |
+| RF-84 | Carne digital con QR y control de acceso | Multiples | Baja |
+| RF-85 | Tablero ejecutivo en tiempo real para el Rector | ROL-02 | Baja |
+| RF-86 | Generador automatico de horarios | ROL-03, ROL-05 | Baja |
+| RF-87 | Alertas tempranas de riesgo (scoring + explicacion IA) | ROL-02, ROL-03 | Media |
+| RF-88 | Asistente de redaccion de observaciones y boletin | ROL-07 | Media |
+| RF-89 | Asistente conversacional para acudientes | ROL-09 | Media |
+
+---
+
 ## Configuracion (Admin en pausa)
 
 ROL-11 esta en pausa. Sus permisos se documentan pero no se implementan en MVP.
@@ -186,3 +279,7 @@ Ver [[07 - Reglas de Negocio]] para el detalle.
 | RI-05 | DIAN | Facturacion |
 | RI-06 | Almacenamiento | Plataforma |
 | RI-07 | SSO | Autenticacion |
+| RI-08 | Firma electronica | Valor Agregado |
+| RI-09 | WhatsApp Business API | Comunicaciones |
+| RI-10 | IA Claude (Anthropic) | Valor Agregado IA |
+| RI-11 | SIMAT / MEN (DANE / ICFES) | Cumplimiento Colombia |

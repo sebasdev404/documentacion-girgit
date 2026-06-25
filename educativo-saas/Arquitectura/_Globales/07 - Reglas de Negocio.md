@@ -33,18 +33,24 @@ Reglas RR-NN consolidadas. Cada regla viene de la fuente de verdad en `Logica de
 | RR-08 | Bloqueo de documentos por pendientes | La secretaria puede ser configurada para bloquear emision de constancias/certificados/paz y salvos cuando hay documentos de matricula o pagos pendientes |
 | RR-09 | Director de Grupo solo opera sobre su grupo | Los permisos extra del complemento Director de Grupo aplican solo sobre el grupo dirigido. En otros grupos sigue siendo solo Docente sobre sus materias |
 | RR-10 | Docente ve solo grupos y materias asignados | Un docente nunca ve datos de grupos o materias que no le han sido asignados explicitamente por el Coordinador Academico |
-| RR-11 | Estudiante y Acudiente comparten rol | Comparten el mismo rol con scope distinto. Estudiante ve sus propios datos; acudiente ve los datos de los estudiantes vinculados a el |
+| RR-11 | El menor tiene una unica cuenta (Estudiante) | No existe rol "Acudiente" como usuario (`RN-TU-410`). El menor posee una unica cuenta -la del Estudiante- y el acudiente la opera de hecho. El estudiante ve sus propios datos; el acudiente actua sobre esa misma cuenta |
 | RR-12 | Coordinador combinado excluye los separados | Un tenant elige: o usa Coord. Academico + Coord. de Convivencia separados, o usa el Coordinador combinado. No ambos esquemas simultaneamente |
 | RR-13 | Cambio de calendario A/B es del Superadmin | El Rector elige el calendario dentro de los habilitados por el plan, pero solo el Superadmin puede cambiar el calendario habilitado para un tenant |
-| RR-14 | Acudiente accede solo a datos de estudiantes vinculados | Un acudiente con varios hijos en el colegio ve los datos de todos sus hijos vinculados, no de otros estudiantes |
+| RR-14 | Acudiente con varios hijos usa selector de estudiante | Cuando un mismo correo de contacto esta vinculado a varios estudiantes, el portal ofrece un selector de estudiante; cada cuenta opera por separado, sin fusionar permisos ni expedientes ni pagos entre hermanos (`RN-CP-002`, `RN-PP-120`) |
 | RR-15 | Reporte SIMAT obligatorio | Los colegios estan obligados a reportar matricula al SIMAT (Ministerio de Educacion Nacional). El sistema debe generar el formato requerido |
+| RR-16 | Visibilidad triple del observador para Personal de Apoyo | Las anotaciones que el Personal de Apoyo (ROL-12) aporta al observador se crean con los tres niveles de visibilidad de `RN-OB-081` y por defecto en nivel **interna**, dado el caracter sensible del dato. El rol solo ve en el observador las anotaciones cuya visibilidad lo permita (origen: `RN-OB-081`, `RN-TU-005`) |
+| RR-17 | Otros cobros entran a la cartera unica del estudiante sin split | Todo cobro fuera de pension (tienda, transporte, comedor, biblioteca, eventos, certificados) se carga a la **cartera unica del estudiante**; no existe canal de cobro paralelo ni split entre hermanos ni entre acudientes: una sola deuda integral por estudiante (origen: `RN-PP-120`, `RN-TI-001`) |
+| RR-18 | IA siempre con humano en el bucle | Ninguna salida de IA que afecte al estudiante surte efecto en estado `Sugerida`; requiere `Aprobada` o `Editada -> Aprobada` por un rol con permiso. No existe publicacion autonoma de la IA (origen: `RN-VA-110`) |
+| RR-19 | Tratamiento de datos del menor exige consentimiento | El consentimiento de tratamiento de datos de un estudiante menor lo otorga el **acudiente con patria potestad**; el sistema no acepta la autorizacion del propio menor. Las autorizaciones son granulares, no premarcadas, y se atan a la version de politica vigente (Ley 1581) (origen: `RN-HD-001`, `RN-HD-002`) |
+| RR-20 | Convivencia sigue la Ruta de Atencion Integral Ley 1620 | Los casos de convivencia se atienden por la **Ruta de Atencion Integral (RAI)** de la Ley 1620: el protocolo se instancia segun el tipo (I/II/III) y no permite saltarse actuaciones obligatorias; los casos tipo III escalan automaticamente al Rector con constancia de reporte a la autoridad (origen: `RN-CVE-003`, `RN-CVE-004`) |
 
 ---
 
 ## Referencias cruzadas
 
 - Fuente de verdad de las reglas transversales: `Logica del negocio/02-usuarios-roles-y-permisos/reglas-transversales-de-roles.md`.
-- Las reglas operativas (RR-07 a RR-15) provienen de los archivos individuales de rol en `Logica del negocio/02-usuarios-roles-y-permisos/roles/`.
+- Las reglas operativas RR-07 a RR-15 provienen de los archivos individuales de rol en `Logica del negocio/02-usuarios-roles-y-permisos/roles/`.
+- Las reglas operativas RR-16 a RR-20 provienen de los modulos nuevos de `Logica del negocio/` (`12-bienestar-y-servicios/`, `13-cumplimiento-colombia/`, `15-valor-agregado/`); ver su origen `RN` en [[10 - Mapeo RN-RR]].
 - Cuando una regla aplique solo a un modulo especifico, ver el archivo de ese modulo en `Logica del negocio/`.
 
 ---

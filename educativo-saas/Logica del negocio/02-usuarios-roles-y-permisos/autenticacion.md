@@ -12,7 +12,7 @@ tags: [autenticacion, login, seguridad]
 
 - **Usuario y contraseña** sobre el subdominio o dominio del colegio. Método principal en el lanzamiento.
 - **SSO con Google / Microsoft** (futuro, plan premium): permite a un colegio habilitar inicio de sesión con cuentas corporativas de su dominio.
-- **MFA opcional** activable por usuario o por el colegio para roles administrativos (futuro).
+- **MFA (multi-factor)** **obligatorio desde el MVP** para el Superadministrador de la Plataforma y los roles de alto privilegio del colegio (rector, coordinadores, secretaría); **opcional con expansión progresiva** para el resto de roles (`RN-RG-421`).
 
 ## Flujo de login
 
@@ -40,9 +40,10 @@ tags: [autenticacion, login, seguridad]
 
 ## Multi-factor (MFA)
 
-- MFA por TOTP (apps tipo Authenticator) disponible como opción en una fase posterior.
-- El colegio puede exigir MFA obligatorio para roles administrativos (rector, coordinadores, secretaría).
-- Recuperación de MFA: códigos de respaldo entregados al activar; en caso de pérdida total, intervención del administrador del colegio.
+- MFA por TOTP (apps tipo Authenticator) **obligatorio desde el MVP** para el Superadministrador de la Plataforma y los roles de alto privilegio del colegio (rector, coordinadores, secretaría), conforme a `RN-RG-421`.
+- Para el resto de roles el MFA es **opcional con expansión progresiva**; el colegio puede exigirlo a más roles desde su configuración.
+- Recuperación de MFA: códigos de respaldo entregados al activar; en caso de pérdida total, intervención del administrador del colegio (y del superadministrador para el caso del propio rector).
+- **SSO con Google / Microsoft** permanece como funcionalidad **futura** (plan premium) y no sustituye al MFA obligatorio.
 
 ## Bloqueo por intentos fallidos
 

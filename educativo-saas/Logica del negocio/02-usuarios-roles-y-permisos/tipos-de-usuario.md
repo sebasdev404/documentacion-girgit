@@ -26,6 +26,7 @@ Catálogo de tipos de usuario que existen en el sistema. Cada tipo representa un
 | Secretaria Académica | Tenant | [[roles/05-secretaria-academica\|Secretaría]] | Personal administrativo del colegio |
 | Docente | Tenant | [[roles/06-docente\|Docente]] (+ opcional [[roles/07-director-de-grupo\|Director de Grupo]]) | Profesores del colegio |
 | Estudiante | Tenant | [[roles/08-estudiante-y-acudiente\|Estudiante]] | Matrícula |
+| Personal de apoyo | Tenant | [[roles/09-personal-de-apoyo\|Personal de apoyo]] | Personal no docente del colegio (psicólogo, enfermería, biblioteca) |
 
 ## Distinciones clave
 
