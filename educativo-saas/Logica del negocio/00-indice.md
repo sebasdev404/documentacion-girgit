@@ -152,7 +152,6 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 ## 15 — Valor agregado
 
 - [[15-valor-agregado/catalogo-de-diferenciadores|Catálogo de diferenciadores (estándar)]]
-- [[15-valor-agregado/ia-aplicada|IA aplicada (IA selectiva)]]
 
 ## Plantillas
 

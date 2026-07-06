@@ -37,7 +37,6 @@ aliases:
 | RR-15 | Reporte SIMAT obligatorio | `RN-MO-001` · `13-cumplimiento-colombia/reportes-oficiales-men.md` |
 | RR-16 | Visibilidad triple del observador para Personal de Apoyo | `RN-OB-081`, `RN-TU-005` · `04-.../observador-del-estudiante.md`, `02-.../roles/09-personal-de-apoyo.md` |
 | RR-17 | Otros cobros entran a la cartera unica del estudiante sin split | `RN-PP-120`, `RN-TI-001` · `06-.../pagos-de-pensiones.md`, `12-bienestar-y-servicios/tienda-y-otros-cobros.md` |
-| RR-18 | IA siempre con humano en el bucle | `RN-VA-110` · `15-valor-agregado/ia-aplicada.md` |
 | RR-19 | Tratamiento de datos del menor exige consentimiento | `RN-HD-001`, `RN-HD-002` · `13-cumplimiento-colombia/habeas-data-y-consentimientos.md` |
 | RR-20 | Convivencia sigue la Ruta de Atencion Integral Ley 1620 | `RN-CVE-003`, `RN-CVE-004` · `13-cumplimiento-colombia/convivencia-ley-1620.md` |
 

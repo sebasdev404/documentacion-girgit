@@ -48,7 +48,7 @@ El coordinador combinado entra por el **subdominio de su colegio** (RR-06). No t
 - **Perfil del usuario:** datos del coordinador, cerrar sesion, preferencias.
 - **Buscador:** busca estudiantes, grupos, materias y docentes del tenant (ve todo el tenant; nunca otro tenant — RR-01).
 - **Selector de ano lectivo / periodo:** define el contexto de notas, consolidados y cierre.
-- **Notificaciones:** cierres pendientes, nivelaciones generadas, casos de convivencia abiertos, citaciones por confirmar, alertas tempranas de riesgo.
+- **Notificaciones:** cierres pendientes, nivelaciones generadas, casos de convivencia abiertos, citaciones por confirmar.
 
 ---
 
@@ -83,7 +83,6 @@ Vista de entrada que combina las dos coordinaciones. Tarjetas resumen:
 - Grupos sin director de grupo asignado o sin horario completo.
 - Nivelaciones / habilitaciones pendientes de nota.
 - Casos de convivencia abiertos por tipo (I / II / III) y citaciones por confirmar.
-- Alertas tempranas de riesgo (cruce asistencia + notas + observador) pendientes de revisar.
 
 > Callout informativo: el dashboard es de solo lectura; cada accion se ejecuta en su modulo.
 

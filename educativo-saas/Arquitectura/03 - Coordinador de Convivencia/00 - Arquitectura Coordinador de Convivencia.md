@@ -83,7 +83,6 @@ Vista de entrada. Tarjetas resumen del estado de convivencia del colegio:
 - Casos de convivencia abiertos por tipo I / II / III.
 - Estudiantes con observaciones reiteradas (casos cronicos).
 - Citaciones de la semana.
-- Alertas tempranas de riesgo enrutadas a convivencia (cruce de asistencia + observador, `RN-VA-101`).
 
 > Callout informativo: el dashboard es de solo lectura; las acciones se hacen en cada modulo. Los datos respetan el aislamiento por tenant (RR-01).
 

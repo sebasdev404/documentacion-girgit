@@ -11,7 +11,7 @@ aliases:
 
 RFs/RRs/RNFs aplicables a este rol. Filtrado de [[../_Globales/03 - Tabla de Requerimientos|Tabla de Requerimientos]].
 
-> Este rol no introduce nuevos IDs RF/RR: reutiliza los RF transversales ya definidos y se gobierna por las reglas `RN-XX` de Logica (`RN-TU`, `RN-BW`, `RN-SA`, `RN-BI`, `RN-OB`, `RN-VA`). Los RF formales de los modulos de servicio (Bienestar/Salud/Biblioteca) se asignan de forma central.
+> Este rol no introduce nuevos IDs RF/RR: reutiliza los RF transversales ya definidos y se gobierna por las reglas `RN-XX` de Logica (`RN-TU`, `RN-BW`, `RN-SA`, `RN-BI`, `RN-OB`). Los RF formales de los modulos de servicio (Bienestar/Salud/Biblioteca) se asignan de forma central.
 
 ## Operativas — Nucleo comun
 
@@ -46,7 +46,6 @@ Gobernadas por reglas `RN-XX` de Logica; sin IDs RF nuevos asignados aqui.
 | `RN-TU-009` | Auditoria de consultas y aportes |
 | `RN-TU-010` | Remision, no decision |
 | `RN-OB-081` | Visibilidad por anotacion (publica/docentes/interna) |
-| `RN-VA-101` | Alertas tempranas (visibilidad configurable para el rol) |
 | RR-03 | Auditoria de acciones sensibles |
 | RR-05 | Configurabilidad acotada de permisos |
 | RR-06 | Acceso solo por subdominio del colegio |

@@ -71,9 +71,9 @@ Modulos que un sistema de gestion escolar (SIS) completo necesita y que hoy no e
 
 ---
 
-## C. Catalogo de valor agregado (pragmatico + IA selectiva)
+## C. Catalogo de valor agregado (diferenciadores estandar)
 
-Diferenciadores frente a la competencia colombiana (Phidias, Master2000, Ciudad Educativa, etc.). Se documentan en `Logica del negocio/12-... o 15-valor-agregado/` y se asignan IDs `RN-VA`. Los modelos de IA usan **Claude (Anthropic)** con humano en el bucle.
+Diferenciadores frente a la competencia colombiana (Phidias, Master2000, Ciudad Educativa, etc.). Se documentan en `Logica del negocio/15-valor-agregado/` y se asignan IDs `RN-VA`. Son features **sin IA**, opt-in por colegio.
 
 ### C.1 Estandar (vendibles ya, bajo riesgo)
 
@@ -87,15 +87,9 @@ Diferenciadores frente a la competencia colombiana (Phidias, Master2000, Ciudad 
 | `RN-VA-006` | Tablero ejecutivo en tiempo real para el Rector | Vision de cartera, asistencia, convivencia y academico en una pantalla. | P2 |
 | `RN-VA-007` | Generador automatico de horarios (optimizacion con restricciones) | Ahorra dias de trabajo manual a la coordinacion. | P3 |
 
-### C.2 IA selectiva (2-3 apuestas bien acotadas, humano en el bucle)
+### C.2 IA — descartada
 
-| ID | Feature | Como funciona | Modelo sugerido | Prioridad |
-|---|---|---|---|---|
-| `RN-VA-101` | Alertas tempranas de riesgo (desercion / bajo rendimiento / convivencia) | Cruza asistencia + notas + observador + cartera y emite un semaforo con recomendacion. Decision siempre humana. | Scoring propio + Claude para explicacion en lenguaje natural | P1 |
-| `RN-VA-102` | Asistente de redaccion de observaciones y comentarios de boletin | Genera borradores de comentarios cualitativos desde los indicadores; el docente edita y aprueba. | Claude Sonnet (borrador) | P2 |
-| `RN-VA-103` | Asistente conversacional para acudientes | Responde estado de cuenta, fechas, requisitos y emite certificados; guardrails + escalamiento a humano. | Claude Haiku/Sonnet | P2 |
-
-> Principios de IA: (1) **humano en el bucle** en toda decision que afecte al estudiante; (2) **trazabilidad** del prompt y la salida en el log de auditoria; (3) **aislamiento por tenant** de los datos; (4) **opt-in** del colegio. Detalle en el modulo de valor agregado.
+> **Decision de producto:** las features de IA que se habian propuesto (alertas tempranas de riesgo, asistente de redaccion de boletines y asistente conversacional para acudientes) fueron **descartadas**. El catalogo de valor agregado queda solo con los diferenciadores estandar de C.1. Los IDs `RN-VA-101..103`, `RN-VA-110..119`, `RR-18`, `RF-87..89`, `RNF-08`, `RI-10` y `AC-28` quedan **retirados** (no reutilizar; sus huecos en la numeracion son intencionales).
 
 ---
 

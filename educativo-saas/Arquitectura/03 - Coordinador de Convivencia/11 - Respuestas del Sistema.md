@@ -31,7 +31,6 @@ Que responde el sistema ante cada evento.
 | Coordinador cita formalmente a un acudiente | Programa la citacion · notifica fecha/hora/lugar por los canales habilitados sin revelar el motivo clinico (RN-BW-006) · registra en log |
 | Coordinador genera un reporte de convivencia | Construye el reporte respetando el alcance del rol y la visibilidad de cada anotacion (RN-OE-005) · permite exportar a PDF · registra la consulta |
 | Orientacion remite un caso a convivencia (configurable) | Enruta la remision a la bandeja del coordinador · muestra solo el contexto compartido · oculta el expediente clinico (RN-BW-002, RN-BW-008) |
-| Alerta temprana de riesgo cruza el umbral | Enruta la alerta a convivencia (y/o orientacion) · muestra semaforo y recomendacion · no ejecuta accion automatica sobre el estudiante (RN-BW-007) |
 | Intento de accion fuera de permiso (notas, otro tenant, expediente clinico) | Rechaza la accion en backend · muestra mensaje de permiso insuficiente · registra el intento en el log de seguridad (RR-02) |
 | Login fallido del coordinador | Mensaje generico (no revela si el usuario existe) · incrementa contador de intentos · registra en log de seguridad |
 | Cierre del ano lectivo | Vuelve inmutables los observadores y casos del ano · deja todo consultable · registra el cierre (RN-OE-004, RN-CVE-009) |

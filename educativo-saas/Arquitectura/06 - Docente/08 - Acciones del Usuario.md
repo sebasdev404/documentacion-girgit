@@ -20,7 +20,7 @@ Tabla accion -> resultado. Cada accion sensible (notas, asistencia, observacione
 | Edita una nota con el periodo abierto | Sistema actualiza la nota · recalcula el acumulado · registra el cambio con valor anterior y nuevo en log (RR-07) |
 | Intenta editar una nota con el periodo cerrado | Sistema bloquea; si el colegio activo el permiso configurable, exige justificacion antes de permitir · registra el evento |
 | Carga una evidencia de evaluacion (si esta activo) | Sistema adjunta el archivo a la evaluacion · descuenta de la cuota del tenant · registra en log |
-| Toma asistencia de la clase del dia | Sistema guarda los estados P/A/T/E · marca la asistencia del dia como registrada · alimenta los conteos para alertas tempranas · registra en log |
+| Toma asistencia de la clase del dia | Sistema guarda los estados P/A/T/E · marca la asistencia del dia como registrada · registra en log |
 | Edita el registro de asistencia del dia | Sistema actualiza estados · registra el cambio con autor y hora |
 | Agrega una observacion academica a un estudiante | Sistema asocia la anotacion al estudiante en SU materia con la visibilidad configurada · notifica segun configuracion · registra en log |
 | Consulta su horario | Sistema muestra la vista semanal/diaria en solo lectura · permite exportar |

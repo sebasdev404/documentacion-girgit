@@ -123,7 +123,6 @@ Pendiente → No respondida (al cerrar la ventana)
 - **[Decisión tomada]** El anonimato es **irreversible** y la evaluación docente es siempre anónima (`RN-EC-003`, `RN-EC-004`). Esto se mantiene incluso para el Superadministrador.
 - **[Decisión tomada]** El umbral mínimo de respuestas para mostrar consolidados anónimos es **configurable por colegio**, con valor por defecto 5 (`RN-EC-006`).
 - **[Pendiente — producto]** Definir si la autoevaluación institucional debe exportar en el formato que pida el MEN / secretaría de educación cuando exista el módulo de [[../13-cumplimiento-colombia/reportes-oficiales-men|reportes oficiales]].
-- **[Pendiente — producto]** Evaluar el cruce de resultados de clima escolar con alertas tempranas (`RN-VA-101`) sin romper el anonimato.
 - **[Pendiente — UX]** Validar durante el piloto el flujo de respuesta en móvil para acudientes con varios hijos (una encuesta puede aplicar por hijo o una sola vez por acudiente).
 
 ## Documentos relacionados

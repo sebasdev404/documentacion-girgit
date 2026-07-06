@@ -19,7 +19,7 @@ PERSONAL DE APOYO (ROL-12)
 │   ├── Ficha acotada del estudiante  (nucleo comun)
 │   │   ├── Buscar por nombre / documento / grupo
 │   │   ├── Ver identificacion, grupo y contacto del acudiente (RN-TU-006)
-│   │   └── Ver alertas basicas (alertas tempranas RN-VA-101 si el colegio lo activa)
+│   │   └── Ver alertas basicas
 │   │
 │   ├── Aportes al observador  (nucleo comun)
 │   │   ├── Crear anotacion con visibilidad RN-OB-081

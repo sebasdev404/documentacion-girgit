@@ -65,7 +65,6 @@ Detalle granular de permisos del rol, modulo por modulo. Para la vista cruzada c
 |---|---|---|
 | Perfil concreto y modulo de servicio habilitado | Segun contratacion | Rector |
 | Nivel de visibilidad por defecto de los aportes | interna (`RN-OB-081`) | Rector / coordinacion |
-| Ver alertas tempranas del estudiante (`RN-VA-101`) | Desactivado | Rector |
 | Notificarse de remisiones internas a su servicio | Activado | Rector / coordinacion |
 | Comunicarse con el acudiente via portal (RF-43) | Desactivado | Rector |
 | Linea de reporte (Rector o coordinacion) | Segun colegio (`RN-TU-008`) | Rector |

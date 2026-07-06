@@ -133,10 +133,7 @@ aliases:
 | RF-83 | RF | Valor agregado | Firma electronica de documentos | Sello de tiempo, hash y trazabilidad legal inmutable | ROL-09, ROL-06 | AC-29 | Media | Pendiente | RN-VA-004, RI-08 |
 | RF-84 | RF | Valor agregado | Carne digital con QR y control de acceso | Lectura valida notifica ingreso/salida al acudiente | Multiples | | Baja | Pendiente | RN-VA-005 |
 | RF-85 | RF | Valor agregado | Tablero ejecutivo en tiempo real para el Rector | Respeta alcance y permisos del rol | ROL-02 | | Baja | Pendiente | RN-VA-006 |
-| RF-86 | RF | Valor agregado | Generador automatico de horarios | Propuesta en borrador; requiere aprobacion humana | ROL-03, ROL-05 | AC-28 | Baja | Pendiente | RN-VA-007 |
-| RF-87 | RF | Valor agregado IA | Alertas tempranas de riesgo (scoring + explicacion IA) | Scoring determinista; IA solo redacta la explicacion | ROL-02, ROL-03 | AC-28 | Media | Pendiente | RN-VA-101, RI-10 |
-| RF-88 | RF | Valor agregado IA | Asistente de redaccion de observaciones y boletin | Genera borradores; el docente edita y aprueba | ROL-07 | AC-28 | Media | Pendiente | RN-VA-102, RI-10 |
-| RF-89 | RF | Valor agregado IA | Asistente conversacional para acudientes | Alcance por vinculo; escala a humano en temas sensibles | ROL-09 | AC-28 | Media | Pendiente | RN-VA-103, RI-10 |
+| RF-86 | RF | Valor agregado | Generador automatico de horarios | Propuesta en borrador; requiere aprobacion humana | ROL-03, ROL-05 | | Baja | Pendiente | RN-VA-007 |
 | RNF-01 | RNF | Plataforma | Aislamiento total entre tenants a nivel BD | Schema separado por colegio | Todos | | Alta | Pendiente | RR-01 |
 | RNF-02 | RNF | Plataforma | Verificacion de permisos en frontend y backend | | Todos | | Alta | Pendiente | RR-02 |
 | RNF-03 | RNF | Plataforma | Auditoria de acciones sensibles | Logs inmutables | Todos | | Alta | Pendiente | RR-03 |
@@ -144,7 +141,6 @@ aliases:
 | RNF-05 | RNF | Plataforma | Disponibilidad >= 99.5% mensual | | Todos | | Alta | Pendiente | |
 | RNF-06 | RNF | Plataforma | Backup automatico diario del schema | Por tenant | Todos | | Alta | Pendiente | |
 | RNF-07 | RNF | Plataforma | Cumplimiento Ley 1581 (proteccion de datos Colombia) | | Todos | | Alta | Pendiente | |
-| RNF-08 | RNF | Valor agregado IA | Trazabilidad y aislamiento por tenant de las invocaciones de IA | Cada invocacion registra prompt/modelo/salida/solicitante/aprobador; contexto solo del tenant; sin entrenamiento con datos del menor | Todos | | Alta | Pendiente | RN-VA-112, RN-VA-113 |
 | RR-01 | RR | Plataforma | Aislamiento total entre tenants | Ver [[07 - Reglas de Negocio]] | | | Alta | Pendiente | |
 | RR-02 | RR | Plataforma | Verificacion de permisos frontend y backend | | | | Alta | Pendiente | |
 | RR-03 | RR | Plataforma | Auditoria obligatoria | | | | Alta | Pendiente | |
@@ -162,7 +158,6 @@ aliases:
 | RR-15 | RR | Reportes | Reporte SIMAT obligatorio | | ROL-06 | | Alta | Pendiente | |
 | RR-16 | RR | Bienestar y servicios | Visibilidad triple del observador para Personal de Apoyo | Aportes del Personal de Apoyo usan RN-OB-081; por defecto interna | ROL-12 | AC-26 | Media | Pendiente | RN-OB-081 |
 | RR-17 | RR | Tienda y otros cobros | Otros cobros entran a la cartera unica del estudiante sin split | Sin split entre hermanos ni acudientes | ROL-06 | AC-27 | Media | Pendiente | RN-PP-120 |
-| RR-18 | RR | Valor agregado IA | IA siempre con humano en el bucle | Ninguna salida de IA surte efecto sin aprobacion humana | Todos | AC-28 | Alta | Pendiente | RN-VA-110 |
 | RR-19 | RR | Habeas Data | Tratamiento de datos del menor exige consentimiento | Lo otorga el acudiente con patria potestad (Ley 1581) | ROL-09, ROL-06 | AC-29 | Alta | Pendiente | RN-HD-001 |
 | RR-20 | RR | Convivencia Ley 1620 | Convivencia sigue la Ruta de Atencion Integral Ley 1620 | RAI con protocolo segun tipo; tipo III escala al Rector | ROL-04, ROL-05 | | Alta | Pendiente | RN-CVE-003 |
 | RI-01 | RI | Pagos | Pasarelas de pago | | | | Alta | Pendiente | |
@@ -174,7 +169,6 @@ aliases:
 | RI-07 | RI | Autenticacion | SSO Google/Microsoft (opcional) | | | | Baja | Pendiente | |
 | RI-08 | RI | Valor agregado | Firma electronica | Sello de tiempo, hash y trazabilidad legal de documentos | | | Media | Pendiente | RN-VA-004 |
 | RI-09 | RI | Comunicaciones | WhatsApp Business API | Canal oficial con plantillas aprobadas y opt-in | | | Media | Pendiente | RN-VA-003 |
-| RI-10 | RI | Valor agregado IA | IA Claude (Anthropic) | Modelos Claude para alertas, redaccion y asistente conversacional | | | Media | Pendiente | RN-VA-118 |
 | RI-11 | RI | Reportes | SIMAT / MEN (DANE / ICFES) | Cargue manual de archivos oficiales; no integracion en linea | | | Alta | Pendiente | RN-MO-001 |
 
 ---

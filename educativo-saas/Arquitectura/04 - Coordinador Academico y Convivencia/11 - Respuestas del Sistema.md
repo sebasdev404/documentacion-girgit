@@ -45,7 +45,6 @@ Que responde el sistema ante cada evento.
 
 | Evento | Respuesta del Sistema |
 |---|---|
-| Una alerta temprana de riesgo alcanza el umbral | Genera notificacion al coordinador · sugiere abrir o actualizar un caso (insumo, no accion automatica) |
 | El coordinador intenta una accion fuera de su tenant | Rechaza en backend · no devuelve datos · registra el intento en log de seguridad (RR-01) |
 | Login fallido del coordinador | Mensaje generico (no revela si el usuario existe) · incrementa contador de intentos · registra en log |
 | El Rector intenta asignar ROL-03 / ROL-04 separados con ROL-05 activo | Advierte que el esquema combinado excluye los separados (RR-12) · bloquea o pide confirmacion segun politica |

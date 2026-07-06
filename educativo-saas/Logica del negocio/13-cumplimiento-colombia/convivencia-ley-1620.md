@@ -58,7 +58,7 @@ La RAI organiza la respuesta institucional en cuatro componentes que el módulo 
 | Componente | Qué cubre en el sistema |
 | --- | --- |
 | **Promoción** | Definición del manual de convivencia vigente, proyectos pedagógicos y movilización de la comunidad. Se registra como configuración institucional del año. |
-| **Prevención** | Identificación de factores de riesgo (cruce con asistencia, observador y alertas tempranas) y acciones para evitar la ocurrencia de situaciones. |
+| **Prevención** | Identificación de factores de riesgo (cruce con asistencia y observador) y acciones para evitar la ocurrencia de situaciones. |
 | **Atención** | Activación del protocolo según el tipo, con plazos, responsables y registro de actuaciones. Es el núcleo operativo del caso. |
 | **Seguimiento** | Verificación del cumplimiento de acuerdos y de la efectividad de la medida; reapertura del caso si reincide. |
 
@@ -106,7 +106,7 @@ Cualquier estado → Reclasificado (con justificación)
 - **Observador del estudiante:** todo acuerdo, compromiso o sanción derivado de un caso se refleja como anotación en el [[../04-procesos-academicos/observador-del-estudiante|observador]], respetando su visibilidad (`RN-OB-081`).
 - **Disciplina y observaciones:** comparte el catálogo de anotaciones y el flujo de confirmación con [[../04-procesos-academicos/disciplina-y-observaciones|disciplina y observaciones]].
 - **Notificaciones:** las citaciones y comunicados a acudientes usan [[../05-comunicacion/notificaciones|notificaciones]] y [[../05-comunicacion/comunicacion-con-padres|comunicación con padres]].
-- **Alertas tempranas:** el cruce de asistencia, notas y observador alimenta la prevención (ver `RN-VA-101`).
+- **Análisis de factores de riesgo:** el cruce manual de asistencia, notas y observador apoya la prevención.
 - **Log de auditoría:** clasificación, reclasificación, actas y reportes a autoridad quedan en [[../11-plataforma-y-operacion/log-de-auditoria|log de auditoría]].
 - **Gestión documental:** actas, acuerdos firmados y soportes se almacenan en [[../11-plataforma-y-operacion/gestion-documental|gestión documental]] sujetos a cuota.
 - **Reportes oficiales:** los datos de convivencia alimentan los reportes al MEN y al SIUCE (ver reportes oficiales).

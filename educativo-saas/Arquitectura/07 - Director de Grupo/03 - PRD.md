@@ -63,7 +63,6 @@ Coord. Academico designa al docente como Director de Grupo
 | RN-CVE-004 | Tipo III escala al Rector | Si el director marca presunto delito, el sistema escala al Rector y restringe la visibilidad | Alta |
 | RN-CVE-007 | Articulacion con el observador | Todo acuerdo o medida de convivencia genera la anotacion correspondiente en el observador | Media |
 | RN-OB-081 | Visibilidad por anotacion | Las anotaciones respetan la visibilidad configurada; el acudiente ve solo lo que le corresponde | Alta |
-| RN-VA-101 | Alertas tempranas | El cruce de asistencia, notas y observador alimenta las alertas del grupo | Media |
 
 ## Restricciones / Permisos
 

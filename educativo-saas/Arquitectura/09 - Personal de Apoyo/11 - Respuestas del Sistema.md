@@ -26,7 +26,6 @@ Que responde el sistema ante cada evento.
 | Evento | Respuesta del Sistema |
 |---|---|
 | Se agenda una cita | Crea la cita · reserva consultorio si es presencial · notifica fecha/hora/lugar **sin el motivo clinico** (`RN-BW-006`) |
-| Una alerta de riesgo alcanza el umbral (`RN-VA-101`) | Enruta la alerta al area de orientacion para abrir o actualizar un caso; **no** actua sola sobre el estudiante (`RN-BW-007`) |
 | Se registra una nota de seguimiento | Guarda en nivel **interna** por defecto · no alimenta el boletin ni los reportes academicos (`RN-BW-003`, `RN-BW-004`) |
 | Se genera una remision externa | Exige consentimiento del acudiente registrado antes de compartir datos (`RN-BW-005`) |
 | Se cierra un caso | Conserva todas las notas y remisiones; no permite borrado fisico (`RN-BW-009`) |

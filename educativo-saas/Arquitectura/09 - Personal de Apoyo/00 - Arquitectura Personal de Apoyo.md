@@ -98,7 +98,7 @@ Vista de entrada. Tarjetas resumen acotadas al servicio del funcionario:
 
 - **Sub-vistas:** resultado de busqueda / ficha acotada del estudiante.
 - **Filtros:** por nombre, documento o grupo.
-- **Detalle (ficha acotada, `RN-TU-006`):** identificacion, foto, grupo, datos de contacto del acudiente, alertas basicas (y alertas tempranas `RN-VA-101` solo si el colegio activo esa visibilidad para el rol).
+- **Detalle (ficha acotada, `RN-TU-006`):** identificacion, foto, grupo, datos de contacto del acudiente, alertas basicas.
 - **Acciones:** Abrir ficha · Ver aportes propios al observador · Iniciar atencion/cita/prestamo en su modulo · Generar remision interna.
 - Callout warning: la ficha **no** incluye notas, boletines, promedios ni estado de cartera. Toda apertura de ficha queda auditada (`RN-TU-009`).
 
@@ -127,7 +127,7 @@ Vista de entrada. Tarjetas resumen acotadas al servicio del funcionario:
 - **Acciones:** Abrir/ubicar expediente · Agendar cita · Registrar nota de seguimiento · Definir plan de acompanamiento (parte visible + parte interna, `RN-BW-008`) · Generar remision interna o externa · Cerrar caso con resumen.
 - Callout warning: la informacion sensible **no alimenta el boletin** (`RN-BW-003`). Las remisiones externas exigen **consentimiento del acudiente** registrado (`RN-BW-005`). La notificacion de cita nunca revela el motivo clinico (`RN-BW-006`).
 
-**Como se usa este modulo:** un caso se abre por solicitud del estudiante/acudiente, por remision interna o por una alerta de riesgo (`RN-VA-101`). El orientador ubica el expediente, agenda la cita, registra la atencion en nivel **interna**, y si procede arma un plan o remite. El cierre exige resumen y preserva el historial (`RN-BW-009`).
+**Como se usa este modulo:** un caso se abre por solicitud del estudiante/acudiente o por remision interna. El orientador ubica el expediente, agenda la cita, registra la atencion en nivel **interna**, y si procede arma un plan o remite. El cierre exige resumen y preserva el historial (`RN-BW-009`).
 
 ### Salud y enfermeria (perfil Enfermeria — `RN-SA`)
 

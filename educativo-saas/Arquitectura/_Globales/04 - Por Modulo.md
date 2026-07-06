@@ -233,7 +233,7 @@ Procesos academicos y de comunicacion complementarios.
 
 ## Valor Agregado
 
-Diferenciadores estandar (RF-80..86) y funciones con IA selectiva (RF-87..89, proveedor Claude/Anthropic). Toda salida de IA requiere aprobacion humana (RR-18).
+Diferenciadores estandar (RF-80..86) que potencian la propuesta de valor de la plataforma.
 
 | ID | Requerimiento | Rol(es) | Prioridad |
 |---|---|---|---|
@@ -244,9 +244,6 @@ Diferenciadores estandar (RF-80..86) y funciones con IA selectiva (RF-87..89, pr
 | RF-84 | Carne digital con QR y control de acceso | Multiples | Baja |
 | RF-85 | Tablero ejecutivo en tiempo real para el Rector | ROL-02 | Baja |
 | RF-86 | Generador automatico de horarios | ROL-03, ROL-05 | Baja |
-| RF-87 | Alertas tempranas de riesgo (scoring + explicacion IA) | ROL-02, ROL-03 | Media |
-| RF-88 | Asistente de redaccion de observaciones y boletin | ROL-07 | Media |
-| RF-89 | Asistente conversacional para acudientes | ROL-09 | Media |
 
 ---
 
@@ -281,5 +278,4 @@ Ver [[07 - Reglas de Negocio]] para el detalle.
 | RI-07 | SSO | Autenticacion |
 | RI-08 | Firma electronica | Valor Agregado |
 | RI-09 | WhatsApp Business API | Comunicaciones |
-| RI-10 | IA Claude (Anthropic) | Valor Agregado IA |
 | RI-11 | SIMAT / MEN (DANE / ICFES) | Cumplimiento Colombia |

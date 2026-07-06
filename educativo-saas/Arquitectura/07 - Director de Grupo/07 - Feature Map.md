@@ -48,7 +48,6 @@ DIRECTOR DE GRUPO (ROL-08) — complemento sobre el grupo dirigido
     │   └── Selector de grupo (si dirige varios)
     │
     ├── Alertas y bienestar
-    │   ├── Alertas tempranas del grupo (inasistencia / bajo rendimiento) (RN-VA-101)
     │   └── Visibilidad de remisiones a orientacion (lo que le corresponde)
     │
     └── Relacion con acudientes

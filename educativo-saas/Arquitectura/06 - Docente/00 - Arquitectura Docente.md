@@ -112,7 +112,7 @@ Vista de entrada operativa. Tarjetas de las clases del dia segun el horario, en 
 - **Filtros:** fecha, grupo, materia.
 - **Detalle:** lista de estudiantes del grupo con estados: Presente / Ausente / Tarde / Excusa.
 - **Acciones:** Registrar asistencia · Editar registro del dia · Marcar excusa.
-- Callout informativo: la asistencia se toma sobre SUS clases. El conteo agregado por estudiante alimenta las alertas tempranas que ve el Director de Grupo y el Coordinador, no el docente.
+- Callout informativo: la asistencia se toma sobre SUS clases.
 
 **Como se usa este modulo:** al iniciar cada clase el docente pasa lista en mobile en segundos. El registro queda con fecha, hora y autor (RR-03). (Ver [[Casos de Uso/RF-22 Registrar asistencia en clase propia|CU RF-22]].)
 

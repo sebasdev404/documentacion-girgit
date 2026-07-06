@@ -63,7 +63,6 @@ El colegio asocia cada cuenta a **un perfil**, que determina qué módulo de ser
 | --- | --- | --- |
 | Perfil concreto y módulo de servicio habilitado | según contratación | Rector |
 | Nivel de visibilidad por defecto de sus anotaciones | interna (`RN-OB-081`) | Rector / coordinación |
-| Ver alertas tempranas del estudiante (`RN-VA-101`) | configurable | Rector |
 | Notificarse de remisiones internas dirigidas a su servicio | activado | Rector / coordinación |
 | Comunicarse con el acudiente vía portal | desactivado | Rector |
 
@@ -116,7 +115,7 @@ Invitado → Activo → Inactivo
 
 - El catálogo de **perfiles** habilitados (orientador, enfermería, biblioteca, otros) depende de los servicios que el colegio contrate.
 - El **nivel de visibilidad por defecto** de los aportes al observador es configurable (recomendado **interna**).
-- Qué **módulo de servicio** se habilita por perfil y si el funcionario ve o no las **alertas tempranas** (`RN-VA-101`).
+- Qué **módulo de servicio** se habilita por perfil.
 - La **línea de reporte** (Rector o coordinación específica) la define el colegio.
 - Si el colegio no usa el módulo de biblioteca/salud/bienestar, el perfil correspondiente opera sólo con el **núcleo de consulta + aporte al observador**.
 
@@ -146,7 +145,6 @@ Invitado → Activo → Inactivo
 - **[Decisión tomada]** El rol se **formaliza** como tipo de usuario y rol con permisos mínimos: consulta acotada + aporte al observador (`D-04`, `RN-TU-411`). Tiene columna propia en la matriz de permisos y corresponde a **ROL-12 / PRD-11** en `Arquitectura/`.
 - **[Decisión tomada]** Los aportes al observador usan la visibilidad de `RN-OB-081` y se crean por defecto en nivel **interna** (`RN-TU-005`), coherente con `RN-BW-004` y `RN-SA-008`.
 - **[Pendiente — producto]** Definir el **catálogo cerrado de perfiles** soportados de fábrica (orientador, enfermería, biblioteca) frente a perfiles "otros" sin módulo dedicado, y si "otros" admite micro-permisos adicionales.
-- **[Pendiente — producto]** Acordar si el Personal de apoyo puede **ver alertas tempranas** (`RN-VA-101`) por defecto o sólo bajo activación explícita del colegio.
 - **[Pendiente — producto]** Validar con jurídico el alcance de la **ficha acotada** frente a Habeas Data (Ley 1581) para perfiles que tratan datos sensibles de salud del menor.
 
 ## Documentos relacionados

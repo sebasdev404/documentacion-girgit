@@ -33,13 +33,13 @@ Brindar acompañamiento psicosocial trazable y confidencial, articulando aula, c
 | --- | --- | --- |
 | Cita individual | Sesión de orientación con el estudiante. | Solicitud propia, remisión interna o seguimiento. |
 | Cita con acudiente | Atención al acudiente o a la familia. | Plan de acompañamiento o citación. |
-| Atención de crisis | Intervención no agendada por situación urgente. | Alerta de riesgo o reporte del docente. |
+| Atención de crisis | Intervención no agendada por situación urgente. | Situación urgente o reporte del docente. |
 | Seguimiento | Registro de avance de un caso ya abierto. | Plan de acompañamiento activo. |
 | Remisión | Derivación a otra instancia interna o a un servicio externo. | Evaluación del orientador. |
 
 ## Flujo principal
 
-1. Un caso se abre por uno de tres disparadores: solicitud del estudiante/acudiente, remisión interna (director de grupo, coordinador o docente) o alerta de riesgo del sistema (`RN-VA-101`).
+1. Un caso se abre por uno de dos disparadores: solicitud del estudiante/acudiente o remisión interna (director de grupo, coordinador o docente).
 2. El orientador crea o ubica el **expediente de bienestar** del estudiante (uno por estudiante, transversal al año).
 3. El orientador **agenda una cita** con el estudiante o con el acudiente, seleccionando fecha, hora y modalidad (presencial / virtual).
 4. El sistema notifica la cita al destinatario por los canales habilitados, sin revelar el motivo clínico en el cuerpo de la notificación.
@@ -68,9 +68,8 @@ Brindar acompañamiento psicosocial trazable y confidencial, articulando aula, c
 
 ## Alertas de riesgo
 
-- El sistema de alertas tempranas (`RN-VA-101`) cruza asistencia, notas, observador y cartera, y emite un semáforo con recomendación.
-- Cuando una alerta alcanza el umbral configurado, se enruta al área de orientación para abrir o actualizar un caso.
-- La decisión de intervención es **siempre humana**; la alerta es insumo, no acción automática sobre el estudiante.
+- Cuando una situación de riesgo se identifica, se enruta al área de orientación para abrir o actualizar un caso.
+- La decisión de intervención es **siempre humana**; el reporte de riesgo es insumo, no acción automática sobre el estudiante.
 
 ## Confidencialidad y visibilidad
 
@@ -107,7 +106,6 @@ Solicitada → Confirmada → Realizada
 
 - **Observador del estudiante:** las notas internas se rigen por la visibilidad de `RN-OB-081` (ver [[../04-procesos-academicos/observador-del-estudiante\|Observador del estudiante]]).
 - **Salud y enfermería:** remisiones internas y casos que mezclan salud física y emocional (ver [[salud-y-enfermeria\|Salud y enfermería]]).
-- **Valor agregado / IA:** consume las alertas tempranas (`RN-VA-101`).
 - **Comunicación:** las citas se notifican por los canales habilitados sin exponer el motivo (ver [[../05-comunicacion/notificaciones\|Notificaciones]]).
 - **Convivencia:** los casos disciplinarios pueden originar remisiones a orientación (ver [[../13-cumplimiento-colombia/convivencia-ley-1620\|Convivencia escolar (Ley 1620)]]).
 
@@ -119,7 +117,7 @@ Solicitada → Confirmada → Realizada
 - **RN-BW-004 — Visibilidad interna por defecto:** las notas de bienestar se registran por defecto en nivel `interna` según `RN-OB-081`; cambiarlas a un nivel más abierto exige acción explícita del orientador.
 - **RN-BW-005 — Consentimiento obligatorio para remisión externa:** ninguna remisión externa comparte datos del estudiante sin el consentimiento del acudiente registrado previamente en el expediente.
 - **RN-BW-006 — Notificación de cita sin motivo sensible:** la notificación de una cita informa fecha, hora y lugar, pero nunca el motivo clínico ni el contenido del caso.
-- **RN-BW-007 — Alerta de riesgo no decide por sí sola:** las alertas tempranas (`RN-VA-101`) abren o actualizan un caso, pero toda intervención sobre el estudiante requiere decisión humana del orientador.
+- **RN-BW-007 — Apertura por solicitud o remisión con decisión humana:** un caso de bienestar puede abrirse por solicitud del estudiante/acudiente o por remisión interna, pero toda intervención sobre el estudiante requiere decisión humana del orientador.
 - **RN-BW-008 — Plan con doble capa de visibilidad:** todo plan de acompañamiento separa una parte visible para el estudiante/acudiente de una parte interna que no se comparte.
 - **RN-BW-009 — Cierre preserva la historia:** cerrar un caso exige un resumen y conserva todas las notas y remisiones; no se permite borrado físico del historial.
 - **RN-BW-010 — Auditoría de acceso a datos sensibles:** toda consulta y edición del expediente de bienestar queda registrada en el log con usuario, fecha, hora e IP.

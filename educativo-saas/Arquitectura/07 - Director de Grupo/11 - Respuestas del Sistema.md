@@ -31,7 +31,6 @@ Que responde el sistema ante cada evento del complemento sobre el grupo dirigido
 | Director cita formalmente a un acudiente (configurable) | Crea la citacion · notifica al acudiente por el canal habilitado · registra en log |
 | Director solicita una citacion al Coordinador | Enruta la solicitud al Coord. de Convivencia · registra en log |
 | Director envia un mensaje a un acudiente (configurable) | Entrega el mensaje por el portal/canal habilitado · lo registra · el acudiente lo recibe operando la cuenta del Estudiante (RR-11) |
-| Se detecta una alerta temprana en el grupo | Genera la alerta en el inicio del director (inasistencia / bajo rendimiento) · cruza asistencia, notas y observador (RN-VA-101) |
 | Intento de operar fuera del grupo dirigido | Rechaza la accion en backend · registra el intento en el log de seguridad (RR-09, RR-02) |
 | Cierre del ano lectivo | Congela los boletines, observaciones y casos del grupo (inmutables) · deja todo consultable · registra el cierre |
 

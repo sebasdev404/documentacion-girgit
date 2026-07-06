@@ -28,14 +28,13 @@ Ficha extendida para Sheet/Excel. Complementa [[01 - Ficha de Rol]].
 | Permisos CRUD | Ficha del estudiante: Ver (acotada) · Observador: Crear/editar aporte propio (no borra) · Modulo del perfil: CRUD acotado a su servicio · Otros perfiles de servicio: — |
 | Permisos negados | Notas, calificaciones, boletines, consolidados, documentos oficiales, pagos/cartera, configuracion del tenant, gestion de roles/grupos/horarios, modulo de un perfil ajeno, datos de otros tenants |
 | Visibilidad observador | Solo las anotaciones que `RN-OB-081` le permita; sus aportes salen en nivel **interna** por defecto |
-| Alertas tempranas (`RN-VA-101`) | Configurable por el colegio (default desactivado) |
 | MFA | Segun politica del tenant |
 | Acceso | Subdominio del colegio (RR-06) |
 | Dispositivo | Desktop / tablet (mostrador, enfermeria, consultorio) |
 | Frecuencia de uso | Diaria durante la jornada escolar |
 | Dolor / Necesidad actual | Necesita ubicar rapido al estudiante y su contacto sin exponer datos academicos; registrar atenciones/citas/prestamos con trazabilidad; dejar constancia en el observador con la confidencialidad adecuada; remitir casos que exceden su servicio |
 | Notas UX / Recomendaciones | Preseleccionar visibilidad **interna** en aportes al observador (`RN-TU-005`); ocultar por completo modulos academicos/financieros; bloquear suministro de medicamento sin autorizacion vigente (`RN-SA-003`); en biblioteca calcular vencimiento por configuracion, no a mano (`RN-BI-002`); en bienestar separar la parte interna del plan de la parte visible (`RN-BW-008`) |
-| Reglas asociadas | `RN-TU-001` a `RN-TU-010`, `RN-OB-081`, `RN-VA-101`, `RN-BW-*`, `RN-SA-*`, `RN-BI-*`, RR-03, RR-05, RR-06 |
+| Reglas asociadas | `RN-TU-001` a `RN-TU-010`, `RN-OB-081`, `RN-BW-*`, `RN-SA-*`, `RN-BI-*`, RR-03, RR-05, RR-06 |
 
 ## Perfiles y su modulo de servicio
 

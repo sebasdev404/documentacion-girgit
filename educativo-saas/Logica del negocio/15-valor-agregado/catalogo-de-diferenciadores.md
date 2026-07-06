@@ -8,7 +8,7 @@ tags: [valor-agregado, diferenciadores, competencia, roadmap]
 
 # Catálogo de diferenciadores (valor agregado estándar)
 
-Este módulo cataloga las **funcionalidades de valor agregado estándar** (`RN-VA-001` a `RN-VA-007`) que diferencian la plataforma frente a la competencia colombiana (**Phidias**, **Master2000**, **Ciudad Educativa**). Son features vendibles de bajo riesgo, sin componente de IA (la IA selectiva se documenta aparte). Cada una es **opt-in y configurable por colegio**; varias dependen del plan contratado (ver [[../06-monetizacion-y-pagos/planes-y-suscripciones|Planes y suscripciones]]).
+Este módulo cataloga las **funcionalidades de valor agregado estándar** (`RN-VA-001` a `RN-VA-007`) que diferencian la plataforma frente a la competencia colombiana (**Phidias**, **Master2000**, **Ciudad Educativa**). Son features vendibles de bajo riesgo, sin componente de IA. Cada una es **opt-in y configurable por colegio**; varias dependen del plan contratado (ver [[../06-monetizacion-y-pagos/planes-y-suscripciones|Planes y suscripciones]]).
 
 > **Aclaración estructural:** "acudiente" / "padre de familia" **no es un tipo de usuario propio**. El **estudiante** posee la única cuenta del menor y el acudiente la opera en la práctica. Toda referencia a "acudiente" se traduce a **"el usuario del estudiante"** (ver `RN-TU-410` en [[../02-usuarios-roles-y-permisos/tipos-de-usuario|Tipos de usuario]]).
 
@@ -113,7 +113,7 @@ Los diferenciadores **no son módulos aislados**: reutilizan la infraestructura 
 
 ## Notas y pendientes
 
-- **[Decisión tomada]** El catálogo estándar (`RN-VA-001..007`) es **sin IA**; las apuestas de IA (`RN-VA-101..103`) se documentan en módulo aparte con humano en el bucle. Ver sección C del [[../../_PLAN MAESTRO DE COMPLETADO|Plan Maestro de Completado]].
+- **[Decisión tomada]** El catálogo estándar (`RN-VA-001..007`) son features **sin IA**, opt-in por colegio.
 - **[Decisión tomada]** Toda feature es **opt-in y configurable por colegio**, vinculada al plan contratado.
 - **[Pendiente — producto]** Definir si el **débito recurrente** (`RN-VA-002`) se ofrece desde el MVP o en una segunda fase, según la pasarela elegida y los requisitos de domiciliación bancaria en Colombia.
 - **[Pendiente — producto]** Decidir si el **carné digital con QR** (`RN-VA-005`) incluye lector propio para portería o se apoya en la cámara del celular del portero en el MVP.

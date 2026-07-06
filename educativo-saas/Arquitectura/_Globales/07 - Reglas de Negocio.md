@@ -40,7 +40,6 @@ Reglas RR-NN consolidadas. Cada regla viene de la fuente de verdad en `Logica de
 | RR-15 | Reporte SIMAT obligatorio | Los colegios estan obligados a reportar matricula al SIMAT (Ministerio de Educacion Nacional). El sistema debe generar el formato requerido |
 | RR-16 | Visibilidad triple del observador para Personal de Apoyo | Las anotaciones que el Personal de Apoyo (ROL-12) aporta al observador se crean con los tres niveles de visibilidad de `RN-OB-081` y por defecto en nivel **interna**, dado el caracter sensible del dato. El rol solo ve en el observador las anotaciones cuya visibilidad lo permita (origen: `RN-OB-081`, `RN-TU-005`) |
 | RR-17 | Otros cobros entran a la cartera unica del estudiante sin split | Todo cobro fuera de pension (tienda, transporte, comedor, biblioteca, eventos, certificados) se carga a la **cartera unica del estudiante**; no existe canal de cobro paralelo ni split entre hermanos ni entre acudientes: una sola deuda integral por estudiante (origen: `RN-PP-120`, `RN-TI-001`) |
-| RR-18 | IA siempre con humano en el bucle | Ninguna salida de IA que afecte al estudiante surte efecto en estado `Sugerida`; requiere `Aprobada` o `Editada -> Aprobada` por un rol con permiso. No existe publicacion autonoma de la IA (origen: `RN-VA-110`) |
 | RR-19 | Tratamiento de datos del menor exige consentimiento | El consentimiento de tratamiento de datos de un estudiante menor lo otorga el **acudiente con patria potestad**; el sistema no acepta la autorizacion del propio menor. Las autorizaciones son granulares, no premarcadas, y se atan a la version de politica vigente (Ley 1581) (origen: `RN-HD-001`, `RN-HD-002`) |
 | RR-20 | Convivencia sigue la Ruta de Atencion Integral Ley 1620 | Los casos de convivencia se atienden por la **Ruta de Atencion Integral (RAI)** de la Ley 1620: el protocolo se instancia segun el tipo (I/II/III) y no permite saltarse actuaciones obligatorias; los casos tipo III escalan automaticamente al Rector con constancia de reporte a la autoridad (origen: `RN-CVE-003`, `RN-CVE-004`) |
 
@@ -50,7 +49,7 @@ Reglas RR-NN consolidadas. Cada regla viene de la fuente de verdad en `Logica de
 
 - Fuente de verdad de las reglas transversales: `Logica del negocio/02-usuarios-roles-y-permisos/reglas-transversales-de-roles.md`.
 - Las reglas operativas RR-07 a RR-15 provienen de los archivos individuales de rol en `Logica del negocio/02-usuarios-roles-y-permisos/roles/`.
-- Las reglas operativas RR-16 a RR-20 provienen de los modulos nuevos de `Logica del negocio/` (`12-bienestar-y-servicios/`, `13-cumplimiento-colombia/`, `15-valor-agregado/`); ver su origen `RN` en [[10 - Mapeo RN-RR]].
+- Las reglas operativas RR-16, RR-17, RR-19 y RR-20 provienen de los modulos nuevos de `Logica del negocio/` (`12-bienestar-y-servicios/`, `13-cumplimiento-colombia/`); ver su origen `RN` en [[10 - Mapeo RN-RR]].
 - Cuando una regla aplique solo a un modulo especifico, ver el archivo de ese modulo en `Logica del negocio/`.
 
 ---

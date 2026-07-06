@@ -49,5 +49,4 @@ Tabla accion -> resultado. Cada accion sensible (notas, cierre, observador, clas
 | Accion | Resultado |
 |---|---|
 | Busca un estudiante / grupo / docente | Sistema devuelve resultados solo del propio tenant (RR-01) |
-| Revisa una alerta temprana de riesgo | Sistema muestra el cruce de asistencia + notas + observador · sugiere accion (insumo, no decision automatica) |
 | Cierra sesion | Sistema invalida el token · registra logout en log |

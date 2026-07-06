@@ -50,7 +50,7 @@ El Director de Grupo entra por el subdominio de SU colegio (RR-06), igual que cu
 - **Perfil del usuario:** datos del docente-director, materias asignadas, grupo(s) dirigido(s), cerrar sesion, configurar MFA.
 - **Buscador:** acotado a estudiantes del grupo dirigido y a estudiantes de sus materias asignadas (RR-10). No busca fuera de su scope.
 - **Selector de grupo dirigido:** visible solo si dirige mas de un grupo; conmuta el contexto de toda la pantalla.
-- **Notificaciones:** boletines por cerrar, anotaciones que requieren confirmacion, citaciones respondidas por acudientes, casos de convivencia de su grupo, alertas tempranas (inasistencia / bajo rendimiento).
+- **Notificaciones:** boletines por cerrar, anotaciones que requieren confirmacion, citaciones respondidas por acudientes, casos de convivencia de su grupo.
 
 ---
 
@@ -161,7 +161,6 @@ Identico al Docente sobre sus clases. Como complemento se agrega:
 
 ### Bienestar y alertas
 
-- **Alertas tempranas** del grupo: cruce de asistencia + notas + observador que marca estudiantes en riesgo (`RN-VA-101`).
 - Visibilidad de **remisiones a orientacion escolar** de estudiantes de su grupo (solo lo que le corresponde como acompanante, sin el detalle psicosocial reservado).
 - Enlace de consulta a servicios de bienestar (salud/enfermeria, restaurante) solo a nivel de alerta del grupo, sin gestion.
 - Fuente: `Logica del negocio/12-bienestar-y-servicios/bienestar-y-orientacion.md`.
@@ -200,7 +199,7 @@ Identico al Docente sobre sus clases. Como complemento se agrega:
 | Conviv.|  [ Reportar situacion + medidas tipo I + seguimiento ]   |
 | Citac. |  [ Citaciones (configurable) ]                           |
 | Comunic|  [ Mensajes a acudientes del grupo (configurable) ]      |
-| Bienest|  [ Alertas tempranas del grupo ]                         |
+| Bienest|  [ Remisiones a orientacion del grupo (lo que corresp.) ] |
 +--------+---------------------------------------------------------+
 ```
 

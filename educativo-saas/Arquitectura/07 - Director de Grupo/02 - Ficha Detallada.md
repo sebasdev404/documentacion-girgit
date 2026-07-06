@@ -36,8 +36,8 @@ Ficha extendida para Sheet/Excel. Complementa [[01 - Ficha de Rol]].
 | Dispositivo | Mobile + desktop |
 | Frecuencia de uso | Diaria sobre el grupo; picos en cierre de periodo (boletines) y eventos disciplinarios |
 | Dolor / Necesidad actual | Hoy el director consolida notas de varias materias a mano, persigue a los docentes por las notas faltantes, redacta observaciones en papel y no tiene trazabilidad del seguimiento de convivencia. Necesita ver el consolidado completo del grupo en un solo lugar, generar boletines con observacion general y dejar registro auditable de anotaciones y acuerdos |
-| Notas UX / Recomendaciones | Bloque "Mi grupo dirigido" destacado en el inicio; selector de grupo si dirige varios; alertas tempranas visibles (inasistencia/bajo rendimiento); advertir notas faltantes antes de generar boletin; separar claramente "ver" (todo el grupo) de "editar" (solo sus materias) para evitar errores; en convivencia, dejar evidente que NO clasifica el tipo |
-| Reglas asociadas | RR-09, RR-07, RR-10, RR-11, `RN-OB-081`, `RN-CVE-003`, `RN-CVE-004`, `RN-CVE-007`, `RN-VA-101` |
+| Notas UX / Recomendaciones | Bloque "Mi grupo dirigido" destacado en el inicio; selector de grupo si dirige varios; advertir notas faltantes antes de generar boletin; separar claramente "ver" (todo el grupo) de "editar" (solo sus materias) para evitar errores; en convivencia, dejar evidente que NO clasifica el tipo |
+| Reglas asociadas | RR-09, RR-07, RR-10, RR-11, `RN-OB-081`, `RN-CVE-003`, `RN-CVE-004`, `RN-CVE-007` |
 
 ## Modulos y nivel de acceso (adicionales del complemento)
 

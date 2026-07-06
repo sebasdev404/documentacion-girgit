@@ -53,8 +53,7 @@ COORDINADOR DE CONVIVENCIA (ROL-04)
     ├── Reportes y analisis
     │   ├── Reporte de convivencia por estudiante / grupo / tipo (RF-29)
     │   ├── Informe disciplinario consolidado multi-ano (PDF)
-    │   ├── Dashboard de convivencia
-    │   └── Alertas tempranas de riesgo (RN-VA-101)
+    │   └── Dashboard de convivencia
     │
     ├── Articulacion
     │   ├── Recibir remisiones de Bienestar / Orientacion (config)

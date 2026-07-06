@@ -43,7 +43,6 @@ Sistemas y servicios externos al SaaS.
 | Servicio de hosting / cloud | Infraestructura del SaaS |
 | Proveedor de firma electronica | Firma de contratos, autorizaciones y documentos con sello de tiempo, hash y trazabilidad legal (RI-08, RN-VA-004) |
 | WhatsApp Business API | Canal oficial de comunicacion con plantillas aprobadas y opt-in del usuario (RI-09, RN-VA-003) |
-| IA Claude (Anthropic) | Modelos Claude (Haiku / Sonnet / Opus) para alertas tempranas, redaccion asistida y asistente conversacional. Bajo acuerdo de no-retencion / no-entrenamiento con datos del menor; invocaciones trazables y aisladas por tenant (RI-10, RN-VA-112, RN-VA-113, RN-VA-115) |
 | SIMAT / DANE / ICFES (MEN Colombia) | Reportes oficiales: matricula (SIMAT), formato estadistico C-600 (DANE) e inscripcion a pruebas Saber (ICFES / PRISMA). Cargue manual de archivos en el formato oficial; no hay integracion en linea (RI-11, RN-MO-001) |
 
 ---

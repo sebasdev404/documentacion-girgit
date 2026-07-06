@@ -63,8 +63,7 @@ COORDINADOR ACADEMICO Y CONVIVENCIA (ROL-05)
     │
     ├── Reportes y analisis
     │   ├── Reportes de convivencia por estudiante / grupo (RF-29)
-    │   ├── Informe institucional para auditoria / SIUCE
-    │   └── Revision de alertas tempranas de riesgo
+    │   └── Informe institucional para auditoria / SIUCE
     │
     └── Comunicaciones
         ├── Citaciones y mensajes dirigidos a acudientes (RF-43)

@@ -17,8 +17,8 @@ Que responde el sistema ante cada evento.
 | Docente registra una nota | Valida asignacion y periodo abierto · guarda la nota · recalcula el acumulado del estudiante en la materia · si el promedio cae bajo el minimo, lo refleja en la planilla · registra en log (RR-03) |
 | Docente edita una nota (periodo abierto) | Actualiza el valor · recalcula el acumulado · registra el cambio con valor anterior y nuevo (RR-07) |
 | Docente intenta editar nota con periodo cerrado | Bloquea; si el colegio activo el permiso, exige justificacion y registra el cambio como excepcion auditada |
-| Docente toma asistencia | Guarda los estados P/A/T/E · marca la clase como registrada · alimenta los conteos de inasistencia para las alertas tempranas del Director de Grupo y del Coordinador · registra en log |
-| Inasistencia reiterada de un estudiante | El sistema NO se lo notifica al docente de materia; genera la alerta temprana hacia el Director de Grupo / Coordinador, que tienen la vista consolidada |
+| Docente toma asistencia | Guarda los estados P/A/T/E · marca la clase como registrada · registra en log |
+| Inasistencia reiterada de un estudiante | El sistema NO se lo notifica al docente de materia; refleja la inasistencia en la vista consolidada del Director de Grupo / Coordinador |
 | Docente agrega una observacion academica | Asocia la anotacion al estudiante en su materia con la visibilidad configurada · notifica al acudiente segun configuracion · registra en log |
 | Docente remite un estudiante a enfermeria | Crea el reporte de remision · notifica al Personal de Apoyo (enfermeria) · registra en log |
 | Docente reporta una situacion de convivencia | Crea el reporte y lo enruta al Coordinador de Convivencia para clasificacion · deja el caso en estado "Reportado" · registra en log (RN-CVE-002) |
