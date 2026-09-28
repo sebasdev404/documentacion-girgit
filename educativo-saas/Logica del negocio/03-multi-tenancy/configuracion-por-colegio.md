@@ -44,16 +44,15 @@ Luego define:
 
 Detalle en [[../04-procesos-academicos/periodos-academicos|Períodos académicos]].
 
-### 3. Jornadas y bloques horarios
+### 3. Jornadas y bloques horarios opcionales
 
 Para cada jornada (Mañana / Tarde / Única / nombre personalizado):
 
 - Hora de inicio y hora de fin.
-- Número de bloques de clase.
-- Duración de cada bloque.
-- Tiempos de descanso o recreo entre bloques.
+- Si el colegio desea franjas predefinidas, configura los bloques de clase y los descansos con hora de inicio y fin.
+- Si prefiere horarios flexibles, puede programar cada clase con horas propias sin crear bloques.
 
-Esta configuración es la base sobre la que se construyen los horarios.
+La jornada y su sede se obtienen del grupo. Todas las clases deben quedar dentro de la jornada; los bloques no son requisito para construir el horario.
 
 ### 4. Escala valorativa
 

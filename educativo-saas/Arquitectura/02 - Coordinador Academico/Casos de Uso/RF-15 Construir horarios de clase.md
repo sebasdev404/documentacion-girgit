@@ -11,10 +11,10 @@ aliases:
 **Nombre:** Construir horarios de clase
 
 **Historia:**
-Como Coordinador Academico, al inicio del ano lectivo necesito armar el horario de cada grupo distribuyendo las materias y los docentes ya asignados a lo largo de la jornada definida por el Rector. El horario es la columna vertebral de la operacion diaria, asi que debe respetar la carga horaria del plan de estudios y no generar cruces de docentes ni de aulas antes de publicarse a docentes y estudiantes.
+Como Coordinador Academico, al inicio del ano lectivo necesito armar el horario de cada grupo distribuyendo las materias a lo largo de su jornada, aun cuando todavia no se hayan creado los docentes. Puedo elegir el docente de cada clase ahora o despues. El horario debe respetar la carga horaria del plan de estudios y no generar cruces de grupos, docentes asignados ni aulas.
 
 **Criterios de aceptacion:**
-El sistema permite construir el horario solo sobre las jornadas y bloques definidos en la configuracion base del tenant (no editables por el Coordinador). Al ubicar una materia en un bloque, el sistema valida en tiempo real que el docente asignado no este ya ocupado en otro grupo en ese mismo bloque y que el aula no este duplicada; si detecta un cruce, bloquea la accion y muestra el conflicto especifico. El horario no puede publicarse mientras existan cruces sin resolver o si la suma de horas por materia no coincide con la intensidad del plan de estudios (RF-11). Al publicar, el horario queda visible para docentes y estudiantes del grupo y la accion queda registrada en auditoria (RR-03).
+El sistema permite construir el horario dentro de la jornada de cada grupo. Cada clase puede seleccionar un bloque de esa jornada o indicar directamente hora de inicio y fin, incluso si hay bloques configurados. Los bloques son franjas compartidas, no horarios obligatorios para todos los grupos. La sede y la jornada se obtienen del grupo. El docente es opcional y se edita en la clase sin exigir una asignacion academica previa. Al ubicar una materia, el sistema valida los intervalos reales para evitar cruces de grupo, docente asignado y aula, incluso entre clases con y sin bloque. Si detecta un cruce, bloquea la accion y muestra el conflicto especifico. La clase se registra con auditoria (RR-03).
 
 **Documentacion:**
 - PRD: PRD-04 Coordinador Academico
@@ -22,4 +22,4 @@ El sistema permite construir el horario solo sobre las jornadas y bloques defini
 - Prototipo: (link de Figma)
 
 **Flujo:**
-`Plan de estudios definido + docentes asignados (RF-13) + jornadas de config base` -> MANUAL -> `Coordinador arrastra materias/docentes a los bloques de la jornada del grupo` -> AUTOMATICO -> `Sistema valida cruces de docente y aula y carga horaria vs plan; bloquea si hay conflicto` -> MANUAL -> `Coordinador resuelve conflictos y pulsa Publicar` -> AUTOMATICO -> `Horario publicado y visible para docentes y estudiantes del grupo; accion registrada en auditoria`
+`Plan de estudios definido + jornada del grupo` -> MANUAL -> `Coordinador programa la clase con bloque o con horas propias; docente opcional` -> AUTOMATICO -> `Sistema valida cruces de grupo, aula y docente si existe, y carga horaria vs plan` -> MANUAL -> `Coordinador puede editar la clase y asignarle docente despues` -> AUTOMATICO -> `Clase visible en el horario del grupo y para su docente cuando se le asigne; cambios auditados`

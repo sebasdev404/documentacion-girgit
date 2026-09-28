@@ -10,6 +10,8 @@ tags: [docentes, asignacion, materias, grupos]
 
 Una asignación es la combinación **materia × grupo × año lectivo** asignada a un docente. Esa asignación es la que determina en qué grupos y materias el docente puede registrar notas y asistencia.
 
+El docente mostrado en una clase del [[horarios|horario]] es opcional y se gestiona por clase. Programar una clase o elegir allí un docente no crea automáticamente una asignación académica ni concede permisos para registrar notas; esos permisos siguen dependiendo de esta asignación.
+
 ## Conceptos
 
 - Un docente puede tener **múltiples asignaciones simultáneas** en el mismo año lectivo.
