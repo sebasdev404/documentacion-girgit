@@ -15,8 +15,8 @@ Año lectivo, bimestres, trimestres o semestres según el modelo del colegio.
 Un año lectivo se compone de:
 
 - **Una fecha de inicio y una fecha de cierre.**
-- **N periodos académicos** consecutivos definidos por el colegio.
-- Opcionalmente un **quinto periodo** que puede corresponder a una sumatoria de los anteriores u otro método de cálculo propio del colegio.
+- **N períodos académicos reales** consecutivos (de 1 a 12), definidos por el colegio. Cada uno tiene fechas y admite notas; si el colegio necesita cinco períodos reales, configura N = 5.
+- Opcionalmente, un **período sumatorio**: resultado anual calculado a partir de los N períodos reales según el método anual del SIEE. No tiene fechas ni notas propias y no aumenta N. En el boletín se muestra como P(N+1): P5 después de cuatro períodos reales, P7 después de seis, etc.
 - Un **estado** del año lectivo: `Planificado`, `En curso`, `Cerrado`, `Archivado`.
 
 El colegio define el número exacto de periodos en su [[../03-multi-tenancy/configuracion-por-colegio|configuración inicial]] (típicamente 4) y las fechas de inicio y cierre de cada uno.
@@ -126,7 +126,7 @@ Planificado → Abierto → Cerrado
 - **RN-PA-005 — Cierre del año ejecuta promoción:** el cierre del año lectivo dispara el [[promocion-y-reprobacion|proceso de promoción automática]] que requiere validación del coordinador antes de quedar definitivo.
 - **RN-PA-006 — Inmutabilidad post-cierre:** los datos de un periodo cerrado son inmutables; los datos de un año lectivo cerrado son **completamente inmutables** para todos los usuarios del tenant.
 - **RN-PA-007 — Tipo de calendario inmutable:** el tipo de calendario (A o B) elegido en la configuración inicial no puede cambiarse mientras haya años lectivos activos o cerrados.
-- **RN-PA-008 — Quinto periodo opcional:** el colegio decide si maneja un quinto periodo y su método de cálculo (sumatoria u otro). Esta configuración es por año lectivo.
+- **RN-PA-008 — Período sumatorio opcional:** el colegio decide por año lectivo si muestra la definitiva anual como P(N+1). Se calcula por promedio simple o ponderado, según el SIEE; si es ponderado, los pesos de los N períodos reales deben sumar exactamente 100 %. No se crea una fila adicional en `periodos`. Un quinto período real se configura con N = 5 y sí tiene fechas y notas propias.
 
 ## Notas y pendientes
 
