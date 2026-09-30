@@ -5,6 +5,10 @@ aliases: [Matriz de Verificacion, Estado verificable del producto]
 
 # Matriz de verificación
 
+**Actualización del 30 de septiembre de 2026:** el [registro de entregas](12%20-%20Registro%20de%20entregas%202026-09.md) y el [estado de sesión y selectores](11%20-%20Pendiente%20de%20seguridad%20de%20sesion%20web.md) incorporan la migración a cookies HttpOnly/CSRF, selectores públicos en API académica y plataforma, permisos de archivos y verificaciones locales (206 pruebas backend, 1443 aserciones y 20 frontend). Estos avances amplían la evidencia de AC-02, AC-18 y AC-24, que siguen **parciales** porque requieren cobertura de todos los módulos y validación de despliegue. AC-20 también sigue parcial: el simulacro no equivale a respaldos externos y restauraciones operativas.
+
+Las cifras de ejecución y hashes del corte del 29 de septiembre que siguen abajo son una instantánea histórica de esa entrega, no resultados del corte del 30.
+
 **Corte:** 29 de septiembre de 2026. Repositorios: frontend y backend `pedro-dev`, documentación `main`. Base previa: frontend `2aae193`, backend `e488f59`, documentación `8e318e0`; esta matriz incluye la entrega de perfil/MFA, confirmada después en frontend (`5f12ede`) y backend (`d224a29`).
 
 **Cobertura documental:** los 29 criterios vigentes de [[08 - Criterios de Aceptacion]] tienen una fila. AC-28 permanece retirado; no se reutiliza. Los estados se refieren al criterio completo, no al porcentaje de archivos escritos.

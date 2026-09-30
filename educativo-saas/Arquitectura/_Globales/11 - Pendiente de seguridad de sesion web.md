@@ -1,23 +1,25 @@
-# Pendiente de seguridad: sesión web y suplantación
+# Estado de seguridad de sesión web y selectores públicos
 
-Estado revisado el 29 de septiembre de 2026. Esta nota distingue lo implementado de lo que falta; no declara la autenticación actual como cifrada en el navegador.
+**Corte:** 30 de septiembre de 2026. Esta nota actualiza el estado del 29 de septiembre: la migración del navegador a cookies y los selectores opacos ya se implementaron localmente en `pedro-dev`.
 
-## Estado actual
+## Implementado y comprobado localmente
 
-- El selector de año lectivo de las vistas académicas usa en la URL un valor opaco derivado mediante HMAC y vinculado al tenant. Evita mostrar el ID numérico en `?ano=`, pero no sustituye la autorización del backend ni cifra el resto de las peticiones.
-- El frontend aún guarda el token de autenticación en `localStorage`. Durante la suplantación guarda allí también el token temporal y el ID del colegio activo. Varias rutas internas de la API usan IDs numéricos; estos no son contraseñas y ocultarlos por sí solo no protege los datos.
-- El acceso sigue dependiendo de la autenticación, los permisos y el aislamiento por tenant en el servidor. No se debe interpretar el selector opaco como una barrera de acceso.
+- La sesión de navegador utiliza cookie HttpOnly, CSRF y comprobación de origen. El cliente limpia credenciales y datos de suplantación heredados de `localStorage`; solo persisten preferencias no sensibles.
+- La suplantación mantiene su estado en el servidor y los canales privados de Reverb comprueban identidad y colegio.
+- La API académica pública rechaza rutas numéricas y claves `id`/`*_id` en consultas y cuerpos. Usa selectores opacos estables de 24 caracteres ligados al colegio y tipo de recurso. El modo numérico heredado solo funciona en `testing` con cabecera explícita para pruebas antiguas.
+- La plataforma usa `slug`, `key` o token público para colegios, planes, roles, sedes, usuarios y archivos. Las respuestas de auditoría eliminan claves internas.
+- La autorización se verifica por sesión, permiso, colegio y recurso; conocer un token no concede acceso. Las pruebas incluyen rechazos entre colegios, permisos y rutas numéricas.
+- Las cargas aplican permiso, tamaño, cuota y escáner. En producción se rechazan cuando ClamAV no está disponible.
 
-## Por qué no se «cifra» simplemente `localStorage`
+La evidencia técnica está en `colegio-saas-backend/docs/SEGURIDAD_API.md` y en pruebas como `BrowserCookieAuthTest`, `RequireOpaqueAcademicContractTest`, `ColegioPublicSelectorTest` y `StoredFilePublicTokenTest`. En el corte se ejecutaron 206 pruebas backend (1443 aserciones), 20 frontend, compilación y recorridos de navegador; `composer audit` y `npm audit` no reportaron avisos.
 
-Una clave incorporada en JavaScript quedaría disponible para el mismo código del navegador que lee `localStorage`. Ante una inyección de scripts, el atacante podría recuperar la clave o usar directamente la sesión. Ese cambio solo daría una falsa sensación de seguridad y podría romper la apertura en nuevas pestañas o la suplantación.
+## Pendientes por momento
 
-## Trabajo pendiente para una solución real
+| Momento | Tarea | Motivo |
+|---|---|---|
+| Antes de producción | HTTPS, cookies y orígenes seguros, secretos y rotación, ClamAV real, copias externas y restauración ensayada, Reverb/colas/scheduler supervisados. | La configuración local no acredita la operación segura. Sin escáner, la carga falla cerrada. |
+| Antes de grandes catálogos | Indexar la resolución de algunos tokens y medir latencia. | La búsqueda actual recorre registros de una consulta limitada al colegio. |
+| Tras migrar clientes externos | Retirar la compatibilidad Bearer heredada. | El navegador ya usa cookies, pero podrían existir otros clientes. |
+| Continuo | Revisar autorización por objeto, rol y colegio en cada ruta nueva, con pruebas negativas. | Los tokens no reemplazan permisos. |
 
-1. Diseñar sesiones de autenticación y suplantación administradas por el servidor, entregadas mediante cookies `HttpOnly`, `Secure` y `SameSite` apropiado para los dominios del colegio y las sedes. Definir caducidad, rotación y revocación.
-2. Incorporar protección CSRF para operaciones que cambian datos y revisar CORS, dominios y el cierre de sesión en todas las pestañas.
-3. Migrar el cliente y los flujos de inicio de sesión, MFA, cambio de colegio y apertura de nuevas pestañas; retirar tokens y el ID del colegio de `localStorage` sin invalidar sesiones de forma inesperada.
-4. Mantener y probar autorización por rol, alcance de tenant y auditoría en cada endpoint. Un ID o un token opaco en una URL nunca debe conceder acceso por sí mismo.
-5. Verificar los flujos anteriores en PostgreSQL de staging con varios colegios y sedes antes de desplegar a producción.
-
-Este trabajo se deja para una fase de autenticación coordinada entre frontend, backend y despliegue. No está implementado por el cambio del selector de año lectivo.
+El selector opaco reduce la exposición y enumeración trivial de claves internas. No oculta el servidor, no es una credencial ni permite declarar seguridad absoluta o disponibilidad productiva.
