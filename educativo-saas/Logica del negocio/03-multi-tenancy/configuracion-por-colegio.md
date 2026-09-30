@@ -40,7 +40,7 @@ Luego define:
 - Fechas exactas de inicio y cierre del año lectivo.
 - Número de periodos académicos (configurable, típicamente 4).
 - Fechas exactas de inicio y cierre de cada periodo.
-- Si maneja un quinto periodo, define cómo se calcula (sumatoria de los anteriores u otro método).
+- Define de 1 a 12 períodos reales por año lectivo. Si habilita el período sumatorio, se muestra después de los reales como P(N+1) y se calcula según el método anual del SIEE, sin fechas ni notas propias. Cinco períodos reales se configuran indicando N = 5.
 
 Detalle en [[../04-procesos-academicos/periodos-academicos|Períodos académicos]].
 
