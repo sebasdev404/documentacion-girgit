@@ -1,0 +1,10 @@
+# Archivos temporales de Microsoft Office
+~$*
+
+# Estado local de Obsidian; conservar configuraciones compartidas explícitas
+.obsidian/workspace*.json
+.obsidian/cache
+
+# Basura del sistema operativo
+.DS_Store
+Thumbs.db
