@@ -28,7 +28,7 @@ Ficha extendida para Sheet/Excel. Complementa [[01 - Ficha de Rol]].
 | Permisos CRUD | Notas: Editar (solo materia asignada, periodo abierto) · Asistencia: Editar (sus clases) · Observador academico: Editar (su materia) · Horario: Ver · Estudiantes: Ver (sus grupos) · Alertas de salud autorizadas: Ver · Convivencia: Reportar |
 | Permisos configurables | Editar notas despues del cierre (default OFF), Cargar evidencias, Comunicarse con acudientes via portal, Ver plan de estudios completo |
 | Permisos negados | Consolidados generales, notas de materias que no dicta, observador disciplinario, configuracion del colegio, documentos oficiales, boletines, matricula, datos de otros tenants |
-| MFA | No obligatorio (configurable por el colegio) |
+| MFA | Opcional para el usuario |
 | Acceso | Subdominio del colegio (no panel de plataforma) — RR-06 |
 | Dispositivo | Mobile + desktop. Mobile predominante para asistencia y notas en clase |
 | Frecuencia de uso | Diaria; es el rol con mayor uso operativo del sistema |

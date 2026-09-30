@@ -27,7 +27,7 @@ Ficha extendida para Sheet/Excel. Complementa [[01 - Ficha de Rol]].
 | Permisos CRUD | Plan de estudios: CRUD · Grupos: CRUD · Horarios: CRUD · Asignacion docente: editar · Director de grupo: designar · Consolidados: ver (todo el tenant) · Cierre de periodo: editar · Nivelaciones: editar |
 | Permisos configurables | Editar notas directamente · Editar notas despues del cierre · Aprobar / firmar boletines · Crear anos lectivos · Asignar/cambiar estudiante de grupo · Citar acudientes · Mensajear acudientes · Ver historial de cambios |
 | Permisos negados | Configuracion base (escala, jornadas, modelo pedagogico, calendario) · Observador disciplinario · Documentos oficiales (constancias, certificados, paz y salvos, SIMAT) · Datos de otros tenants · Logs de auditoria del tenant |
-| MFA | Configurable por el colegio (no obligatorio para este rol) |
+| MFA | Opcional para el usuario |
 | Acceso | Subdominio del colegio (RR-06) |
 | Dispositivo | Desktop principalmente |
 | Frecuencia de uso | Alta al inicio del ano (plan, grupos, asignacion, horarios) y en cada cierre de periodo; media en operacion estable |

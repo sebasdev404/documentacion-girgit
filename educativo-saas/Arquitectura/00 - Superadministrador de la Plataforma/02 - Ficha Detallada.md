@@ -26,7 +26,7 @@ Ficha extendida para Sheet/Excel. Complementa [[01 - Ficha de Rol]].
 | Modulos que usa | Dashboard global, Tenants, Planes, Calendario A/B, Almacenamiento, Backups, Log global, Soporte/Impersonacion, Salud del sistema |
 | Permisos CRUD | Tenants: CRUD · Planes: asignar/editar · Calendario A/B: editar · Cuotas: editar · Logs globales: ver · Impersonacion: si (auditada) |
 | Permisos negados | Notas, asistencia, observador, boletines, documentos oficiales, operacion academica |
-| MFA | Obligatorio (no configurable) |
+| MFA | Opcional; si se activa, se exige código al iniciar sesión |
 | Acceso | URL de plataforma (no subdominio de colegio) |
 | Dispositivo | Desktop (panel administrativo) |
 | Frecuencia de uso | Esporadica; picos al crear tenants o ante incidentes |

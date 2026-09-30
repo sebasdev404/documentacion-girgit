@@ -22,7 +22,7 @@ El Superadmin NO entra por el subdominio de ningun colegio (RR-06). Entra por un
 [ panel.plataforma.com ]
         |
         v
-  Login (correo + contrasena + MFA OBLIGATORIO)
+  Login (correo + contraseña; código MFA solo si el usuario lo activó)
         |
         +--- credenciales invalidas --> mensaje generico + registro en log
         |
@@ -30,7 +30,7 @@ El Superadmin NO entra por el subdominio de ningun colegio (RR-06). Entra por un
   Dashboard global de plataforma
 ```
 
-- MFA obligatorio para este rol (no configurable).
+- MFA opcional para este rol; se configura desde Ajustes de la cuenta.
 - Todo intento de login (exito/fallo) queda en el log de auditoria global.
 
 ---

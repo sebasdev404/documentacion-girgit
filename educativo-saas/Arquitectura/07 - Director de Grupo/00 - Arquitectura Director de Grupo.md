@@ -24,7 +24,7 @@ El Director de Grupo entra por el subdominio de SU colegio (RR-06), igual que cu
 [ colegio.plataforma.com ]
         |
         v
-  Login (correo + contrasena) + MFA si el colegio lo exige
+  Login (correo + contraseña) + código MFA solo si el usuario lo activó
         |
         +--- credenciales invalidas --> mensaje generico + registro en log
         |

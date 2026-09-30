@@ -28,7 +28,7 @@ Ficha extendida para Sheet/Excel. Complementa [[01 - Ficha de Rol]].
 | Permisos CRUD | Plan de estudios: CRUD · Grupos: CRUD · Asignaciones docente: C/E · Horarios: CRUD · Consolidados: Ver · Cierre de periodo: Ejecutar · Observador (cualquier estudiante): C/E · Tipologias: C/E · Reportes de convivencia: Generar |
 | Permisos configurables | Editar notas directamente (hereda ROL-03) · Aprobar/firmar boletines (hereda ROL-03) · Citaciones formales a acudientes (hereda ROL-04) · Definir sanciones formales (hereda ROL-04) |
 | Permisos negados | Configuracion base del sistema (escala, jornadas, calendario, modelo pedagogico) · Documentos oficiales y SIMAT · Datos de otros tenants · Expediente clinico de bienestar |
-| MFA | No obligatorio por defecto (configurable por el colegio) |
+| MFA | Opcional para el usuario |
 | Acceso | Subdominio del colegio (RR-06) — no URL de plataforma |
 | Dispositivo | Desktop principalmente |
 | Frecuencia de uso | Alta; cubre dos ambitos a la vez (academico + convivencia) |

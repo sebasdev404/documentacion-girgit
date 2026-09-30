@@ -28,7 +28,7 @@ Ficha extendida para Sheet/Excel. Complementa [[01 - Ficha de Rol]].
 | Permisos CRUD | Estudiantes y acudientes: CRUD · Asignar a grupo: editar · Cambiar grupo post-matricula: configurable · Documentos de matricula: editar · Constancias / certificados / paz y salvos: reportar (generar) · SIMAT: reportar · Notas: solo lectura para certificados |
 | Permisos configurables | Bloqueo de emision por documentos pendientes (default activado) · Bloqueo por pagos pendientes · Cambiar grupo post-matricula · Paz y salvo sin pasar por contabilidad · Ver notas consultables · Comunicarse con acudientes · Enviar comunicados al colegio · Ver historial de cambios |
 | Permisos negados | Registrar/editar notas, registrar asistencia, observador disciplinario, configuracion base del colegio, log global del tenant, datos de otros tenants |
-| MFA | No obligatorio (segun politica del colegio) |
+| MFA | Opcional para el usuario |
 | Acceso | Subdominio del colegio (RR-06); no entra por panel de plataforma |
 | Dispositivo | Desktop principalmente (impresion de documentos, formularios extensos) |
 | Frecuencia de uso | Diaria; picos en epoca de matricula (inicio del ano) y al cierre (certificados, paz y salvos, SIMAT) |

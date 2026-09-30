@@ -29,7 +29,7 @@ Ficha extendida para Sheet/Excel. Complementa [[01 - Ficha de Rol]].
 | Modulos que usa | Dashboard, Identidad, Calendario y periodos, Jornadas, Modelo pedagogico, Escala valorativa, Aprobacion, Usuarios, Roles, Auditoria, Plan de estudios, Grupos, Horarios, Notas, Asistencia, Boletines, Observador, Convivencia Ley 1620, Matricula y admisiones, Documentos oficiales, Bienestar (salud, orientacion, biblioteca, transporte, restaurante), Financiero (pensiones, becas, paz y salvo), Comunicaciones, Reportes y KPIs |
 | Permisos CRUD | Configuracion institucional: CRUD · Usuarios: CRUD · Roles/permisos configurables: editar · Academico (plan, grupos, horarios, notas): CRUD/editar · Boletines: aprobar/firmar · Convivencia: editar · Matricula/documentos: respaldo de Secretaria · Auditoria del tenant: ver · Reportes: ver/exportar |
 | Permisos negados | Crear/eliminar tenants · Cambiar calendario A/B habilitado · Acceder a datos de otros colegios · Impersonar usuarios · Ver logs globales de plataforma |
-| MFA | Recomendado, no obligatorio (a diferencia del Superadmin). Configurable por el colegio |
+| MFA | Opcional para el usuario, igual que para el Superadministrador |
 | Dispositivo | Desktop principalmente (configuracion y gestion); mobile para consulta y aprobaciones puntuales |
 | Frecuencia de uso | Alta al inicio del ano lectivo y en cambios de configuracion; media-baja en operacion estable |
 | Dolor / Necesidad actual | Necesita configurar el colegio rapido al arrancar; visibilidad consolidada del estado academico, de convivencia y financiero; capacidad de delegar sin perder control; trazabilidad de quien hizo que |

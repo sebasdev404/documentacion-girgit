@@ -284,3 +284,7 @@ El aspirante no es usuario del sistema. Operado por Secretaria, Coordinacion y R
 > **Auditoria (RR-03) aplica a todas las acciones sensibles** sin importar el rol.
 
 > **Fuente de verdad del detalle:** `Logica del negocio/02-usuarios-roles-y-permisos/matriz-de-permisos.md`. Esta matriz es la **interpretacion UX** de esa.
+
+## Aplicación del corte 2026-09-29
+
+La fila histórica «Editar notas despues del cierre» no autoriza escribir en un período cerrado. Requiere reapertura explícita por Rector con el permiso de transición o suplantación válida. Las ventanas de solicitudes son futuras (RN-CL-030/031). La existencia de permisos de módulos futuros no implica que esos módulos funcionen. Perfil personal y MFA son controles de la propia cuenta, separados de permisos para administrar otras cuentas. Ver [[../../Logica del negocio/02-usuarios-roles-y-permisos/perfil-personal]] y [[11 - Matriz de Verificacion]].

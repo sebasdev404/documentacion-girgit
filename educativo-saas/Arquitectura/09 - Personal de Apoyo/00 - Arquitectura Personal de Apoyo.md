@@ -25,7 +25,7 @@ El Personal de Apoyo entra por el **subdominio del colegio** (RR-06), igual que 
 [ micolegio.plataforma.com ]
         |
         v
-  Login (correo + contrasena + MFA si el colegio lo exige)
+  Login (correo + contraseña + código MFA solo si el usuario lo activó)
         |
         +--- credenciales invalidas --> mensaje generico + registro en log
         |

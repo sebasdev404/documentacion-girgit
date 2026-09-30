@@ -33,7 +33,7 @@ El Rector entra por el subdominio de SU colegio (RR-06), no por una URL global d
   Dashboard del colegio
 ```
 
-- Si el colegio activo SSO (RI-07) o MFA, el flujo agrega ese paso. MFA no es obligatorio para este rol como si lo es para el Superadmin.
+- Si el usuario activó MFA, el flujo agrega ese paso. MFA es opcional para todos los roles; SSO (RI-07) permanece futuro.
 - Todo intento de login (exito/fallo) queda en el log de auditoria del tenant (RR-03, RF-49).
 - En el primer ingreso (tenant recien creado por el Superadmin) el sistema lleva al Rector al asistente de configuracion institucional.
 

@@ -29,7 +29,7 @@ Ficha extendida para Sheet/Excel. Complementa [[01 - Ficha de Rol]].
 | Permisos CRUD | Observador: Ver (cualquier estudiante) + Editar (registrar/cerrar/anular anotaciones) · Tipologias: Editar · Casos 1620: clasificar/operar/cerrar · Reportes de convivencia: generar/exportar |
 | Permisos configurables | Acceso al modulo academico (notas) — default desactivado · Citaciones formales a acudientes · Definir sanciones formales · Comunicados al colegio · Mensajes via portal · Ver historial de cambios de un registro |
 | Permisos negados | Registrar/editar notas academicas · Plan de estudios y horarios · Emitir documentos oficiales · Acceso al expediente clinico de bienestar · Datos de otros tenants |
-| MFA | Segun politica del tenant (no obligatorio como en ROL-01) |
+| MFA | Opcional para el usuario, igual que en ROL-01 |
 | Acceso | Subdominio del colegio (RR-06); no entra por URL de plataforma |
 | Dispositivo | Desktop principalmente; mobile para anotaciones rapidas |
 | Frecuencia de uso | Diaria. Picos en cierres de periodo y ante casos de convivencia |

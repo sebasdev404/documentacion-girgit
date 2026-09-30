@@ -31,7 +31,7 @@ La Secretaria entra por el subdominio del colegio (RR-06). El tenant se infiere 
   Inicio (resumen de matricula + documentos pendientes + alertas SIMAT)
 ```
 
-- MFA no obligatorio para este rol (depende de la politica del colegio).
+- MFA opcional para este rol; solo se exige código de inicio de sesión si el usuario lo activó.
 - El acceso queda en el log de auditoria del tenant (RR-03).
 - Si el tenant esta suspendido por el Superadmin, ve pantalla "colegio suspendido" y no puede operar.
 

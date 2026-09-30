@@ -63,7 +63,7 @@ Casos de validacion y comportamiento del sistema.
 
 | Caso | Comportamiento del Sistema |
 |---|---|
-| Sesion sin MFA | Bloquea acceso al panel; MFA es obligatorio para este rol |
+| Sesión sin MFA | Permite acceso al panel; MFA es opcional. Si fue activado, el login exige código |
 | Accion sensible sin conectividad con el log | Bloquea la accion; no se permite operar sin poder auditar (RR-03) |
 | Token expirado a mitad de operacion | Cierra sesion; la operacion no se aplica; pide reautenticacion |
 

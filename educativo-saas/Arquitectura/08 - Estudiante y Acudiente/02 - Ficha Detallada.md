@@ -29,7 +29,7 @@ Ficha extendida para Sheet/Excel. Complementa [[01 - Ficha de Rol]].
 | Modulos que usa | Inicio, Notas, Horario, Asistencia, Boletines, Observador (configurable), Comunicaciones, Pagos y estado de cuenta, Documentos, Citas |
 | Permisos CRUD | Notas: Ver · Horario: Ver · Asistencia: Ver + Justificar (queda pendiente) · Boletines: Ver + Confirmar + Descargar (configurable) · Observador: Ver + Confirmar (configurable) · Comunicaciones: Ver + Mensaje a docente (configurable) · Pagos: Ver + Pagar + Descargar comprobante · Documentos: Cargar requeridos + Solicitar oficiales · Citas: Solicitar |
 | Permisos negados | Modificar notas, asistencia, observador, boletines o cualquier dato del sistema; ver datos de otros estudiantes; acceder a configuracion del colegio; acceder a otros tenants (RN-PE-002, RR-14, RR-01) |
-| MFA | No obligatorio (a diferencia del Superadmin) |
+| MFA | Opcional, igual que para el Superadministrador |
 | Acceso | Subdominio del colegio (RR-06). Configurable: el colegio puede desactivar el portal por completo (RN-PE-001) |
 | Selector multi-estudiante | Si el correo esta vinculado a varios estudiantes del mismo colegio, el portal ofrece selector; no fusiona expedientes, permisos ni pagos (RR-14, RN-CP-002, RN-PP-120) |
 | Dispositivo | Mobile principalmente; desktop para descargas de boletines y comprobantes |

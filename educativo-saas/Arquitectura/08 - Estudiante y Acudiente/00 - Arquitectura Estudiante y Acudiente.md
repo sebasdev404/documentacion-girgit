@@ -45,7 +45,7 @@ El Estudiante/Acudiente entra por el subdominio del propio colegio (RR-06). No e
                                                  Dashboard del estudiante elegido
 ```
 
-- Sin MFA obligatorio para este rol (a diferencia del Superadmin). El colegio puede desactivar el portal por completo (RN-PE-001): las cuentas existen pero no pueden iniciar sesion.
+- MFA opcional para este rol y para el Superadministrador. El colegio puede desactivar el portal por completo (RN-PE-001): las cuentas existen pero no pueden iniciar sesion.
 - El selector de estudiante NO fusiona expedientes, permisos ni pagos entre hermanos (RR-14, RN-CP-002, RN-PP-120). Cada cuenta se opera por separado.
 - Todo intento de login (exito/fallo) queda en el log de auditoria del tenant.
 
