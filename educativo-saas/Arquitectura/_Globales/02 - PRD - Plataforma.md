@@ -31,7 +31,7 @@ Proveer una plataforma SaaS multi-tenant que permita a colegios privados de Colo
 
 ### Incluye
 
-- Multi-tenant: un colegio = un schema independiente.
+- Multi-tenant: un colegio = una base de datos PostgreSQL independiente.
 - Configuracion institucional por colegio (calendario A/B, jornadas, escala valorativa, modelo pedagogico).
 - Gestion completa de matricula, asistencia, notas, boletines, disciplina.
 - Comunicacion interna y con acudientes.
@@ -125,3 +125,7 @@ Resumen:
 - **Internas:** modulos de Logica del Negocio (matricula, notas, asistencia, etc.).
 - **Externas:** pasarelas de pago, SIMAT, proveedores de correo/SMS, DIAN, almacenamiento.
 - **Catalogos:** escalas valorativas, modelos pedagogicos, calendarios A/B, jornadas.
+
+## Entregas y aceptación
+
+El alcance del lanzamiento y las ampliaciones se rigen por [[../../Logica del negocio/01-vision-y-alcance/corte-de-alcance-2026-09-29]]. Este PRD describe el producto objetivo; no acredita que todos los módulos estén implementados. Consultar [[11 - Matriz de Verificacion]].

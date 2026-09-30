@@ -44,6 +44,6 @@ Reglas que aplican transversalmente a todos los módulos del sistema, más allá
 
 - **[Decisión tomada]** **Internacionalización**: la plataforma adopta desde el inicio una **arquitectura basada en catálogos de mensajes y soporte de locales**, evitando deuda técnica al expandirse. **Locale activo en MVP: `es-CO`**. Cuando se confirme el segundo país piloto se añade su locale (ej. `es-EC` o `es-PE`). Regla: **RN-RG-420 — Arquitectura i18n desde MVP; locales activos según país piloto**.
 - **[Decisión tomada]** **MFA**:
-  - **Obligatorio en MVP** para cuentas de **superadministración de plataforma** y **accesos de alto privilegio**.
-  - **Expansión progresiva** a rectoría, administración institucional y acciones críticas específicas (cierre académico, emisión de certificados, cambios de notas tras cierre, configuración de pagos) en **etapas posteriores** según evolución operativa y de seguridad.
-  Regla: **RN-RG-421 — MFA obligatorio para superadmin/alto privilegio en MVP; expansión progresiva a roles críticos del colegio**.
+  - **Opcional para todas las cuentas**, incluidas superadministración de plataforma y accesos de alto privilegio. No se obliga a activarlo en el primer ingreso.
+  - Si el usuario lo activa, el inicio de sesión exige TOTP o un código de recuperación. La decisión posterior del usuario sustituye la versión obligatoria anterior.
+  Regla: **RN-RG-421 — MFA opcional para todos; segundo factor exigido al iniciar sesión únicamente después de activarlo**.

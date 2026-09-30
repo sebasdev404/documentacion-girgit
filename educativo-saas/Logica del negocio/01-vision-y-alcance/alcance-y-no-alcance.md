@@ -86,3 +86,7 @@ tags: [alcance, scope]
 ## Notas y pendientes
 
 - Validar con colegios piloto qué exclusiones generan más fricción.
+
+## Corte de entregas vigente
+
+Las exclusiones corresponden al lanzamiento. La documentación de servicios, inventario o talento humano en el plan maestro constituye ampliación futura, no incorporación automática. Ver [[corte-de-alcance-2026-09-29]] y [[../../Arquitectura/_Globales/11 - Matriz de Verificacion|estado verificable]].

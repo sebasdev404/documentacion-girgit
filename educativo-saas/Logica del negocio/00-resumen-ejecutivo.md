@@ -48,7 +48,7 @@ El **login es por subdominio** del tenant; un usuario solo existe en su tenant (
 
 El ciclo de vida del usuario contempla los estados `Pendiente → Activo → Inactivo → Suspendido` con transiciones auditadas (`RN-CV-001..005`). **La eliminación nunca borra datos históricos**: el usuario inactivo queda **oculto por defecto** en los listados, pero su huella en notas, asistencia, observador y pagos persiste íntegramente (`RN-CV-002`, `RN-CV-370`). **Los correos no se reutilizan** dentro del tenant (`RN-CV-003`).
 
-El **MFA es obligatorio para el superadministrador y para roles de alto privilegio** desde el MVP, con expansión progresiva al resto de roles (`RN-RG-421`).
+El **MFA es opcional para todos los perfiles**. Al activarlo, el inicio de sesión exige un código TOTP o de recuperación (`RN-RG-421`).
 
 La **carga masiva de usuarios** acepta CSV y Excel con **plantilla descargable y validación estricta de cabeceras** (`RN-OU-390`), y opera en **dos modos** seleccionables: **transaccional (todo o nada)** por defecto en procesos críticos, y **tolerante** para procesar válidos y reportar errores por fila (`RN-OU-391`).
 
@@ -178,7 +178,7 @@ La **reapertura del año cerrado** está controlada por permisos y limitada en v
 
 El **log de auditoría es append-only** y **preserva valores previo y nuevo** con IP y user-agent (`RN-LA-001`, `RN-LA-003`, `RN-LA-004`). Las **acciones privilegiadas se auditan doblemente** (`RN-LA-002`); la **retención es legal** y configurable (`RN-LA-005`); el **acceso al log mismo está auditado** (`RN-LA-006`). El registro guarda **diff JSON + snapshot** cuando la operación lo amerita (`RN-LA-290`).
 
-La **seguridad** descansa sobre: aislamiento estricto por tenant (`RN-AI-001`), MFA obligatorio para roles de alto privilegio con expansión progresiva (`RN-RG-421`), credenciales temporales en alta y cambio en primer login (`RN-AU-360`), credenciales de integraciones cifradas (`RN-OI-002`), validación dual frontend/backend con backend autoritativo (`RN-VL-430`), e impersonación restringida al superadministrador (`RN-RT-402`).
+La **seguridad** descansa sobre: aislamiento estricto por tenant (`RN-AI-001`), MFA opcional con código exigido cuando está activo (`RN-RG-421`), credenciales temporales en alta y cambio en primer login (`RN-AU-360`), credenciales de integraciones cifradas (`RN-OI-002`), validación dual frontend/backend con backend autoritativo (`RN-VL-430`), e impersonación restringida al superadministrador (`RN-RT-402`).
 
 La **internacionalización está activa desde el MVP** con `es-CO` como locale por defecto y un **catálogo i18n compartido entre frontend y backend** para mensajes de validación y notificaciones (`RN-RG-420`, `RN-VL-430`). Nuevos locales se incorporan progresivamente.
 

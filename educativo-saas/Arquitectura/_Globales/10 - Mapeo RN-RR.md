@@ -52,7 +52,7 @@ Estas familias de reglas de la Logica **no tienen aun una `RR` espejo** en Arqui
 | `RN-LA-001..006`, `RN-LA-290` | Log de auditoria append-only, diff JSON, retencion legal | `11-.../log-de-auditoria.md` | Cubierto via RR-03 (parcial) |
 | `RN-PE-001..005`, `RN-PE-350/351` | Idempotencia y seguridad de pasarela | `10-.../pasarelas-de-pago-externas.md` | Pendiente RR/RI |
 | `RN-MN-001..003` | Doble flujo de monetizacion, comisiones | `06-.../modelo-de-negocio.md` | Pendiente RR |
-| `RN-RG-420/421`, `RN-VL-430` | i18n, MFA obligatorio, validacion dual | `07-.../reglas-globales.md`, `validaciones.md` | RR-02 (validacion); MFA pendiente RR/RNF |
+| `RN-RG-420/421`, `RN-VL-430` | i18n, MFA opcional, validacion dual | `07-.../reglas-globales.md`, `validaciones.md` | RR-02 (validacion); MFA pendiente RR/RNF |
 
 ---
 

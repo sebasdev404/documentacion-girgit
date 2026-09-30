@@ -23,7 +23,7 @@ Estas decisiones cierran las contradicciones halladas en la auditoria. Se aplica
 
 | ID | Decision | Regla(s) afectada(s) | Resolucion | Archivos a tocar |
 |---|---|---|---|---|
-| **D-01** | MFA en el MVP | `RN-RG-421` vs `autenticacion.md` | MFA **obligatorio desde el MVP** para Superadministrador y roles de alto privilegio (rector, coordinadores, secretaria). Opcional/expansion progresiva para el resto. SSO Google/Microsoft permanece como futuro. Se elimina el rotulo "MFA opcional (futuro)". | `02-.../autenticacion.md` |
+| **D-01** | MFA en el MVP | `RN-RG-421` vs decisión posterior del usuario | MFA **opcional para todos los perfiles**, incluidos Superadministrador, rector, coordinadores y secretaría. Solo quien lo activa debe usar un código al iniciar sesión. SSO Google/Microsoft permanece como futuro. La decisión posterior sustituye la obligatoriedad anterior. | `02-.../autenticacion.md` |
 | **D-02** | Caducidad de cuentas inactivas | `RN-CV-370`, nota MVP | **Sin transicion automatica a Inactivo en MVP**: el cambio `Activo -> Inactivo` es **manual** por rol con permiso. Se corrigen las tablas de transiciones y eventos del ciclo de vida para que digan "manual", coherente con la nota ya decidida. | `02-.../ciclo-de-vida-de-usuario.md` |
 | **D-03** | Quien reabre el año cerrado | `RN-PR-005`, `RN-PR-101`, `RN-HC-280`, `RN-HC-281` | **Modelo de dos niveles unico:** (1) reapertura **intra-ventana** -> cualquier rol con permiso `cierre.reabrir` (`RN-PR-101`/`RN-HC-280`), con justificacion y log inmutable; (2) reapertura **fuera de ventana / post-cierre** -> **exclusiva del superadministrador** (`RN-HC-281`). `RN-PR-005` se reescribe para remitir a este modelo y prohibir edicion directa. | `04-.../promocion-y-reprobacion.md`, `11-.../historico-y-anos-cerrados.md` |
 | **D-04** | Rol "Personal de apoyo" | `RN-TU-411`, `RN-OB-081` | Se **formaliza** como tipo de usuario y rol: se agrega al catalogo de `tipos-de-usuario.md`, a la matriz de permisos (columna propia) y a `Arquitectura` como **ROL-12**. Permisos minimos: consulta acotada del expediente + aporte al observador con visibilidad `RN-OB-081`. | `02-.../tipos-de-usuario.md`, `02-.../matriz-de-permisos.md`, nuevo `roles/09-personal-de-apoyo.md`, `Arquitectura/_Globales/01,05,06`, nueva carpeta `Arquitectura/09 - Personal de Apoyo/` |
@@ -149,3 +149,7 @@ Libres y asignados: `RN-SA` salud, `RN-BW` bienestar, `RN-BI` biblioteca, `RN-TR
 - [ ] Tabla de Requerimientos incluye RR-09..RR-16+ y columna AC completa.
 - [ ] Wikilinks sin romper.
 - [ ] Frontmatter consistente; sin emojis decorativos.
+
+## Corte de ejecución y alcance (2026-09-29)
+
+Este plan organiza el catálogo documental. Sus marcas P1/P2/P3 y casillas no certifican implementación ni alteran las exclusiones del lanzamiento. Prevalece [[Logica del negocio/01-vision-y-alcance/corte-de-alcance-2026-09-29]]; el estado por criterio está en [[Arquitectura/_Globales/11 - Matriz de Verificacion]]. Las referencias previas a ventana de corrección se interpretan como solicitudes futuras y nunca como escritura directa en un período cerrado.

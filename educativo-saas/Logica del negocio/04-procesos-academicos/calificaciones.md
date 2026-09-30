@@ -18,7 +18,7 @@ Proceso por el cual los docentes registran las notas de los estudiantes en las m
 | --- | --- |
 | [[roles/06-docente\|Docente]] | Registra las notas de las materias en las que tiene asignación activa. |
 | [[roles/07-director-de-grupo\|Director de Grupo]] | Si el colegio activa el permiso, puede editar notas de otras materias del grupo que dirige. |
-| [[roles/02-coordinador-academico\|Coordinador Académico]] | Supervisa el registro, identifica pendientes, autoriza ventanas de corrección. |
+| [[roles/02-coordinador-academico\|Coordinador Académico]] | Supervisa el registro, identifica pendientes, revisa solicitudes de corrección; la reapertura del período corresponde al Rector autorizado. |
 | [[roles/01-rector-administrador-colegio\|Administrador del Colegio]] | Acceso completo de consulta y configuración. |
 
 ## Quién puede registrar
@@ -88,7 +88,7 @@ No calculada → Calculada → Bloqueada (cierre de periodo)
 
 - Mientras el periodo esté `Abierto`, el docente puede editar libremente las notas de los componentes evaluativos.
 - Al cierre del periodo, las notas quedan bloqueadas.
-- El [[roles/02-coordinador-academico|Coordinador Académico]] puede abrir una **ventana de corrección** puntual con motivo registrado, que permite al docente corregir notas en un rango de tiempo controlado.
+- Para corregir, el Rector con permiso de transición (o una suplantación válida) reabre el período; ningún permiso permite escribir mientras siga cerrado.
 - Toda edición queda en el log de auditoría con valor anterior, nuevo, usuario, fecha, hora.
 
 ## Trazabilidad
@@ -121,12 +121,14 @@ Esta trazabilidad es **inviolable y no puede desactivarse**.
 - **RN-CA-002 — Director de grupo con permiso opcional:** la edición de notas de otras materias del grupo por parte del director es un permiso configurable, desactivado por defecto.
 - **RN-CA-003 — Nota dentro del rango de la escala:** el sistema rechaza notas fuera del rango definido por la escala valorativa del nivel educativo.
 - **RN-CA-004 — Recalculo automático:** al registrar o editar un componente, el sistema recalcula la nota final del periodo aplicando el método configurado.
-- **RN-CA-005 — Bloqueo al cierre del periodo:** las notas de un periodo cerrado no se pueden editar, salvo en una ventana de corrección autorizada por el coordinador.
+- **RN-CA-005 — Bloqueo al cierre del periodo:** las notas de un periodo cerrado no se pueden editar, hasta que el Rector autorizado, o una suplantación válida, reabra el período.
 - **RN-CA-006 — Inmutabilidad post-cierre del año:** las notas de un año lectivo cerrado son completamente inmutables.
 - **RN-CA-007 — Auditoría obligatoria:** toda escritura sobre notas queda en el log con valor anterior y nuevo. No se puede desactivar.
 
 ## Notas y pendientes
 
-- **[Decisión tomada]** La **ventana de corrección de notas** es totalmente **configurable por colegio**: el colegio decide si la activa, su duración máxima tras el cierre del periodo y las alertas asociadas. Regla: **RN-CL-030 — Ventana de corrección configurable por colegio (activable, duración y alertas)**.
-- **[Decisión tomada]** Una corrección de nota tras cierre de periodo **requiere aprobación** de un rol con el permiso correspondiente (rector, coordinador académico, secretaria u otro definido por la matriz de permisos del colegio). El docente solicita; el rol con permiso aprueba o rechaza con justificación. Regla: **RN-CL-031 — Corrección tras cierre con aprobación por permiso, no por rol fijo**.
+- **RN-CL-030 — Ventana de corrección: ampliación futura.** Podrá limitar duración, aprobación y alertas de las solicitudes. No sustituye la reapertura explícita ni permite editar en estado cerrado.
+- **RN-CL-031 — Aprobación de solicitudes: ampliación futura.** Aprobar una solicitud según permisos no concede la transición del período. Rector con `academico.periodos.transicionar`, o suplantación válida, realiza la reapertura auditada antes de escribir.
 - **[Funcionalidad futura]** Importación masiva de notas desde archivo CSV/Excel. **Fuera de MVP**; se incorpora tras lanzamiento si los colegios piloto lo solicitan.
+
+Decisión vigente: [[../01-vision-y-alcance/corte-de-alcance-2026-09-29]].
