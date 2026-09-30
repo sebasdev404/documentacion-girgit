@@ -12,7 +12,7 @@ tags: [autenticacion, login, seguridad]
 
 - **Usuario y contraseña** sobre el subdominio o dominio del colegio. Método principal en el lanzamiento.
 - **SSO con Google / Microsoft** (futuro, plan premium): permite a un colegio habilitar inicio de sesión con cuentas corporativas de su dominio.
-- **MFA (multi-factor)** **obligatorio desde el MVP** para el Superadministrador de la Plataforma y los roles de alto privilegio del colegio (rector, coordinadores, secretaría); **opcional con expansión progresiva** para el resto de roles (`RN-RG-421`).
+- **MFA (multi-factor)** opcional para todos los perfiles, incluido el Superadministrador, el rector, los coordinadores y secretaría. El usuario puede activarlo en Ajustes de la cuenta; una vez activado se exige un código al iniciar sesión. Esta decisión posterior sustituye la obligatoriedad descrita anteriormente en `RN-RG-421`.
 
 ## Flujo de login
 
@@ -40,10 +40,11 @@ tags: [autenticacion, login, seguridad]
 
 ## Multi-factor (MFA)
 
-- MFA por TOTP (apps tipo Authenticator) **obligatorio desde el MVP** para el Superadministrador de la Plataforma y los roles de alto privilegio del colegio (rector, coordinadores, secretaría), conforme a `RN-RG-421`.
-- Para el resto de roles el MFA es **opcional con expansión progresiva**; el colegio puede exigirlo a más roles desde su configuración.
+- MFA por TOTP (Google Authenticator, Microsoft Authenticator u otra aplicación compatible) **opcional para todos los perfiles**. No bloquea el acceso ni el primer ingreso si no está activado.
+- En Ajustes de la cuenta, el usuario vincula su aplicación escaneando un QR o introduciendo manualmente la clave en esa aplicación; la clave no se introduce en Gmail. La activación requiere confirmar un código de seis dígitos.
+- Si está activado, cada inicio de sesión exige un código TOTP o un código de recuperación. Puede desactivarse con la contraseña y uno de esos códigos.
 - Recuperación de MFA: códigos de respaldo entregados al activar; en caso de pérdida total, intervención del administrador del colegio (y del superadministrador para el caso del propio rector).
-- **SSO con Google / Microsoft** permanece como funcionalidad **futura** (plan premium) y no sustituye al MFA obligatorio.
+- **SSO con Google / Microsoft** permanece como funcionalidad **futura** (plan premium).
 
 ## Bloqueo por intentos fallidos
 
@@ -65,3 +66,7 @@ tags: [autenticacion, login, seguridad]
 
 - **[Decisión tomada]** **Política de contraseñas seguras**: el sistema obliga **complejidad mínima** (longitud, mayúsculas, minúsculas, números y símbolos) y rechaza contraseñas comunes. Las cuentas creadas durante **matrícula o procesos administrativos** reciben una **contraseña temporal generada por el sistema**; el usuario debe **cambiarla obligatoriamente en el primer inicio de sesión**. Regla: **RN-AU-360 — Contraseña temporal obligatoria en primer login para cuentas creadas administrativamente**.
 - **[Decisión tomada]** **Sin caducidad automática de cuentas inactivas en MVP**. Los bloqueos por inactividad u otras causas se hacen **manualmente** por el rector u otro rol con permiso. La caducidad automática queda como funcionalidad futura.
+
+## Aplicación del corte de seguridad
+
+La contraseña temporal sigue siendo obligatoria en el primer ingreso y después continúa la configuración institucional. MFA se ofrece en Ajustes de la cuenta sin interrumpir ese recorrido. Los códigos de recuperación son de un uso y la activación revoca las otras sesiones. Detalle y límites en [[perfil-personal]]; evidencia y pendientes en [[../../Arquitectura/_Globales/11 - Matriz de Verificacion]].
