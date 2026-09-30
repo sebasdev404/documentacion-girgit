@@ -72,13 +72,14 @@ El sistema soporta que ambos procesos ocurran al mismo tiempo sin que interfiera
 ### Apertura
 
 - Un periodo se abre automáticamente cuando llega su fecha de inicio configurada.
-- El [[roles/02-coordinador-academico|Coordinador Académico]] puede adelantar la apertura manualmente si es necesario.
+- El Rector puede adelantar la apertura manualmente. El superadministrador también puede hacerlo mientras suplanta el colegio. El coordinador académico puede configurar los períodos, pero no cambiar sus estados.
 - A partir de la apertura, los docentes pueden registrar notas, asistencia y logros del periodo.
 
 ### Cierre
 
-- El cierre de un periodo lo ejecuta el coordinador académico al finalizar las clases del periodo.
-- Antes del cierre, el sistema valida que todos los docentes hayan registrado las notas finales de sus materias asignadas. Genera un reporte de pendientes.
+- El período se cierra automáticamente al terminar su fecha configurada, según la zona horaria del colegio. El Rector o el superadministrador suplantando pueden cerrarlo antes de forma manual.
+- Si el servicio de tareas estuvo detenido, la siguiente sincronización cierra los períodos vencidos. Consultar los períodos también aplica las transiciones pendientes.
+- El Rector o el superadministrador suplantando pueden reabrir excepcionalmente un período cerrado, incluso si ya venció su fecha. La reapertura se audita y permanece abierta hasta que el Rector la cierre manualmente.
 - Al cierre del periodo:
   - Se calcula la nota final por materia según el método de aprobación configurado.
   - Se identifican los estudiantes que perdieron materias (candidatos a [[nivelaciones-y-habilitaciones|nivelación]]).
@@ -88,7 +89,7 @@ El sistema soporta que ambos procesos ocurran al mismo tiempo sin que interfiera
 ## Reglas para reportar fuera de período
 
 - Una vez cerrado un periodo, ningún rol del tenant puede registrar notas, asistencia ni logros sobre fechas de ese periodo.
-- La excepción es la apertura puntual de una **ventana de corrección** autorizada por el coordinador académico, que queda registrada en el log de auditoría con fecha de inicio, fecha de fin y motivo.
+- Para corregir datos de un período cerrado, el Rector debe reabrirlo. La transición queda registrada en el log de auditoría.
 
 ## Estados y transiciones
 
@@ -108,7 +109,7 @@ Planificado → En curso → Cerrado → Archivado
 ### Periodo académico
 
 ```
-Planificado → Abierto → Cerrado
+Planificado → Abierto → Cerrado → Abierto (reapertura excepcional)
 ```
 
 | Estado | Descripción |
@@ -122,7 +123,7 @@ Planificado → Abierto → Cerrado
 - **RN-PA-001 — Un único año lectivo activo:** solo un año lectivo puede estar en estado `En curso` simultáneamente. El siguiente puede estar `Planificado` (caso Calendario B en junio).
 - **RN-PA-002 — Calendario B usa formato AAAA-AAAA:** la identificación del año lectivo en Calendario B siempre se muestra con el formato "AAAA-AAAA" en interfaz, reportes y documentos oficiales.
 - **RN-PA-003 — Periodos contiguos:** los periodos académicos son contiguos: la fecha de inicio del periodo N+1 es el día siguiente al cierre del periodo N.
-- **RN-PA-004 — Cierre requiere notas completas:** el sistema alerta antes de cerrar un periodo si hay docentes con notas finales pendientes; el coordinador puede forzar el cierre asumiendo la responsabilidad.
+- **RN-PA-004 — Cierre por calendario:** el estado se cierra cuando vence la fecha configurada; la revisión de notas pendientes es una tarea académica separada y no impide la transición automática.
 - **RN-PA-005 — Cierre del año ejecuta promoción:** el cierre del año lectivo dispara el [[promocion-y-reprobacion|proceso de promoción automática]] que requiere validación del coordinador antes de quedar definitivo.
 - **RN-PA-006 — Inmutabilidad post-cierre:** los datos de un periodo cerrado son inmutables; los datos de un año lectivo cerrado son **completamente inmutables** para todos los usuarios del tenant.
 - **RN-PA-007 — Tipo de calendario inmutable:** el tipo de calendario (A o B) elegido en la configuración inicial no puede cambiarse mientras haya años lectivos activos o cerrados.

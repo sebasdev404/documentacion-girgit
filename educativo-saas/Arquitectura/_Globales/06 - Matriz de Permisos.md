@@ -65,12 +65,17 @@ Convenciones cortas usadas en esta matriz:
 
 | Modulo | Accion | ROL-01 | ROL-02 | ROL-03 | ROL-04 | ROL-05 | ROL-06 | ROL-07 | ROL-08 | ROL-09 | ROL-12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
+| **Años lectivos** | Configurar años y períodos | — | CRUD | CRUD | — | CRUD | — | — | — | — | — |
+| | Iniciar y cerrar año lectivo | — | Editar | — | — | — | — | — | — | — | — |
+| **Períodos** | Abrir, cerrar y reabrir excepcionalmente | — | Editar | — | — | — | — | — | — | — | — |
 | **Plan de estudios** | Gestionar materias por grado | — | CRUD | CRUD | — | CRUD | — | — | — | — | — |
 | **Grupos** | Crear / gestionar grupos | — | CRUD | CRUD | — | CRUD | — | — | — | — | — |
 | **Asignacion** | Asignar docentes a materias/grupos | — | Editar | Editar | — | Editar | — | — | — | — | — |
 | | Designar director de grupo | — | Editar | Editar | — | Editar | — | — | — | — | — |
 | **Horarios** | Construir / editar horarios | — | CRUD | CRUD | — | CRUD | — | — | — | — | — |
 | | Consultar horario propio | — | Ver | Ver | Ver | Ver | Ver | Ver | Ver | Ver | — |
+
+El superadministrador de plataforma puede efectuar las transiciones mientras suplanta un colegio. La apertura y el cierre automáticos de períodos se ejecutan por el sistema según las fechas configuradas; no conceden este permiso a otros roles.
 
 ---
 
@@ -84,7 +89,7 @@ Convenciones cortas usadas en esta matriz:
 | **Consolidados** | Ver consolidado del grupo dirigido | — | Ver | Ver | — | Ver | — | — | Ver | — | — |
 | | Ver consolidado de todos los grupos | — | Ver | Ver | — | Ver | — | — | — | — | — |
 | | Ver notas propias / del estudiante asociado | — | Ver | Ver | — | Ver | Configurable | — | — | Ver | — |
-| **Periodo** | Coordinar cierre de periodo | — | Editar | Editar | — | Editar | — | — | — | — | — |
+| **Periodo** | Coordinar revisión de pendientes de cierre (sin cambiar el estado) | — | Editar | Editar | — | Editar | — | — | — | — | — |
 | | Gestionar nivelaciones / habilitaciones | — | Editar | Editar | — | Editar | — | — | — | — | — |
 
 ---
