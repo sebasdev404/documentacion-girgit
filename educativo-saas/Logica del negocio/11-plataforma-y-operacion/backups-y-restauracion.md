@@ -2,7 +2,7 @@
 titulo: Backups y restauración
 modulo: 11-plataforma-y-operacion
 tipo: proceso
-estado: borrador
+estado: objetivo-pendiente-despliegue
 tags: [backup, restore, disaster-recovery, operacion]
 ---
 
@@ -12,21 +12,23 @@ tags: [backup, restore, disaster-recovery, operacion]
 
 Estrategia de respaldo, retención y restauración de los datos de la plataforma, diseñada para soportar fallos operativos, errores humanos y recuperación de desastres.
 
-## Estrategia de backups
+## Estrategia objetivo de backups
+
+Esta tabla describe el objetivo. No existe todavía evidencia de su programación, retención ni almacenamiento externo en producción. El estado y el simulacro local están en [[procedimiento-respaldo-restauracion]].
 
 | Tipo | Frecuencia | Retención | Ubicación |
 | --- | --- | --- | --- |
-| Backup completo | Semanal. | 12 semanas. | Bucket / almacenamiento secundario en otra región. |
+| Backup completo | Semanal. | 12 semanas. | Almacenamiento secundario; región/proveedor por definir. |
 | Backup incremental | Diario. | 30 días. | Bucket / almacenamiento secundario. |
 | Snapshot de base de datos | Cada hora (configurable). | 7 días. | Almacenamiento del proveedor cloud. |
 | WAL / log de transacciones | Continuo. | 7 días. | Almacenamiento del proveedor cloud. |
-| Backup de archivos (storage del tenant) | Diario incremental + semanal completo. | 30 / 90 días. | Bucket secundario en otra región. |
+| Backup de archivos (storage del tenant) | Diario incremental + semanal completo. | 30 / 90 días. | Almacenamiento secundario; región/proveedor por definir. |
 
-Los rangos exactos pueden ajustarse por plan o por colegio.
+Los rangos exactos pueden ajustarse por plan o por colegio. El RPO de una hora requiere copias horarias o WAL/PITR; una copia diaria por sí sola no cumple ese objetivo.
 
 ## Aislamiento por tenant
 
-- Cada tenant (colegio) tiene su propia BD y su propio bucket de archivos (ver [[../03-multi-tenancy/aislamiento-de-datos|Aislamiento de datos]]).
+- Cada tenant (colegio) tiene su propia BD y un espacio de archivos aislado (la implementación local usa prefijos por tenant en un disco; un bucket dedicado es una decisión de infraestructura) (ver [[../03-multi-tenancy/aislamiento-de-datos|Aislamiento de datos]]).
 - Los backups respetan el aislamiento: una restauración de un tenant no afecta a los demás.
 
 ## Restauración
@@ -74,5 +76,5 @@ Los rangos exactos pueden ajustarse por plan o por colegio.
 
 ## Notas y pendientes
 
-- **[Decisión tomada]** **Almacenamiento secundario de backups**: queda como **decisión de infraestructura pendiente**. Hipótesis inicial: la plataforma opera sobre **VPS Linux** y los respaldos se almacenan en almacenamiento secundario **dentro del mismo proveedor o región**, dejando abierta la incorporación de un **proveedor o región adicional** en fases futuras según crecimiento y requerimientos de resiliencia.
+- **[Pendiente de infraestructura]** **Almacenamiento secundario de backups**: queda como **decisión de infraestructura pendiente**. Hipótesis inicial: la plataforma opera sobre **VPS Linux** y los respaldos se almacenan en almacenamiento secundario **dentro del mismo proveedor o región**, dejando abierta la incorporación de un **proveedor o región adicional** en fases futuras según crecimiento y requerimientos de resiliencia.
 - **[Decisión tomada]** **Pruebas de restauración** se realizan **trimestralmente** con registro interno; el **reporte resumido** queda **disponible al cliente bajo solicitud**. Regla: **RN-BR-260 — Pruebas trimestrales de restauración con reporte bajo solicitud**.
