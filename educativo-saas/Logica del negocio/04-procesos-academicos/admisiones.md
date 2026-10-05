@@ -14,6 +14,8 @@ Proceso por el cual una persona externa al colegio (aspirante) postula a un grad
 
 Es un proceso distinto de la matrícula: admisiones decide **a quién se acepta**; la matrícula formaliza **el ingreso y el pago** del aspirante ya admitido.
 
+**Estado de la aplicación al 5 de octubre de 2026:** la gestión de matrícula académica disponible actualmente vincula un estudiante existente a un **grupo y año lectivo**. No equivale al flujo integral de solicitud, documentos, revisión de admisión y pagos descrito aquí y en [[matriculas|Matrícula]]. Ese flujo integral queda pendiente de definición e implementación; no se incluye en la próxima mejora de boletines, asistencia o promoción.
+
 ## Objetivo del proceso
 
 Seleccionar a los aspirantes que ingresarán al colegio según los criterios definidos por la institución, gestionar la lista de espera cuando el cupo es insuficiente, y entregar al aspirante admitido el medio para iniciar la matrícula sin requerir un usuario previo en el sistema.
