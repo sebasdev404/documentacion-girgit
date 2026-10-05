@@ -40,6 +40,14 @@ Proceso por el cual los docentes registran la presencia o inasistencia de los es
 5. El sistema actualiza los conteos acumulados por estudiante, materia y periodo.
 6. Si algún estudiante supera el porcentaje máximo de inasistencias configurado, el sistema genera una alerta para el docente y los coordinadores.
 
+### Unidad de registro y política pendiente — decisión de producto del 5 de octubre de 2026
+
+- Registrar la asistencia por **cada franja/clase efectivamente programada del grupo y la asignatura**, incluso si el colegio no usa bloques horarios fijos. Una clase de doble franja cuenta como dos oportunidades de asistencia: faltar a ambas genera dos inasistencias; asistir a la segunda genera solo una.
+- La duración física de cada franja puede variar. No convertir automáticamente minutos de clase en "horas de inasistencia" sin una regla institucional explícita; la unidad inicial propuesta es la **sesión/franja** del horario.
+- El colegio debe poder configurar si la asistencia solo informa y alerta, o si superar un umbral por asignatura repercute en su aprobación. La consecuencia nunca se aplica con un número fijo global como "tres faltas" para todos los colegios.
+- Quedan por decidir con el colegio: umbral por cantidad o porcentaje, período o año, tratamiento de faltas justificadas y tardanzas, clases canceladas/festivos, correcciones y posibles excepciones autorizadas. Estas decisiones deben reflejarse coherentemente en el boletín y en la revisión de promoción.
+- **Estado:** requisito y reglas por concretar; no hay aún planilla de asistencia ni reprobación por inasistencia implementadas.
+
 ## Justificaciones de inasistencia
 
 1. El estudiante (o el acudiente) ingresa al portal y solicita justificar una inasistencia específica.
