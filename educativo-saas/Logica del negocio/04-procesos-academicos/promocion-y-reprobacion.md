@@ -36,6 +36,12 @@ El coordinador puede:
 
 **Solo después de que el coordinador valida el listado**, el proceso queda cerrado.
 
+### Interfaz de revisión — decisión de producto del 5 de octubre de 2026
+
+- En la política de promoción, presentar las **materias que no se pueden reprobar** en filas y columnas legibles, con selección individual y un control **Seleccionar todas**. El control debe permitir deshacer la selección masiva antes de guardar; no modifica la política sin confirmación.
+- En el listado de **matrículas activas**, ofrecer un filtro por **grupo** que muestre a sus estudiantes. Es un filtro de revisión, no una modificación de matrícula ni de la propuesta académica.
+- **Estado:** mejoras de interfaz pendientes. El cálculo y la revisión de promoción existentes no deben confundirse con promoción automática al año siguiente o cierre académico oficial.
+
 ## Cierre del año y preparación del siguiente
 
 Una vez cerrado el año:
