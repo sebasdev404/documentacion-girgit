@@ -46,6 +46,14 @@ Por defecto el boletín incluye:
 
 El colegio configura qué secciones aparecen y cuáles se ocultan.
 
+### Pesos visibles en el boletín — decisión de producto del 5 de octubre de 2026
+
+- Junto al encabezado de cada período se mostrará su peso anual configurado, por ejemplo, **Primer período · 25 %**. Ese peso se aplica al resultado de cada asignatura y, cuando corresponda, al área; no es un porcentaje propio de la materia.
+- Si el SIEE calcula un área por **promedio ponderado**, se podrá mostrar además el peso de cada asignatura dentro de esa área, claramente separado del peso del período.
+- Si el SIEE calcula un área por **promedio simple**, no se mostrará un porcentaje por asignatura: se suman los resultados de sus asignaturas y se dividen entre la cantidad correspondiente.
+- Esta visualización no cambia la fórmula vigente: los cálculos conservan su precisión interna y redondean solo el resultado publicado. Se descartó añadir un desglose técnico de los valores internos al boletín.
+- **Estado:** requisito acordado, aún no implementado en la vista previa ni en una emisión oficial.
+
 ## Generación del boletín
 
 1. Al cierre del periodo, el sistema marca los boletines como "disponibles para generación".
@@ -59,6 +67,8 @@ El colegio configura qué secciones aparecen y cuáles se ocultan.
 - El director de grupo revisa el boletín antes de marcarlo como definitivo (opcional según configuración).
 - El coordinador académico puede ejecutar una validación consolidada antes de la entrega masiva.
 - Una vez marcado como entregado, el boletín queda accesible para descarga del estudiante.
+
+La aprobación significa **revisar y confirmar el documento que se publicará**, no modificar calificaciones. La futura emisión oficial debe conservar el PDF y la versión de datos/plantilla aprobada para consulta histórica; una corrección posterior requiere un proceso auditado y una nueva versión, sin sobrescribir silenciosamente la anterior. El alcance operativo de la aprobación (estudiante, grupo o lote institucional) y la combinación de permisos de Rector, dirección de grupo y coordinación siguen **pendientes de decisión**. Hoy la aplicación únicamente ofrece una **vista previa** del boletín, no aprobación, firma ni PDF histórico.
 
 ## Confirmación digital del estudiante
 
