@@ -52,7 +52,7 @@ El colegio configura qué secciones aparecen y cuáles se ocultan.
 - Si el SIEE calcula un área por **promedio ponderado**, se podrá mostrar además el peso de cada asignatura dentro de esa área, claramente separado del peso del período.
 - Si el SIEE calcula un área por **promedio simple**, no se mostrará un porcentaje por asignatura: se suman los resultados de sus asignaturas y se dividen entre la cantidad correspondiente.
 - Esta visualización no cambia la fórmula vigente: los cálculos conservan su precisión interna y redondean solo el resultado publicado. Se descartó añadir un desglose técnico de los valores internos al boletín.
-- **Estado:** requisito acordado, aún no implementado en la vista previa ni en una emisión oficial.
+- **Estado:** los pesos ya se muestran en la vista previa del código de trabajo; la emisión oficial aún no está implementada.
 
 ## Generación del boletín
 
@@ -68,7 +68,7 @@ El colegio configura qué secciones aparecen y cuáles se ocultan.
 - El coordinador académico puede ejecutar una validación consolidada antes de la entrega masiva.
 - Una vez marcado como entregado, el boletín queda accesible para descarga del estudiante.
 
-La aprobación significa **revisar y confirmar el documento que se publicará**, no modificar calificaciones. La futura emisión oficial debe conservar el PDF y la versión de datos/plantilla aprobada para consulta histórica; una corrección posterior requiere un proceso auditado y una nueva versión, sin sobrescribir silenciosamente la anterior. El alcance operativo de la aprobación (estudiante, grupo o lote institucional) y la combinación de permisos de Rector, dirección de grupo y coordinación siguen **pendientes de decisión**. Hoy la aplicación únicamente ofrece una **vista previa** del boletín, no aprobación, firma ni PDF histórico.
+La aprobación significa **revisar y confirmar el documento que se publicará**, no modificar calificaciones. La futura emisión oficial debe conservar el PDF y la versión de datos/plantilla aprobada para consulta histórica; una corrección posterior requiere un proceso auditado y una nueva versión, sin sobrescribir silenciosamente la anterior. **Decisión del 5 de octubre de 2026:** el rector podrá aprobar un boletín individual y también un lote completo por grupo. Una aprobación por lote debe registrar el resultado y la versión de cada estudiante, sin saltarse documentos pendientes o inválidos ni emitir versiones duplicadas. Los permisos concretos de dirección de grupo y coordinación siguen pendientes de definición. Hoy la aplicación únicamente ofrece una **vista previa** del boletín, no aprobación, firma ni PDF histórico.
 
 ## Confirmación digital del estudiante
 

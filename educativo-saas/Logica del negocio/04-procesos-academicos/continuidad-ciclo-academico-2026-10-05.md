@@ -2,7 +2,7 @@
 titulo: Continuidad del ciclo académico — decisiones de octubre de 2026
 modulo: procesos-academicos
 tipo: plan-de-continuidad
-estado: planificado
+estado: en-implementacion
 tags: [siee, boletines, promocion, asistencia, continuidad]
 ---
 
@@ -22,9 +22,19 @@ Este documento sirve para retomar el trabajo en otro ordenador. **Registra decis
 1. **Boletín preliminar:** mostrar el peso anual en cada encabezado de período (`Primer período · 25 %`). Solo mostrar peso de asignatura dentro del área si el SIEE usa promedio ponderado; con promedio simple no hay porcentajes por asignatura. No añadir el desglose técnico de valores internos del P5.
 2. **Revisión de promoción:** ordenar la selección de materias no reprobables en una tabla clara, con selección individual y «Seleccionar todas»; filtrar matrículas activas por grupo. Conservar los permisos y reglas de revisión actuales.
 3. **Ensayo aislado del cierre académico:** comprobar recuperación/nivelación, política de promoción, decisiones y transición del año de extremo a extremo en datos controlados. No cerrar el cuarto período activo de Inmaculada únicamente para hacer una prueba.
-4. **Boletín oficial:** diseñar plantillas configurables, revisión/aprobación, PDF persistente y versiones históricas. La aprobación confirma el documento que se publicará; no edita las notas. Faltan decisiones sobre alcance de aprobación (individual/grupo/lote) y responsabilidades concretas entre Rector, dirección de grupo y coordinación.
+4. **Boletín oficial:** diseñar plantillas configurables, revisión/aprobación, PDF persistente y versiones históricas. La aprobación confirma el documento que se publicará; no edita las notas. El rector debe poder aprobar **individualmente o en lote por grupo**. Falta definir las responsabilidades concretas de dirección de grupo y coordinación.
 5. **Asistencia:** configurar y registrar por franja/clase del horario, también sin bloques fijos. Dos franjas de la misma materia con dos ausencias generan dos inasistencias. Definir por colegio los umbrales, períodos de acumulación, justificaciones, tardanzas y efectos sobre aprobación, boletín y promoción.
 6. **Admisiones y matrícula integral:** mantener aparte del próximo lote. La matrícula académica actual solo relaciona estudiante, grupo y año; el flujo integral de solicitud, documentos, admisión y pago todavía no está acordado para implementación.
+
+## Avance del siguiente lote (código de trabajo; requiere publicar y migrar)
+
+- La vista previa del boletín muestra el porcentaje de cada período real. El peso de la asignatura dentro del área solo se muestra cuando el SIEE usa promedio ponderado por área.
+- Revisión de promoción: selector de materias cuya reprobación impide promover con opción «Seleccionar todas» y filtro de matrículas activas por grupo.
+- Asistencia básica: una ocurrencia por fecha y **franja explícita** del horario, más una marca por matrícula. La ocurrencia copia año, período, asignación, grupo, asignatura, docente, aula y horas; editar el horario o reemplazar al docente no modifica las ocurrencias ya registradas. Si se cambia la pareja grupo/asignatura de una franja con asistencia, la operación se rechaza y se pide crear otra franja, para no cambiar la identidad histórica. El docente nuevo accede a la planilla de la asignación actual y el anterior deja de poder operarla. Una versión de la lista rechaza guardadas concurrentes obsoletas con HTTP 409.
+- La lista de asignaciones de asistencia se consulta y reutiliza separada del detalle por fecha; cambiar la fecha no vuelve a descargar todo el catálogo. Las escrituras de asistencia invalidan solo su propio recurso en tiempo real y no fuerzan una recarga global de años, SIEE y planillas.
+- Asignación integral de un docente a **todas las materias del currículo de un grupo** en una transacción. Reutiliza las asignaciones existentes y conserva calificaciones; una falla en una materia revierte el lote completo.
+- La política de alerta de inasistencia ya permite **umbral por cantidad y por porcentaje**, combinación de cualquiera o ambos, alcance por período o año y equivalencia de tardanzas. Calcula provisionalmente solo con las franjas registradas; el porcentaje publicado se redondea, pero la comparación usa el cociente original. **No reprueba ni modifica promoción automáticamente.** Faltan justificaciones, clases no dictadas, completitud de asistencia y las pruebas de efectos antes de habilitar consecuencias académicas.
+- El ensayo aislado de calificación reprobada, nivelación, propuesta de promoción, aprobación y cierre de año pasó en la suite automatizada; conservó la nota original y la efectiva. **No se cerró Inmaculada.** El boletín **oficial** con plantilla, aprobación individual y por grupo, PDF y versiones históricas sigue pendiente. La vista actual debe seguir rotulada como preliminar; además faltan pruebas de emisión y correcciones antes de publicarlo.
 
 ## Antes de trabajar en el otro ordenador
 

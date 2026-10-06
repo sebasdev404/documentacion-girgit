@@ -10,7 +10,7 @@ tags: [asistencia, proceso]
 
 ## Descripción
 
-Proceso por el cual los docentes registran la presencia o inasistencia de los estudiantes en cada sesión de clase. El sistema acumula los conteos por estudiante, materia y periodo, y emite alertas cuando se superan los porcentajes máximos configurados.
+Proceso por el cual los docentes registran la presencia o inasistencia de los estudiantes en cada sesión de clase. La captura por franja y la acumulación/alerta provisional ya están en código de trabajo; las consecuencias académicas por umbral siguen pendientes.
 
 ## Actores involucrados
 
@@ -42,11 +42,13 @@ Proceso por el cual los docentes registran la presencia o inasistencia de los es
 
 ### Unidad de registro y política pendiente — decisión de producto del 5 de octubre de 2026
 
-- Registrar la asistencia por **cada franja/clase efectivamente programada del grupo y la asignatura**, incluso si el colegio no usa bloques horarios fijos. Una clase de doble franja cuenta como dos oportunidades de asistencia: faltar a ambas genera dos inasistencias; asistir a la segunda genera solo una.
+- Registrar la asistencia por **cada franja explícita programada del grupo y la asignatura**, incluso si el colegio no usa bloques horarios fijos. Una franja larga cuenta como una oportunidad, no como tantas horas dure. Dos faltas requieren dos franjas explícitas en Horarios; si asiste a una de ellas, solo hay una ausencia.
 - La duración física de cada franja puede variar. No convertir automáticamente minutos de clase en "horas de inasistencia" sin una regla institucional explícita; la unidad inicial propuesta es la **sesión/franja** del horario.
 - El colegio debe poder configurar si la asistencia solo informa y alerta, o si superar un umbral por asignatura repercute en su aprobación. La consecuencia nunca se aplica con un número fijo global como "tres faltas" para todos los colegios.
 - Quedan por decidir con el colegio: umbral por cantidad o porcentaje, período o año, tratamiento de faltas justificadas y tardanzas, clases canceladas/festivos, correcciones y posibles excepciones autorizadas. Estas decisiones deben reflejarse coherentemente en el boletín y en la revisión de promoción.
-- **Estado:** requisito y reglas por concretar; no hay aún planilla de asistencia ni reprobación por inasistencia implementadas.
+- **Estado de implementación inicial:** existe captura de presente/ausente/tarde por franja y fecha, con instantánea de identidad y horario, auditoría, control de versión contra sobrescrituras concurrentes y bloqueo de edición cuando el período está cerrado. La primera versión no incluye aprobación de justificaciones ni consecuencias académicas automáticas.
+- **Política de alerta implementada en código de trabajo:** por año lectivo se pueden configurar umbrales por cantidad y porcentaje, combinación «uno cualquiera» o «ambos», acumulación por período o año y equivalencia de N tardanzas a una falta. Se alerta cuando el valor **supera**, no cuando iguala, el máximo. El denominador usa exclusivamente las franjas cuya asistencia se registró para ese estudiante; los porcentajes son provisionales y la comparación usa el cociente antes de redondear el porcentaje mostrado. No se modifica ninguna nota, boletín ni decisión de promoción.
+- Antes de activar consecuencias académicas faltan la aprobación de justificaciones, la exclusión de clases canceladas/festivos, la verificación de completitud de registro, el tratamiento normativo de las faltas justificadas y pruebas de cierre con la política vigente.
 
 ## Justificaciones de inasistencia
 
@@ -59,8 +61,8 @@ Proceso por el cual los docentes registran la presencia o inasistencia de los es
 
 ## Alertas por inasistencia
 
-- El colegio configura un porcentaje máximo de inasistencias permitidas por materia y periodo (ej. 20%).
-- Cuando un estudiante supera ese porcentaje en una materia, el sistema genera una alerta para el docente y el coordinador.
+- El colegio configura un máximo de faltas y/o porcentaje por materia, con alcance por período o año.
+- Cuando un estudiante supera el umbral configurado, la lista de asistencia muestra una alerta provisional al docente y a los responsables que pueden consultar esa asignación. Todavía no se envían notificaciones automáticas.
 - La consecuencia sobre la nota o la aprobación la define el colegio en su configuración (puede ser perder la materia automáticamente, requerir comité de evaluación, o ninguna).
 
 ## Estados y transiciones
