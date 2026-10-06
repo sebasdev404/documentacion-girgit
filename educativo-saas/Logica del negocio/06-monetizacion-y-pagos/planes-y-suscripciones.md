@@ -13,10 +13,12 @@ tags: [planes, suscripciones]
 | Plan | Público objetivo | Funcionalidades clave |
 | --- | --- | --- |
 | Esencial | Colegios pequeños (< 300 estudiantes). | Académico, asistencia, comunicación básica, pagos de pensión con 1 pasarela, almacenamiento limitado. |
-| Estándar | Colegios medianos (300–800 estudiantes). | Todo lo anterior + boletines personalizables, reportes financieros, multi-sede, múltiples pasarelas. |
-| Premium | Colegios grandes (800+ estudiantes) o con necesidades avanzadas. | Todo lo anterior + WhatsApp, BI avanzado, integraciones DIAN / facturación electrónica, almacenamiento ampliado, soporte priorizado. |
+| Estándar | Colegios medianos (300–800 estudiantes). | Todo lo anterior + boletines personalizables, reportes financieros, multi-sede, múltiples pasarelas y Aula por asignatura (propuesta pendiente de implementación). |
+| Premium | Colegios grandes (800+ estudiantes) o con necesidades avanzadas. | Todo lo anterior, incluida Aula, + WhatsApp, BI avanzado, integraciones DIAN / facturación electrónica, almacenamiento ampliado, soporte priorizado. |
 
 Las funcionalidades exactas de cada plan se mantienen en una matriz separada que el equipo de producto puede actualizar.
+
+**Decisión de producto propuesta el 6 de octubre de 2026:** Aula por asignatura empieza en Estándar y no forma parte de Esencial. La matriz comercial debe permitir al administrador de plataforma retirar o devolver ese acceso sin despliegue; la revocación surte efecto en las sesiones activas y la API, y no elimina contenidos ni calificaciones. Planillas y notas siguen disponibles en Esencial y pueden utilizarse sin Aula. Véase [[../04-procesos-academicos/plan-aula-virtual-y-ayuda-asistencia-2026-10-06|Plan de Aula por asignatura y ayuda de asistencia]]. **No está implementado todavía.**
 
 ## Ciclos de facturación
 

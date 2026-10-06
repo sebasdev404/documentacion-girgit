@@ -2,7 +2,7 @@
 titulo: Tareas y actividades
 modulo: procesos-academicos
 tipo: proceso
-estado: borrador
+estado: implementacion-en-curso
 tags: [tareas, actividades, lms-lite, entregas, proceso]
 ---
 
@@ -10,7 +10,7 @@ tags: [tareas, actividades, lms-lite, entregas, proceso]
 
 ## Descripción
 
-Proceso por el cual los docentes publican tareas y actividades a sus grupos, adjuntan recursos de apoyo, reciben las entregas de los estudiantes dentro de una fecha límite y devuelven retroalimentación y calificación. Es una capa **LMS-lite**: la antesala práctica del LMS nativo (`RN-OI-340`), no un sistema de aula virtual completo. **No es un chat**: el intercambio se limita a la entrega del estudiante y la retroalimentación del docente sobre esa entrega.
+Proceso por el cual los docentes publican tareas y actividades en el Aula por asignatura, adjuntan recursos de apoyo, reciben entregas y devuelven retroalimentación y calificación. El Aula también incluye cuestionarios nativos (ver [[plan-aula-virtual-y-ayuda-asistencia-2026-10-06|Plan de Aula]]). **No es un chat**: el intercambio se limita a la entrega del estudiante y la retroalimentación del docente sobre esa entrega.
 
 ## Objetivo del proceso
 
@@ -41,7 +41,7 @@ Dar a los docentes una vía dentro de la plataforma para asignar trabajo, recibi
 5. El estudiante abre la tarea, adjunta su entrega (archivo y/o texto) y la envía. La entrega también consume cuota del colegio.
 6. El sistema marca la entrega como `Entregada` o `Entregada con retraso` según la hora frente a la fecha límite.
 7. El docente revisa cada entrega, escribe retroalimentación y, si la tarea es calificable, asigna una valoración.
-8. Si la tarea está vinculada a un componente evaluativo, la valoración **propone** la nota de ese componente en Calificaciones; el docente la confirma.
+8. La tarea puede quedar sin vincular. Si se vincula a Planilla, la calificación docente se registra allí como nota oficial con versión y auditoría. Para cuestionarios objetivos la transferencia puede ser automática o requerir confirmación docente, según la opción del recurso.
 9. El sistema notifica al estudiante (y acudiente) que su entrega fue retroalimentada/calificada.
 
 ## Flujos alternativos
@@ -94,8 +94,8 @@ Entregada → Devuelta para corregir → Entregada (reenvío)
 - **RN-TA-001 — Publicación solo con asignación activa:** un docente solo puede crear y publicar tareas en combinaciones materia × grupo donde tiene asignación activa.
 - **RN-TA-002 — Visibilidad acotada al grupo:** una tarea y sus entregas son visibles solo para el grupo destino y los roles con supervisión; un estudiante nunca ve la entrega de otro.
 - **RN-TA-003 — Adjuntos consumen cuota del tenant:** recursos del docente y entregas del estudiante se almacenan en el bucket del colegio y consumen su cuota; aplican las validaciones de [[../11-plataforma-y-operacion/almacenamiento-y-cuotas|Almacenamiento y cuotas]].
-- **RN-TA-004 — Fecha límite obligatoria:** toda tarea publicada tiene fecha y hora límite; el sistema clasifica cada entrega como en plazo o con retraso según ese corte.
-- **RN-TA-005 — Calificación como propuesta, no escritura directa:** la valoración de una tarea calificable propone la nota del componente evaluativo vinculado, pero la nota oficial solo queda en firme cuando el docente la confirma en [[calificaciones|Calificaciones]].
+- **RN-TA-004 — Fecha límite configurable:** una tarea puede tener fecha y hora límite o quedar sin restricción. Si existe límite, el servidor lo aplica; entregas posteriores solo si el recurso lo permite expresamente.
+- **RN-TA-005 — Planilla como registro oficial:** vincular un recurso es opcional y crea una única actividad. Las tareas calificadas por docente transfieren la valoración al guardarse; un cuestionario objetivo puede configurarse con confirmación docente o transferencia automática. La calificación oficial reside en Planillas; el vínculo posterior incorpora notas previas idempotentemente y no reemplaza una nota oficial ya editada.
 - **RN-TA-006 — Imputación a periodo abierto:** una tarea solo puede crearse o editarse contra un periodo `Abierto`; al cierre del periodo la tarea y sus valoraciones quedan bloqueadas.
 - **RN-TA-007 — Entrega tardía configurable:** la aceptación de entregas tras la fecha límite y su eventual descuento de valoración los define el colegio en su configuración.
 - **RN-TA-008 — No es canal de mensajería:** el intercambio se limita a entrega y retroalimentación sobre esa entrega; no existe conversación libre entre estudiante y docente dentro de la tarea.
@@ -104,8 +104,8 @@ Entregada → Devuelta para corregir → Entregada (reenvío)
 
 ## Notas y pendientes
 
-- **[Decisión tomada]** El vínculo tarea → componente evaluativo es **propuesta confirmable**, no escritura automática: protege la potestad del docente sobre la nota oficial y evita inconsistencias con el método de cálculo del colegio. Coherente con `RN-CA-004` y `RN-CA-007`.
-- **[Decisión tomada]** Las tareas son una capa **LMS-lite** y deliberadamente acotada; no incluye foros, cuestionarios autocalificables ni rúbricas avanzadas. Esas capacidades pertenecen al LMS nativo futuro (`RN-OI-340`).
+- **[Decisión actualizada]** El vínculo tarea → actividad de Planilla es opcional y la Planilla es el registro oficial. El cuestionario objetivo admite transferencia inmediata solo si se configuró así; por defecto requiere confirmación.
+- **[Decisión actualizada]** El Aula incorpora cuestionarios construidos dentro de Coscolegios; no integra motores de examen externos. Las preguntas abiertas requieren revisión docente.
 - **[Pendiente — producto]** Definir si la **acumulación de incumplimientos** de tareas dispara una alerta automática (semáforo) y si esa alerta sugiere o no una anotación en el observador. Candidata a regla `RN-TA-020`.
 - **[Pendiente — producto]** Validar durante el piloto si los acudientes deben recibir notificación de **cada** tarea publicada o solo de vencimientos y resultados, para no saturar el canal.
 
