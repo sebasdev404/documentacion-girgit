@@ -13,12 +13,12 @@ tags: [planes, suscripciones]
 | Plan | Público objetivo | Funcionalidades clave |
 | --- | --- | --- |
 | Esencial | Colegios pequeños (< 300 estudiantes). | Académico, asistencia, comunicación básica, pagos de pensión con 1 pasarela, almacenamiento limitado. |
-| Estándar | Colegios medianos (300–800 estudiantes). | Todo lo anterior + boletines personalizables, reportes financieros, multi-sede, múltiples pasarelas y Aula por asignatura (propuesta pendiente de implementación). |
-| Premium | Colegios grandes (800+ estudiantes) o con necesidades avanzadas. | Todo lo anterior, incluida Aula, + WhatsApp, BI avanzado, integraciones DIAN / facturación electrónica, almacenamiento ampliado, soporte priorizado. |
+| Estándar | Colegios medianos (300–800 estudiantes). | Todo lo anterior + boletines personalizables, reportes financieros, multi-sede, múltiples pasarelas, Aula por asignatura y colores configurables de su jerarquía. |
+| Premium | Colegios grandes (800+ estudiantes) o con necesidades avanzadas. | Todo lo anterior, incluida Aula y su apariencia configurable, + WhatsApp, BI avanzado, integraciones DIAN / facturación electrónica, almacenamiento ampliado, soporte priorizado. |
 
 Las funcionalidades exactas de cada plan se mantienen en una matriz separada que el equipo de producto puede actualizar.
 
-**Decisión de producto propuesta el 6 de octubre de 2026:** Aula por asignatura empieza en Estándar y no forma parte de Esencial. La matriz comercial debe permitir al administrador de plataforma retirar o devolver ese acceso sin despliegue; la revocación surte efecto en las sesiones activas y la API, y no elimina contenidos ni calificaciones. Planillas y notas siguen disponibles en Esencial y pueden utilizarse sin Aula. Véase [[../04-procesos-academicos/plan-aula-virtual-y-ayuda-asistencia-2026-10-06|Plan de Aula por asignatura y ayuda de asistencia]]. **No está implementado todavía.**
+**Implementado localmente el 7 de octubre de 2026:** Aula por asignatura empieza en Estándar y no forma parte de Esencial. La capacidad `aula` controla el acceso al módulo; `aula_colores`, listada inmediatamente después en el catálogo comercial, controla la configuración de los acentos de períodos y preinformes y requiere `aula`. Ambas vienen por defecto en Estándar y Premium, pero la plataforma puede retirarlas por plan personalizado sin eliminar contenido ni calificaciones. Sin `aula_colores` se muestran colores predeterminados y la configuración guardada se conserva para una eventual reactivación. Solo el rector puede modificar esos colores mediante el permiso `aula.apariencia.configurar`. Planillas y notas siguen disponibles en Esencial sin Aula. Véase [[../04-procesos-academicos/plan-aula-virtual-y-ayuda-asistencia-2026-10-06|Plan de Aula por asignatura y ayuda de asistencia]]. Aplicar las migraciones en cada entorno no equivale a haber desplegado o verificado el VPS.
 
 ## Ciclos de facturación
 

@@ -94,6 +94,38 @@ El superadministrador de plataforma puede efectuar las transiciones mientras sup
 
 ---
 
+## Aula (plan Estándar/Premium)
+
+La capacidad `aula` es necesaria para todas las acciones; `aula_colores` es necesaria además para configurar su apariencia. `Cfg+` significa configurable y concedido por defecto; `Cfg` significa configurable y denegado por defecto. ROL-01, ROL-04, ROL-06 y ROL-12 no reciben permisos del Aula. La consulta y la escritura se limitan siempre al colegio, grupo y asignatura autorizados. La creación de Aulas es automática desde grupo y currículo: no existe permiso para crearlas manualmente.
+
+| Permiso | ROL-02 Rector | ROL-03 y ROL-05 Coordinación | ROL-07 Docente | ROL-08 Director de grupo | ROL-09 Estudiante |
+|---|---|---|---|---|---|
+| `aula.ver_todas` | Ver | Cfg+ | — | — | — |
+| `aula.ver_asignadas` | — | — | Ver | Ver | — |
+| `aula.ver_propias` | — | — | — | — | Ver |
+| `aula.recursos.gestionar` | Editar | Cfg | Cfg+ | Cfg+ | — |
+| `aula.contenido.crear` | Crear | Cfg | Cfg+ | Cfg+ | — |
+| `aula.contenido.editar` | Editar | Cfg | Cfg+ | Cfg+ | — |
+| `aula.contenido.publicar` | Editar | Cfg | Cfg+ | Cfg+ | — |
+| `aula.contenido.archivar` | Editar | Cfg | Cfg+ | Cfg+ | — |
+| `aula.contenido.eliminar` | Editar | Cfg | Cfg+ | Cfg+ | — |
+| `aula.contenido.restaurar` | Editar | Cfg | — | — | — |
+| `aula.archivos.gestionar` | Editar | Cfg | Cfg+ | Cfg+ | — |
+| `aula.planilla.vincular` | Editar | Cfg | Cfg+ | Cfg+ | — |
+| `aula.entregas.calificar` | Editar | Cfg | Cfg+ | Cfg+ | — |
+| `aula.entregas.enviar` | — | — | — | — | Editar |
+| `aula.evaluaciones.gestionar` | Editar | Cfg | Cfg+ | Cfg+ | — |
+| `aula.evaluaciones.calificar` | Editar | Cfg | Cfg+ | — | — |
+| `aula.evaluaciones.responder` | — | — | — | — | Editar |
+| `aula.intentos.reactivar` | Editar | Cfg | Cfg+ | — | — |
+| `aula.configurar` | Editar | — | — | — | — |
+| `aula.apariencia.configurar` | Editar | — | — | — | — |
+| `aula.duplicar` | Editar | Cfg | — | — | — |
+
+La configuración institucional del Aula y sus colores están reservados **solo al rector**: además de la matriz, la API comprueba explícitamente ese rol. Para editar contenido se necesitan tanto `aula.recursos.gestionar` como el permiso de acción correspondiente. El borrado editorial es recuperable; restaurar requiere permiso distinto. El cierre de período mantiene bloqueadas las notas y las entregas aunque el colegio permita preparar materiales.
+
+---
+
 ## Asistencia
 
 | Modulo | Accion | ROL-01 | ROL-02 | ROL-03 | ROL-04 | ROL-05 | ROL-06 | ROL-07 | ROL-08 | ROL-09 | ROL-12 |
