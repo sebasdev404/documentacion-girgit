@@ -286,6 +286,8 @@ Ruta de Atencion Integral (RAI) y Comite Escolar de Convivencia (CEC).
 
 ## Admisiones (Procesos academicos)
 
+**Estado 2026-10-07:** esta tabla de pruebas/entrevistas sigue como diseño futuro. Para la entrega operativa de matrícula directa usar la sección siguiente; no hay cuentas de acudientes ni cobros.
+
 El aspirante no es usuario del sistema. Operado por Secretaria, Coordinacion y Rector.
 
 | Modulo | Accion | ROL-01 | ROL-02 | ROL-03 | ROL-04 | ROL-05 | ROL-06 | ROL-07 | ROL-08 | ROL-09 | ROL-12 |
@@ -300,6 +302,21 @@ El aspirante no es usuario del sistema. Operado por Secretaria, Coordinacion y R
 ---
 
 ## Notas clave
+
+### Ingreso estudiantil / Matrículas por enlace (implementación local)
+
+Conexión de correo electrónico en Ajustes y menú del usuario: `config.correo` + rol Rector, no delegable. Primera configuración permitida; después, solo lectura. Editar/desconectar requiere solicitud del rector y aprobación exclusiva del Superadmin en panel central, un uso/24 horas por colegio, solicitante, acción y versión. La matriz no concede un bypass permanente. Incluido en todos los planes; nunca se muestra la clave guardada.
+
+| Acción / permiso | Rector | Secretaría | Coordinación académica/combinada | Otros roles |
+| --- | --- | --- | --- | --- |
+| Convocatorias y requisitos `ingreso.configurar` | Estructural | Configurable OFF | No | No |
+| Solicitudes y archivos `ingreso.ver` | Estructural | Configurable OFF | Configurable OFF | No |
+| Revisar documentos `ingreso.revisar` | Estructural | Configurable OFF | No | No |
+| Decidir solicitud `ingreso.decidir` | Estructural | Configurable OFF | No | No |
+| Cambiar grado con motivo `ingreso.cambiar_grado` | Estructural | Configurable OFF | No | No |
+| Asignar grupos `ingreso.asignar` | Estructural | Configurable OFF | Configurable OFF | No |
+
+Todos dependen del plan `academico`. Consulta es requisito adicional de las cuatro últimas operaciones. Aprobar crea estudiante; confirmar grupo crea matrícula. El aspirante no tiene rol institucional: accede únicamente a su expediente con email/PIN. La cuenta creada es solo de estudiante y su onboarding exige contraseña, no configuración del colegio. Especificación: [[../../Logica del negocio/04-procesos-academicos/matriculas]].
 
 > **Permisos estructurales vs configurables.** Las marcas "Configurable" indican que el colegio puede activar o desactivar el permiso desde la pantalla de configuracion del rol. Las marcas firmes (CRUD/Editar/Ver/Reportar/Aprobar/Auto/—) son **estructurales**, no se pueden modificar.
 

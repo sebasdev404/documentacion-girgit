@@ -105,6 +105,25 @@ Abreviaturas de columna:
 
 ## Matrícula y secretaría
 
+### Ingreso estudiantil por enlace — implementado localmente, 2026-10-07
+
+Capacidad de plan `academico`. Consulta (`ingreso.ver`) es adicionalmente obligatoria para revisar, decidir, cambiar grado y asignar. Rector estructural; delegaciones configurables inicialmente OFF. El portal público usa correo + PIN del solicitante, no un rol de estudiante/acudiente. No se crean cuentas de acudiente.
+
+| Permiso / acción | SA | R | CA | CC | CK | SE | DO | DG | EA |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `ingreso.configurar`: convocatorias y requisitos | — | ✅ | ❌ | ❌ | ❌ | ⚠️❌ | ❌ | ❌ | ❌ |
+| `ingreso.ver`: solicitudes y archivos privados | — | ✅ | ⚠️❌ | ❌ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ |
+| `ingreso.revisar`: aprobar/rechazar documentos | — | ✅ | ❌ | ❌ | ❌ | ⚠️❌ | ❌ | ❌ | ❌ |
+| `ingreso.decidir`: aprobar/rechazar/espera/correcciones | — | ✅ | ❌ | ❌ | ❌ | ⚠️❌ | ❌ | ❌ | ❌ |
+| `ingreso.cambiar_grado`: proponer/aprobar otro grado con motivo | — | ✅ | ❌ | ❌ | ❌ | ⚠️❌ | ❌ | ❌ | ❌ |
+| `ingreso.asignar`: grupos y matrícula académica | — | ✅ | ⚠️❌ | ❌ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ |
+
+**Correo institucional:** `config.correo` es estructural del rector y denegado para los demás roles del tenant. Además de ese permiso se verifica el rol rector explícitamente; delegarlo no habilita acceso. Permite primera configuración y solicitar cambios, **no editar libremente una conexión guardada**. Editar/desconectar exige aprobación del superadministrador central, de un uso y 24 horas, ligada a rector/colegio/acción/versión. No existe permiso delegable para aprobar. La suplantación no permite aprobar ni evita este bloqueo. No es acceso a buzones o documentos; incluido en configuración básica sin gate adicional.
+
+### Matriz académica/documental histórica
+
+La tabla siguiente mezcla funciones existentes y futuras de secretaría. No concede los permisos nuevos de ingreso ni implica implementación de acudientes, SIMAT o certificados en esta entrega. La matrícula académica manual conserva su permiso anterior.
+
 | Acción | SA | R | CA | CC | CK | SE | DO | DG | EA |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Registrar / editar estudiantes y datos de acudiente operativo | — | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |

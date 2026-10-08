@@ -22,6 +22,16 @@ Las funcionalidades exactas de cada plan se mantienen en una matriz separada que
 
 ## Ciclos de facturación
 
+### Matrículas por enlace: alcance comercial del corte 2026-10-07
+
+Ingreso estudiantil pertenece a la capacidad existente `academico`, con seis permisos `ingreso.*` en el catálogo/matriz. No se creó un suplemento comercial ni se habilitó pasarela. Al aprobar una solicitud se verifica `max_estudiantes`; los documentos consumen cuota de almacenamiento del tenant. Quitar `academico` bloquea endpoints internos/públicos de solicitud sin borrar expedientes. Los planes que lo incluyen pueden usar el módulo sujeto a permisos; no confundir con `aula` ni `aula_colores`.
+
+La conexión de Gmail por colegio es configuración institucional básica en todos los planes, sin suplemento ni capacidad comercial adicional; requiere `config.correo`, exclusivo del rector. Usa una cuenta aportada por el colegio, sujeta a cuotas/políticas de Google; no implica correo ilimitado ni servicio transaccional contratado por la plataforma. Aplica también a recuperación de contraseña, independiente del módulo de matrículas.
+
+Una conexión guardada queda bloqueada en todos los planes. Cambiarla o desconectarla requiere aprobación directa del superadministrador central: autorización personal, ligada al colegio, la acción y la versión, de un solo uso durante 24 horas. Ningún plan ni permiso delegado elimina este control (RN-CO-001).
+
+El texto «Pagos: próximamente» es informativo: no hay cargo, descuento, factura ni comprobación de pago en la versión actual. El cobro B2B del colegio sigue siendo independiente.
+
 - **Mensual:** cobro al inicio del periodo de servicio.
 - **Anual prepago:** descuento aplicable. Cobro único al inicio del año de servicio.
 - **Anual escolar prepago:** alineado al año lectivo del colegio (en lugar del año calendario).
