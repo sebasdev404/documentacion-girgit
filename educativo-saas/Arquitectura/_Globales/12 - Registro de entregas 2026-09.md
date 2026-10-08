@@ -14,3 +14,13 @@ Este registro reúne el trabajo en las ramas `pedro-dev` del frontend y backend.
 | Archivos y operación | Permiso de carga, escaneo que falla cerrado, descargas firmadas, simulacro aislado de restauración y actualización de dependencias. | ClamAV real y respaldos externos antes de producción. |
 
 La secuencia de commits y pruebas específicas está en cada repositorio. Las próximas entregas deben actualizar este registro y la matriz, distinguiendo verificación local de aptitud para producción.
+
+## Adenda: ingreso estudiantil y correo — 7 de octubre de 2026
+
+Matrículas por enlace, correo/PIN, requisitos configurables, archivos privados/versionados, correcciones, decisión, cuenta estudiantil y asignación de grupos. Sin pagos ni usuarios de acudiente. Permisos `ingreso.*` bajo `academico`. Guía y configuración Gmail en Ajustes institucionales, permiso exclusivo del rector `config.correo`, contraseña de aplicación cifrada por tenant y prueba antes de guardar. Incluye notificaciones de matrícula y recuperación de contraseña.
+
+Validación local: pruebas API, cliente, build, recorrido de navegador con fixtures y migraciones PostgreSQL ensayadas en base nueva/restaurada, con respaldos. Detalle vigente, límites y procedimiento en [[../../Logica del negocio/04-procesos-academicos/matriculas]] y los runbooks `docs/INGRESO_ESTUDIANTIL.md` de backend/frontend. No se da por terminado el módulo futuro de admisiones/entrevistas ni se desplegó VPS.
+
+### 8 de octubre: aprobación central de cambios de correo
+
+Conexión guardada bloqueada, solicitud motivada, bandeja/notificación de Superadmin y aprobación de un uso/24 horas. Sin delegación por RBAC; también protege desconexión y posterior reconexión. Menú del usuario incorpora «Conexión de correo electrónico». Migración conserva bytes cifrados de la credencial real y datos académicos. Se verificó Inmaculada con un mensaje SMTP real al remitente ya guardado, aceptado por Google; no se alteraron credenciales ni se crearon solicitudes ficticias de aprobación. La revisión de recepción/spam sigue a cargo del titular del buzón.
