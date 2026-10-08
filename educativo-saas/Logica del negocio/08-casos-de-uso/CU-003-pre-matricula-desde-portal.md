@@ -1,79 +1,39 @@
 ---
-titulo: "CU-003: Pre-matrícula desde portal"
+titulo: "CU-003: Solicitud de matrícula desde portal público"
 modulo: 04-procesos-academicos
 tipo: caso-de-uso
-estado: borrador
-tags: [caso-de-uso, pre-matricula, portal, acudiente]
+estado: implementado-local
+tags: [caso-de-uso, pre-matricula, portal, pin]
 ---
 
-# CU-003: Pre-matrícula desde portal
+# CU-003: Solicitud de matrícula desde portal público
 
-## Identificación
-
-- **ID:** CU-003
-- **Nombre:** Pre-matrícula desde portal
-- **Módulo:** Procesos académicos
-- **Prioridad:** alta
-- **Versión:** 0.1
-
-## Actores
-
-- **Primario:** Acudiente / aspirante.
-- **Secundarios:** [[../02-usuarios-roles-y-permisos/roles/05-secretaria-academica|Secretaría Académica]] (revisión).
-
-## Descripción
-
-Un acudiente o aspirante completa el formulario de pre-matrícula desde el portal del colegio, sube documentos y queda en cola para la revisión y confirmación por parte de secretaría (CU-002).
+Versión del 7 de octubre de 2026. Sin usuario de acudiente, cuenta estudiantil previa, pagos o firma de contrato. Referencia: [[../04-procesos-academicos/matriculas|Matrículas por enlace]].
 
 ## Precondiciones
 
-- El colegio tiene el período de admisiones / renovaciones abierto.
-- El acudiente tiene acceso al portal o puede registrarse.
+Convocatoria habilitada dentro de fechas, año planificado/en curso, grados/requisitos configurados; dominio del colegio, correo saliente y almacenamiento operativo.
 
-## Postcondiciones (éxito)
+## Flujo
 
-- Pre-matrícula creada en estado **Documentos pendientes** o **Documentos cargados**.
-- Secretaría notificada para revisión.
+1. Abrir enlace, indicar correo y grado.
+2. Recibir PIN y acceder con correo + PIN.
+3. Completar nombres/apellidos, nacimiento, identificación y campos adicionales. Guardar borrador.
+4. Adjuntar documentos; validar MIME, tamaño, cuota y escáner; conservar nombre/versiones.
+5. Aceptar texto institucional de tratamiento y enviar.
+6. Registrar envío, notificar al correo y mostrar en bandeja interna.
+7. Seguimiento desde `/ingreso`, convocatoria, correo + PIN.
+8. Corregir datos/documentos observados y reenviar.
 
-## Flujo principal (camino feliz)
+## Alternativas y aceptación
 
-1. Acudiente entra al portal y selecciona \"Pre-matricular\".
-2. Llena los datos del estudiante (o carga existente si renovación).
-3. Sube los documentos requeridos según la lista del colegio.
-4. Acepta el contrato / pagaré (firma electrónica simple).
-5. Confirma envío.
-6. Sistema valida estructura y antivirus.
-7. Sistema registra la pre-matrícula y notifica a secretaría.
+- Recuperación de PIN vencido/olvidado no duplica solicitud ni revela existencia del email.
+- Sesión terminada: recuperar lo guardado; sin credenciales/PII persistidas en navegador.
+- Archivo no válido: rechazo claro; no omitir escáner ni reemplazar aprobados.
+- Durante revisión: formulario bloqueado hasta solicitud de correcciones.
+- Convocatoria cerrada: seguimiento sí; iniciar/editar/subir no. Colegio puede reabrir para recibir correcciones.
+- Documentos solo del propio expediente; selectores ajenos/numéricos no dan acceso.
+- Al aprobar: correo con acceso, contraseña 72 h y cambio obligatorio; grupo pendiente hasta CU-002.
+- Un borrador no crea cuenta ni matrícula académica.
 
-## Flujos alternativos
-
-### A1. Pago de inscripción inicial
-
-- Si el colegio cobra inscripción para iniciar admisión, el acudiente paga antes de poder enviar el formulario.
-
-## Excepciones / errores
-
-| ID | Condición | Comportamiento esperado |
-| --- | --- | --- |
-| EX-1 | Documento infectado o no soportado. | Sistema rechaza el archivo con mensaje claro. |
-| EX-2 | Cupos agotados en el grado. | Sistema permite enviar pero advierte que entra en lista de espera. |
-| EX-3 | Sesión perdida a mitad de proceso. | El borrador se conserva y se puede retomar. |
-
-## Reglas de negocio aplicables
-
-- RN-MA-NNN, RN-AC-002 (antivirus), RN-GD-005 (documentos requeridos).
-
-## Datos de entrada / salida
-
-- **Entrada:** formulario y documentos.
-- **Salida:** pre-matrícula registrada, número de radicado.
-
-## Criterios de aceptación
-
-- [ ] El acudiente puede retomar un formulario incompleto.
-- [ ] La pre-matrícula queda visible para secretaría con todos los datos y archivos.
-- [ ] El acudiente recibe acuse del envío con número de radicado.
-
-## Notas y pendientes
-
-- Validar si la pre-matrícula puede iniciarse sin tener todavía cuenta en el portal (por correo).
+Pruebas: `EnrollmentIntakeTest` y `npm run test:ui:ingreso` con navegador aislado y datos simulados. Verificar proveedor de correo antes de operar públicamente.

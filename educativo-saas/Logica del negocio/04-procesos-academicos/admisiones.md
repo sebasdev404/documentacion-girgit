@@ -14,7 +14,7 @@ Proceso por el cual una persona externa al colegio (aspirante) postula a un grad
 
 Es un proceso distinto de la matrícula: admisiones decide **a quién se acepta**; la matrícula formaliza **el ingreso y el pago** del aspirante ya admitido.
 
-**Estado de la aplicación al 5 de octubre de 2026:** la gestión de matrícula académica disponible actualmente vincula un estudiante existente a un **grupo y año lectivo**. No equivale al flujo integral de solicitud, documentos, revisión de admisión y pagos descrito aquí y en [[matriculas|Matrícula]]. Ese flujo integral queda pendiente de definición e implementación; no se incluye en la próxima mejora de boletines, asistencia o promoción.
+**Corte vigente, 7 de octubre de 2026:** «Ingreso estudiantil» separa este futuro proceso de selección de las **Matrículas por enlace**, implementadas localmente para ingreso directo sin pagos ni cuentas de acudiente, y de la matrícula académica manual existente. Véase [[matriculas|Matrículas por enlace]]. Las pruebas, entrevistas, derechos de inscripción y conversiones descritos debajo siguen como diseño futuro, no como requisitos de la entrega actual. Aprobar matrícula crea estudiante; asignar grupo es posterior.
 
 ## Objetivo del proceso
 
@@ -163,7 +163,7 @@ Pendiente → Pagado (inscripción confirmada)
 - **[Decisión tomada]** El expediente de admisión no se convierte en observador del estudiante; solo al matricularse se inicia el observador. Ver [[observador-del-estudiante|Observador del estudiante]].
 - **[Pendiente — producto]** Definir si el aspirante en `Lista de espera` recibe un ranking visible o solo la confirmación de estar en espera, por sensibilidad de la información entre familias.
 - **[Pendiente — producto]** Validar el autoagendamiento de citas durante el piloto: control de no-shows y política de recargo por reagendamiento.
-- **[Pendiente — producto]** Decidir si un colegio puede operar matrícula directa (sin proceso de admisiones) y, en ese caso, cómo se concilia con `RN-AM-001`.
+- **[Decidido — 2026-10-07]** La entrega actual opera matrícula directa sin selección previa. Pruebas/entrevistas seguirán separadas y no introducen cuentas de acudiente ni cobros en esta versión.
 
 ## Documentos relacionados
 
