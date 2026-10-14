@@ -8,6 +8,12 @@ tags: [calendario, eventos]
 
 # Calendario escolar
 
+## Corte implementado — 14 de octubre de 2026
+
+El calendario actual unifica eventos manuales (actividad, reunión, celebración y aviso) y tareas publicadas del Aula mediante lectura, sin copiar tareas a eventos. Una tarea con plazo aparece el día de entrega; sin plazo, el día de publicación efectiva. Borradores/ocultos/programaciones futuras no aparecen. Cada entrada conserva sus permisos y origen. El alcance actual es por grupos o institucional; otros alcances, recurrencias, festivos automáticos y hitos descritos abajo son objetivos futuros, no capacidades verificadas.
+
+Los eventos pueden guardarse como borrador o publicarse. Solo el autor ve sus borradores; los gestores pueden consultar los eventos publicados. El docente requiere asignación vigente a sus grupos; no existe una excepción configurable de cualquier grupo. Toda publicación institucional exige el permiso específico. No se crean cuentas ni se notifican acudientes en este corte.
+
 ## Descripción
 
 El calendario escolar agrupa todos los eventos relevantes del año lectivo: clases, exámenes, festivos, reuniones, salidas pedagógicas, fechas de cierre de periodos y eventos institucionales. Sirve de referencia visual para todos los actores del colegio.
@@ -30,9 +36,9 @@ No confundir con [[periodos-academicos|períodos académicos]]: los periodos def
 ## Visibilidad por rol
 
 - **Estudiante:** ve los eventos que le aplican según su grado y grupo.
-- **Acudiente:** mismo alcance que el estudiante a su cargo.
+- **Acudiente:** portal no implementado en el corte actual.
 - **Docente:** ve los eventos que le aplican según sus asignaciones, más eventos institucionales generales.
-- **Coordinación y administración:** vista completa.
+- **Coordinación y administración:** vista completa de publicados; los borradores ajenos permanecen privados.
 
 ## Creación y edición de eventos
 
@@ -50,9 +56,10 @@ No confundir con [[periodos-academicos|períodos académicos]]: los periodos def
 
 ## Integración con notificaciones
 
-- Al crear un evento institucional, el sistema notifica automáticamente a los destinatarios según el alcance configurado.
-- El autor del evento puede marcarlo como urgente para forzar la notificación inmediata.
-- Los recordatorios automáticos previos al evento son configurables por el colegio (ej. recordatorio 24h antes y 1h antes).
+- El creador elige «Enviar evento por correo al publicar», apagado inicialmente. Guardar un borrador no envía nada; publicar sin activarlo tampoco.
+- Solo estudiantes activos con matrícula dentro del alcance. No docentes ni representantes. Se procesa por cola en lotes y con reintentos; no hay urgencia que evada estos controles.
+- La edición no reenvía automáticamente. Avisos explícitos de cambios/cancelaciones y recordatorios son futuros.
+- Aceptación SMTP no acredita bandeja de entrada. El detalle autorizado muestra pendientes, aceptados y fallidos, sin revelar destinatarios a estudiantes.
 
 Ver [[../05-comunicacion/notificaciones|Notificaciones]].
 

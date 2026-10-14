@@ -8,6 +8,14 @@ tags: [notificaciones, comunicacion]
 
 # Notificaciones
 
+## Corte de eventos — 14 de octubre de 2026
+
+Correo optativo por publicación de evento manual, control apagado al crear. Solo estudiantes activos con matrícula y alcance autorizados; nunca docentes ni representantes. Borradores no envían. Se conserva una intención transaccional por estudiante, con lotes de hasta 10, espera entre lotes, reintentos limitados y fallidos visibles para revisión. El detalle editable permite reintentar únicamente fallidos; editar o repetir publicación no reenvía éxitos.
+
+Esta regla prevalece para Eventos sobre las propuestas generales de urgencia, preferencias y destinatarios de las secciones siguientes. En esta entrega no hay bypass urgente, recordatorios, avisos de edición/cancelación ni personalizador de plantilla. Sí hay plantilla institucional HTML/texto ES/EN y enlace autenticado al evento. Los demás canales y automatizaciones del catálogo son planificación, no una declaración de implementación.
+
+Operación: scheduler cada minuto + worker `event-mail` supervisado, con caché compartida. «Enviado» significa aceptado por SMTP; rebotes/spam y llegada real requieren supervisión del proveedor y pruebas en buzones controlados. No se promete llegada garantizada.
+
 ## Canales
 
 | Canal | Descripción | Disponibilidad |

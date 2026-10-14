@@ -8,6 +8,8 @@ tags: [tareas, actividades, lms-lite, entregas, proceso]
 
 # Tareas y actividades
 
+> Corte del 14 de octubre de 2026: las tareas se crean exclusivamente en Aula. El calendario las proyecta con fecha límite o, si falta, publicación efectiva (`publicado_en`), nunca creación del borrador. El acceso depende de plan, permisos y grupo/matrícula. No se duplican como Eventos. No se activaron correos de tareas, portal de acudiente ni notificaciones a representantes; las menciones posteriores a estos canales son propuestas futuras. Los correos optativos de esta entrega son de eventos manuales.
+
 ## Descripción
 
 Proceso por el cual los docentes publican tareas y actividades en el Aula por asignatura, adjuntan recursos de apoyo, reciben entregas y devuelven retroalimentación y calificación. El Aula también incluye cuestionarios nativos (ver [[plan-aula-virtual-y-ayuda-asistencia-2026-10-06|Plan de Aula]]). **No es un chat**: el intercambio se limita a la entrega del estudiante y la retroalimentación del docente sobre esa entrega.
@@ -37,7 +39,7 @@ Dar a los docentes una vía dentro de la plataforma para asignar trabajo, recibi
 1. El docente crea una tarea: título, instrucciones, materia, grupo(s) destino y fecha límite.
 2. Opcionalmente adjunta recursos de apoyo (PDF, imagen, enlace) que **consumen la cuota de almacenamiento del colegio** (ver [[../11-plataforma-y-operacion/almacenamiento-y-cuotas|Almacenamiento y cuotas]]).
 3. El docente decide si la tarea es **calificable** y, si lo es, a qué componente evaluativo del periodo se vinculará.
-4. El docente publica la tarea. El sistema notifica a los estudiantes del grupo (y a sus acudientes, según configuración del colegio).
+4. El docente publica la tarea. Se registra su publicación y aparece en el calendario de los usuarios autorizados; el correo de tareas no está implementado en este corte.
 5. El estudiante abre la tarea, adjunta su entrega (archivo y/o texto) y la envía. La entrega también consume cuota del colegio.
 6. El sistema marca la entrega como `Entregada` o `Entregada con retraso` según la hora frente a la fecha límite.
 7. El docente revisa cada entrega, escribe retroalimentación y, si la tarea es calificable, asigna una valoración.
