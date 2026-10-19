@@ -56,6 +56,7 @@ Convenciones cortas usadas en esta matriz:
 | Modulo | Accion | ROL-01 | ROL-02 | ROL-03 | ROL-04 | ROL-05 | ROL-06 | ROL-07 | ROL-08 | ROL-09 | ROL-12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | **Usuarios** | Crear / editar / desactivar usuarios | — | CRUD | — | — | — | — | — | — | — | — |
+| **Estudiantes** | Marcar egreso manual (`estudiantes.egreso.gestionar`) | Plataforma | Configurable: no por defecto | Configurable: no por defecto | — | Configurable: no por defecto | Configurable: no por defecto | — | — | — | — |
 | | Asignar roles | — | Editar | — | — | — | — | — | — | — | — |
 | | Ajustar permisos configurables | — | Editar | — | — | — | — | — | — | — | — |
 
@@ -309,14 +310,16 @@ Conexión de correo electrónico en Ajustes y menú del usuario: `config.correo`
 
 | Acción / permiso | Rector | Secretaría | Coordinación académica/combinada | Otros roles |
 | --- | --- | --- | --- | --- |
-| Convocatorias y requisitos `ingreso.configurar` | Estructural | Configurable OFF | No | No |
+| Política institucional de matrículas, convocatorias y requisitos `ingreso.configurar` | Estructural | Configurable OFF | No | No |
 | Solicitudes y archivos `ingreso.ver` | Estructural | Configurable OFF | Configurable OFF | No |
 | Revisar documentos `ingreso.revisar` | Estructural | Configurable OFF | No | No |
 | Decidir solicitud `ingreso.decidir` | Estructural | Configurable OFF | No | No |
 | Cambiar grado con motivo `ingreso.cambiar_grado` | Estructural | Configurable OFF | No | No |
 | Asignar grupos `ingreso.asignar` | Estructural | Configurable OFF | Configurable OFF | No |
 
-Todos dependen del plan `academico`. Consulta es requisito adicional de las cuatro últimas operaciones. Aprobar crea estudiante; confirmar grupo crea matrícula. El aspirante no tiene rol institucional: accede únicamente a su expediente con email/PIN. La cuenta creada es solo de estudiante y su onboarding exige contraseña, no configuración del colegio. Especificación: [[../../Logica del negocio/04-procesos-academicos/matriculas]].
+Todos dependen del plan `academico`. Consulta es requisito adicional de las cuatro últimas operaciones. Aprobar crea estudiante; confirmar grupo crea matrícula. El aspirante no tiene rol institucional: accede únicamente a su expediente con enlace privado/desafío HttpOnly y PIN de cuatro dígitos. La cuenta creada es solo de estudiante y su onboarding exige contraseña, no configuración del colegio. Especificación: [[../../Logica del negocio/04-procesos-academicos/matriculas]].
+
+**Configuración de matrículas — política aceptada el 14 de octubre de 2026:** se ubica en **Ajustes institucionales > Configuración de matrículas**, con acceso directo desde **Matrículas por enlace**. Usa `ingreso.configurar`, delegable a Secretaría según la matriz, más plan `academico`; no requiere rol rector adicional. Ambos accesos abren el mismo formulario de rangos permanentes por grado, aviso institucional versionado y resolución explícita de conflictos heredados. La decisión y sus criterios se documentan en RN-MA-015 y RN-MA-018 a RN-MA-021 de la fuente canónica; no acredita pruebas en producción.
 
 > **Permisos estructurales vs configurables.** Las marcas "Configurable" indican que el colegio puede activar o desactivar el permiso desde la pantalla de configuracion del rol. Las marcas firmes (CRUD/Editar/Ver/Reportar/Aprobar/Auto/—) son **estructurales**, no se pueden modificar.
 

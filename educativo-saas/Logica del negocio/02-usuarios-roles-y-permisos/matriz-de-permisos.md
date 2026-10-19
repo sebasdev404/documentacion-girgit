@@ -107,16 +107,20 @@ Abreviaturas de columna:
 
 ### Ingreso estudiantil por enlace — implementado localmente, 2026-10-07
 
-Capacidad de plan `academico`. Consulta (`ingreso.ver`) es adicionalmente obligatoria para revisar, decidir, cambiar grado y asignar. Rector estructural; delegaciones configurables inicialmente OFF. El portal público usa correo + PIN del solicitante, no un rol de estudiante/acudiente. No se crean cuentas de acudiente.
+Capacidad de plan `academico`. Consulta (`ingreso.ver`) es adicionalmente obligatoria para revisar, decidir, cambiar grado y asignar. Rector estructural; delegaciones configurables inicialmente OFF. El portal público usa enlace privado/desafío HttpOnly + PIN de cuatro dígitos del solicitante, no un rol de estudiante/acudiente. No se crean cuentas de acudiente.
 
 | Permiso / acción | SA | R | CA | CC | CK | SE | DO | DG | EA |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `ingreso.configurar`: convocatorias y requisitos | — | ✅ | ❌ | ❌ | ❌ | ⚠️❌ | ❌ | ❌ | ❌ |
+| `ingreso.configurar`: política institucional de matrículas, convocatorias y requisitos | — | ✅ | ❌ | ❌ | ❌ | ⚠️❌ | ❌ | ❌ | ❌ |
 | `ingreso.ver`: solicitudes y archivos privados | — | ✅ | ⚠️❌ | ❌ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ |
 | `ingreso.revisar`: aprobar/rechazar documentos | — | ✅ | ❌ | ❌ | ❌ | ⚠️❌ | ❌ | ❌ | ❌ |
 | `ingreso.decidir`: aprobar/rechazar/espera/correcciones | — | ✅ | ❌ | ❌ | ❌ | ⚠️❌ | ❌ | ❌ | ❌ |
 | `ingreso.cambiar_grado`: proponer/aprobar otro grado con motivo | — | ✅ | ❌ | ❌ | ❌ | ⚠️❌ | ❌ | ❌ | ❌ |
 | `ingreso.asignar`: grupos y matrícula académica | — | ✅ | ⚠️❌ | ❌ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ |
+
+**Política aceptada el 14 de octubre de 2026:** `ingreso.configurar` habilita **Ajustes institucionales > Configuración de matrículas** y su acceso directo desde **Matrículas por enlace**, con los mismos controles de permiso y plan. Incluye rangos permanentes por grado, aviso institucional versionado y resolución de valores heredados en el mismo formulario. Secretaría puede recibir la delegación; no se exige rol rector adicional. Fuente canónica: [[../04-procesos-academicos/matriculas|Matrículas por enlace]], RN-MA-018 a RN-MA-021.
+
+**Salida institucional (15 de octubre de 2026):** `estudiantes.egreso.gestionar` autoriza listar candidatos estudiantes y marcar manualmente el egreso. Por defecto lo usa solo el superadministrador suplantando al colegio; rector, secretaría y coordinaciones académicas pueden recibirlo mediante las celdas configurables de la matriz, inicialmente apagadas. No habilita borrar el usuario ni cambiar el resultado académico. La cuenta egresada pierde acceso y conserva su historial. La renovación del siguiente año, usando el mismo usuario y el grado destino, es un proceso separado aún pendiente.
 
 **Correo institucional:** `config.correo` es estructural del rector y denegado para los demás roles del tenant. Además de ese permiso se verifica el rol rector explícitamente; delegarlo no habilita acceso. Permite primera configuración y solicitar cambios, **no editar libremente una conexión guardada**. Editar/desconectar exige aprobación del superadministrador central, de un uso y 24 horas, ligada a rector/colegio/acción/versión. No existe permiso delegable para aprobar. La suplantación no permite aprobar ni evita este bloqueo. No es acceso a buzones o documentos; incluido en configuración básica sin gate adicional.
 
@@ -137,6 +141,16 @@ La tabla siguiente mezcla funciones existentes y futuras de secretaría. No conc
 | Bloquear documentos por pendientes | — | ✅ | ❌ | ❌ | ❌ | ⚠️✅ | ❌ | ❌ | ❌ |
 
 ## Boletines
+
+> La tabla general siguiente describe un objetivo histórico, **no todos los permisos ya operativos**. En desarrollo local existe emisión individual con PDF privado y publicación separada, pero no firma digital certificada. Aprobar una observación **no** aprueba el boletín. La extensión de consulta del boletín completo al docente asignado está planificada en `../04-procesos-academicos/plan-acceso-docente-y-filtros-2026-10-19.md`; todavía no se concede por esta tabla.
+
+| Clave operativa | R | CA | CK | SE | DO | DG | EA | Estado |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `boletines.politica.gestionar` | ✅ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ | ❌ | API/UI local |
+| `boletines.observaciones.gestionar` | ✅ | ⚠️❌ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ | API/UI local; la interfaz actual se alcanza desde la vista preliminar autorizada |
+| `boletines.observaciones.aprobar` | ✅ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ | ❌ | Solo aprueba el texto; no emite documento |
+| `indicadores.base.gestionar` | ✅ | ⚠️❌ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ | Catálogo institucional local; concesión configurable según matriz |
+| `indicadores.grupo.editar` | ✅ | ⚠️❌ | ⚠️❌ | ❌ | ⚠️❌ | ⚠️❌ | ❌ | Variante local por materia y grupo asignados; exige permiso efectivo y política activa |
 
 | Acción | SA | R | CA | CC | CK | SE | DO | DG | EA |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

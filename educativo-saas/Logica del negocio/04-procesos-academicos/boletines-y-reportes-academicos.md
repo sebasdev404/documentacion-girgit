@@ -2,7 +2,7 @@
 titulo: Boletines y reportes académicos
 modulo: procesos-academicos
 tipo: proceso
-estado: borrador
+estado: propuesta vigente
 tags: [boletines, reportes, proceso]
 ---
 
@@ -10,7 +10,11 @@ tags: [boletines, reportes, proceso]
 
 ## Descripción
 
-Proceso de generación del documento PDF que consolida el desempeño académico del estudiante en un periodo o al cierre del año lectivo. Es el documento más visible para acudientes y se entrega siempre tras cada cierre de periodo.
+Proceso individual de preparación, revisión, aprobación y emisión persistente del PDF académico de un estudiante. Conviven una vista de notas preliminar y un flujo independiente de emisión oficial individual; imprimir la vista preliminar no constituye emisión. El plan de cierre del ciclo académico de octubre de 2026 prevalece sobre los apartados históricos incompatibles de este documento.
+
+**Avance local del 14 de octubre de 2026:** ya existen diseños base de período/final y un editor de bloques con vista previa viva ficticia, guardado de borradores y publicación de revisiones. El permiso de gestión y la capacidad `boletines_personalizables` se verifican en servidor. La preview todavía no contiene datos académicos reales ni sustituye la preparación, aprobación y emisión individual del PDF. Contrato implementado: `colegio-saas-backend/docs/BOLETIN_PLANTILLAS.md`.
+
+**Segundo incremento local del 14 de octubre:** preparación individual contra notas completas y observación aprobada, aprobación con PDF privado y SHA-256, y publicación separada para el estudiante. Se aplicaron migraciones a central y cinco colegios locales sin emitir documentos reales. La vista previa de notas permanece preliminar. Contrato, evidencia y límites: `colegio-saas-backend/docs/BOLETIN_EMISION.md`. Siguen pendientes firma/confirmación digital, paz y salvo, asistencia por materia, algunos datos estudiantiles y paridad visual completa del editor con PDF; no se declara terminado el ciclo académico.
 
 ## Tipos de boletín
 
@@ -22,13 +26,13 @@ Proceso de generación del documento PDF que consolida el desempeño académico 
 
 ## Plantillas
 
-- El sistema ofrece un conjunto de **plantillas base** de boletín en HTML y CSS.
-- El colegio selecciona una plantilla y la personaliza con su logo, colores institucionales y los campos que desea mostrar u ocultar.
-- Si el colegio requiere una plantilla **completamente personalizada** con un diseño propio, se trata como servicio adicional: se diseña una vez y se carga en el sistema de ese tenant.
+- Todo colegio con el módulo académico puede emitir mediante una **plantilla base de la plataforma** con nombre, logo y datos reales del colegio, sin marca del SaaS en el documento.
+- La capacidad efectiva `boletines_personalizables` permite al Rector autorizado crear, duplicar, ordenar y publicar diseños en un editor visual de bloques controlados. Está incluida por defecto en Estándar y Premium; un plan personalizado depende de sus capacidades efectivas. El backend comprueba tanto capacidad como permiso.
+- La asistencia profesional de diseño puede ofrecerse adicionalmente, pero no reemplaza ni bloquea el editor autoservicio de un plan autorizado.
 
 ### Versionado de plantillas
 
-Las plantillas y configuraciones del boletín se versionan. Esto garantiza que los boletines de años anteriores siempre se vean exactamente como se veían en el momento de su emisión original, con la plantilla y la configuración vigente en ese entonces, **no con la actual**.
+Una revisión publicada de plantilla es inmutable. Cada PDF emitido conserva esa revisión, configuración, resultados, indicadores, observación exacta, actor, archivo y huella. Cambiar de diseño o plan no altera lo ya emitido.
 
 ## Contenido del boletín
 
@@ -37,9 +41,8 @@ Por defecto el boletín incluye:
 - Datos del estudiante (nombre, documento, grado, grupo, foto).
 - Periodo académico (o consolidado del año si es final).
 - Cada materia con su nota final.
-- Logros alcanzados por materia.
-- Observaciones escritas por el docente de cada materia.
-- Observación general escrita por el [[roles/07-director-de-grupo|Director de Grupo]].
+- Indicadores descriptivos del aprendizaje esperado por asignatura y período, sin valoración individual propia.
+- Observación académica general guardada para ese estudiante y período por un actor autorizado. No es una anotación disciplinaria ni la observación opcional de una nota.
 - Registro de inasistencias por materia y total del periodo.
 - Nota de comportamiento si el colegio la maneja.
 - Logo y datos institucionales del colegio.
@@ -52,23 +55,25 @@ El colegio configura qué secciones aparecen y cuáles se ocultan.
 - Si el SIEE calcula un área por **promedio ponderado**, se podrá mostrar además el peso de cada asignatura dentro de esa área, claramente separado del peso del período.
 - Si el SIEE calcula un área por **promedio simple**, no se mostrará un porcentaje por asignatura: se suman los resultados de sus asignaturas y se dividen entre la cantidad correspondiente.
 - Esta visualización no cambia la fórmula vigente: los cálculos conservan su precisión interna y redondean solo el resultado publicado. Se descartó añadir un desglose técnico de los valores internos al boletín.
-- **Estado:** los pesos ya se muestran en la vista previa del código de trabajo; la emisión oficial aún no está implementada.
+- **Estado:** el flujo de emisión individual y PDF ya existe en desarrollo local; la paridad visual de todos los pesos y secciones entre vista previa y PDF sigue pendiente de revisión.
 
 ## Generación del boletín
 
-1. Al cierre del periodo, el sistema marca los boletines como "disponibles para generación".
-2. El [[roles/07-director-de-grupo|Director de Grupo]] (con permiso) o el [[roles/02-coordinador-academico|Coordinador]] dispara la generación para todo el grupo.
-3. El sistema arma cada boletín aplicando la plantilla, los datos del estudiante y la configuración vigente.
-4. Genera el archivo PDF y lo almacena asociado al estudiante y al periodo.
-5. Notifica al estudiante (y al acudiente) que su boletín está disponible.
+1. Seleccionar individualmente estudiante y período cerrado, o el contexto final anual aprobado.
+2. Guardar la observación académica general de ese estudiante y período. Si falta, bloquear la preparación; no inventar texto para continuar.
+3. Preparar con datos académicos completos y plantilla publicada, revisar el borrador y sus advertencias.
+4. Aprobar con permiso, generar el PDF desde datos congelados y guardar archivo y huella.
+5. Publicar la emisión aprobada para consulta del estudiante autorizado. Una corrección genera nueva versión y conserva el PDF anterior.
+
+El Rector o un rol autorizado configura si el boletín final anual exige una **observación final adicional**; si no se exige, no se bloquea por ella. El período sumatorio, si se activa, es un resultado calculado P(N+1), no otro período real de captura.
 
 ## Aprobación / firma del boletín
 
-- El director de grupo revisa el boletín antes de marcarlo como definitivo (opcional según configuración).
-- El coordinador académico puede ejecutar una validación consolidada antes de la entrega masiva.
-- Una vez marcado como entregado, el boletín queda accesible para descarga del estudiante.
+- Diseño de plantilla, captura académica, revisión, aprobación, emisión y publicación tienen permisos y estados separados.
+- El Rector debe poder revisar y aprobar una emisión individual. Dirección de grupo y coordinación requieren vínculo y alcance comprobados por el servidor antes de recibir acceso.
+- El documento publicado queda accesible únicamente a perfiles autorizados y al estudiante titular; no hay portal de acudiente implementado.
 
-La aprobación significa **revisar y confirmar el documento que se publicará**, no modificar calificaciones. La futura emisión oficial debe conservar el PDF y la versión de datos/plantilla aprobada para consulta histórica; una corrección posterior requiere un proceso auditado y una nueva versión, sin sobrescribir silenciosamente la anterior. **Decisión del 5 de octubre de 2026:** el rector podrá aprobar un boletín individual y también un lote completo por grupo. Una aprobación por lote debe registrar el resultado y la versión de cada estudiante, sin saltarse documentos pendientes o inválidos ni emitir versiones duplicadas. Los permisos concretos de dirección de grupo y coordinación siguen pendientes de definición. Hoy la aplicación únicamente ofrece una **vista previa** del boletín, no aprobación, firma ni PDF histórico.
+La aprobación confirma el documento congelado, no modifica las calificaciones. La decisión posterior del 14 de octubre de 2026 sustituye la aprobación/generación por lote como flujo principal: **la emisión solicitada es estudiante por estudiante**. Una operación masiva futura requerirá nueva decisión de producto y controles equivalentes. Ya existe aprobación de la emisión y PDF histórico privado; no existe firma digital certificada.
 
 ## Confirmación digital del estudiante
 
@@ -80,9 +85,9 @@ El sistema puede bloquear la disponibilidad del boletín si el estudiante tiene 
 
 ## Distribución a padres y estudiantes
 
-- El boletín está disponible en el portal del estudiante y del acudiente.
-- El sistema envía notificación por correo y por portal cuando el boletín está disponible.
-- El acudiente puede descargar el PDF en cualquier momento si no hay bloqueo por paz y salvo.
+- El boletín publicado está disponible en el portal del estudiante autorizado. No se habilitan cuentas ni correo a acudientes por inferencia documental.
+- Una notificación futura requiere política de destinatarios y cola verificadas; no se envía automáticamente durante el desarrollo.
+- El bloqueo por paz y salvo solo puede habilitarse con integración real de cartera; no se declara a alguien «al día» por ausencia de datos.
 
 ## Otros reportes académicos
 
@@ -100,10 +105,10 @@ Ver [[../09-reportes-y-analitica/reportes-academicos|Reportes académicos]] y [[
 - **RN-BR-002 — Versionado fiel:** la regeneración de un boletín histórico usa la plantilla y configuración vigente al momento de su emisión original, no la actual.
 - **RN-BR-003 — Bloqueo por paz y salvo configurable:** el bloqueo de boletín por paz y salvo es configurable por el colegio. Por defecto los boletines están disponibles.
 - **RN-BR-004 — Confirmación digital opcional:** la confirmación digital del boletín por parte del estudiante es opcional, configurable por el colegio.
-- **RN-BR-005 — PDF persistente:** los PDFs generados se almacenan y consumen cuota del tenant. Si el archivo se pierde, se regenera con fidelidad.
-- **RN-BR-006 — Personalización total bajo servicio:** una plantilla completamente personalizada es servicio adicional fuera del autoservicio.
+- **RN-BR-005 — PDF persistente:** los PDFs generados se almacenan en el tenant. La integración con cuota y una regeneración fiel tras pérdida del archivo siguen pendientes; hasta entonces el sistema alerta y no reconstruye el histórico con recursos actuales.
+- **RN-BR-006 — Editor por capacidad y permiso:** un plan con `boletines_personalizables` y permiso efectivo habilita editor autoservicio; el plan básico conserva emisión con plantilla base.
 
 ## Notas y pendientes
 
-- **[Pendiente — producto]** Definir límites de personalización autoservicio del boletin (encabezado, logo, texto institucional, orden de columnas) versus personalización profunda que requiera servicio profesional.
+- **[Decisión tomada]** Rector o rol autorizado configura si se exige una observación final anual distinta de las de cada período.
 - **[Pendiente — funcionalidad futura]** Firma digital sobre certificados oficiales y sellos del rector. No bloquea el lanzamiento; el certificado lleva firma escaneada del rector cargada por el colegio.
