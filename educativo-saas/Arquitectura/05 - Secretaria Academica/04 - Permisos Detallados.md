@@ -28,6 +28,7 @@ Detalle granular. Vista cruzada en [[../_Globales/06 - Matriz de Permisos|Matriz
 
 | Permiso | Default | Notas |
 |---|---|---|
+| Configuración de matrículas (`ingreso.configurar`) | desactivado | Delegable; exige plan `academico`. Habilita Ajustes institucionales > Configuración de matrículas y su acceso directo desde Matrículas por enlace: rangos permanentes por grado, aviso versionado y resolución explícita de conflictos heredados en el mismo formulario |
 | Bloquear emision por documentos pendientes | activado | Algunos colegios prefieren emitirlos igual con advertencia |
 | Bloquear emision por pagos pendientes | configurable | Depende de si el colegio integra cartera con secretaria |
 | Editar grupo del estudiante despues de matriculado | configurable | Algunos lo restringen al Coord. Academico |
@@ -43,13 +44,14 @@ Detalle granular. Vista cruzada en [[../_Globales/06 - Matriz de Permisos|Matriz
 |---|---|
 | Registrar o editar notas academicas | No es su ambito |
 | Registrar asistencia u observaciones disciplinarias | No es su ambito |
-| Modificar configuracion base del sistema | Es del Rector |
+| Modificar configuracion base del sistema sin delegación aplicable | Es del Rector; la configuración de matrículas sí admite delegación explícita de `ingreso.configurar` con plan `academico` |
 | Acceder a datos de otros tenants | RR-01 |
 
 ## Reglas asociadas
 
 - RR-08 Bloqueo de documentos por pendientes (configurable).
 - RR-15 Reporte SIMAT obligatorio.
+- Política de matrículas aceptada el 14 de octubre de 2026: [[../../Logica del negocio/04-procesos-academicos/matriculas|RN-MA-015 y RN-MA-018 a RN-MA-021]]. La delegación no exige rol rector adicional ni crea usuarios de acudiente.
 
 ## Fuente
 

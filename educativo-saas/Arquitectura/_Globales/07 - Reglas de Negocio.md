@@ -52,6 +52,14 @@ Reglas RR-NN consolidadas. Cada regla viene de la fuente de verdad en `Logica de
 - Las reglas operativas RR-16, RR-17, RR-19 y RR-20 provienen de los modulos nuevos de `Logica del negocio/` (`12-bienestar-y-servicios/`, `13-cumplimiento-colombia/`); ver su origen `RN` en [[10 - Mapeo RN-RR]].
 - Cuando una regla aplique solo a un modulo especifico, ver el archivo de ese modulo en `Logica del negocio/`.
 
+### Política institucional de matrículas — decisión aceptada el 14 de octubre de 2026
+
+Fuente canónica: [[../../Logica del negocio/04-procesos-academicos/matriculas|Matrículas por enlace]], RN-MA-015 y RN-MA-018 a RN-MA-021. Estas reglas específicas complementan RR-01, RR-02 y RR-05 y la trazabilidad del consentimiento de RR-19; no crean cuentas de acudiente ni acreditan despliegue o pruebas de correo real.
+
+La interpretación de interfaz es una única pantalla en **Ajustes institucionales > Configuración de matrículas**, con acceso directo desde **Matrículas por enlace** y control de `ingreso.configurar` delegable más plan `academico`. Los rangos son permanentes por colegio/grado estable, inclusivos y sin límite cuando se deshabilitan; la edad se calcula hoy en la zona horaria institucional, sin corte arbitrario ni copia por año. Las correcciones conservan la constancia de nacimiento/grado del envío validado aunque cambien la edad o la política; modificar nacimiento o grado de destino exige revalidar.
+
+El aviso es institucional y versionado. Si cambia antes de enviar, se detiene el envío hasta aceptar explícitamente el texto actualizado. Los valores heredados de convocatorias se conservan hasta el primer guardado institucional; solo los inequívocos se sugieren, y cualquier conflicto se resuelve por elección explícita en el mismo formulario. Detalle y criterios de aceptación en la fuente canónica.
+
 ---
 
 ## Documentos relacionados

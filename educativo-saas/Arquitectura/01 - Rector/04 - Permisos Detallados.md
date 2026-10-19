@@ -16,6 +16,7 @@ Detalle granular de permisos. Para la vista cruzada ver [[../_Globales/06 - Matr
 | Modulo | Funcionalidad | Permiso | Descripcion |
 |---|---|---|---|
 | **Identidad** | Configurar logo, NIT, MEN, contactos | Editar | Datos institucionales |
+| **Matrículas por enlace** | Configurar política institucional, convocatorias y requisitos | `ingreso.configurar` | Requiere plan `academico`; rangos permanentes por grado y aviso versionado en Ajustes institucionales > Configuración de matrículas, con acceso directo desde Matrículas por enlace |
 | **Calendario** | Definir periodos lectivos | Editar | Dentro del calendario habilitado |
 | **Jornadas** | Configurar jornadas y bloques horarios | Editar | Manana / tarde / noche |
 | **Modelo pedagogico** | Configurar por nivel | Editar | Docente unico vs rotacion |
@@ -38,6 +39,7 @@ El Rector tiene poder total, pero el colegio puede decidir delegar algunas funci
 | Cierre de periodo academico | Coordinador Academico |
 | Aprobacion de boletines | Coordinador Academico o Director de Grupo |
 | Generacion de constancias | Secretaria Academica |
+| Configuración de matrículas (`ingreso.configurar`) | Secretaría Académica, inicialmente desactivado; exige plan `academico` |
 
 ## Permisos explicitamente NO otorgados
 
@@ -52,6 +54,7 @@ El Rector tiene poder total, pero el colegio puede decidir delegar algunas funci
 - RR-04 Asignacion de roles por el Rector.
 - RR-05 Configurabilidad acotada de permisos.
 - RR-13 Cambio de calendario A/B es del Superadmin (el Rector solo elige dentro del habilitado).
+- Política de matrículas aceptada el 14 de octubre de 2026: [[../../Logica del negocio/04-procesos-academicos/matriculas|RN-MA-015 y RN-MA-018 a RN-MA-021]]. La delegación válida de `ingreso.configurar` permite usar el mismo formulario institucional, incluida la elección explícita ante conflictos heredados; no habilita cuentas de acudiente.
 
 ## Fuente
 

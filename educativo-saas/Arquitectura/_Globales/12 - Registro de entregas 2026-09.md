@@ -24,3 +24,7 @@ Validación local: pruebas API, cliente, build, recorrido de navegador con fixtu
 ### 8 de octubre: aprobación central de cambios de correo
 
 Conexión guardada bloqueada, solicitud motivada, bandeja/notificación de Superadmin y aprobación de un uso/24 horas. Sin delegación por RBAC; también protege desconexión y posterior reconexión. Menú del usuario incorpora «Conexión de correo electrónico». Migración conserva bytes cifrados de la credencial real y datos académicos. Se verificó Inmaculada con un mensaje SMTP real al remitente ya guardado, aceptado por Google; no se alteraron credenciales ni se crearon solicitudes ficticias de aprobación. La revisión de recepción/spam sigue a cargo del titular del buzón.
+
+### 8 de octubre: preparación de convocatoria y diseño del correo
+
+El enlace admite cupo de convocatoria ilimitado por grado (`null`) y cierre opcional; continúan aplicando límites de plan y grupo. Los avisos de ingreso tienen HTML con la paleta violeta/verde y texto alternativo; se envió una vista previa con datos ficticios al remitente Gmail configurado, sin crear un aspirante. Se creó un borrador local de Inmaculada 2026 para todos los grados, cerrado mientras el colegio revisa privacidad y autorización del representante legal; no se publicó una recolección de datos de menores.
