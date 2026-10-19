@@ -8,6 +8,8 @@ tags: [consejo-academico, promocion, decisiones]
 
 # Consejo académico
 
+> **Propuesta histórica descartada para promoción (15-10-2026):** por decisión del propietario, la promoción y reprobación se determinan por notas efectivas y reglas configuradas. No implementar la votación, el consenso ni la sobreescritura descritos abajo como mecanismo para cambiar resultados. Este documento se conserva como antecedente, no como requisito vigente del ciclo académico.
+
 Reunión institucional al cierre del año lectivo donde se evalúan casos de estudiantes en situación límite y se toman decisiones sobre su promoción.
 
 ## Identificación de casos

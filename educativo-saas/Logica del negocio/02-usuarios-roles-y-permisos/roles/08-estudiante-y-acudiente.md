@@ -88,7 +88,7 @@ Rol de **solo consulta**. El estudiante (o, en la práctica, su acudiente operan
 
 ## Egresados
 
-- Al graduarse, el estudiante pasa al estado **Egresado** y conserva acceso a su histórico (boletines, certificados, paz y salvo) según `RN-HC-281` (ver [[historico-y-anos-cerrados|Histórico y años cerrados]] y `RN-PR-007` en [[promocion-y-reprobacion|Promoción y reprobación]]).
+- Graduarse o ser promovido no cambia automáticamente el estado de la cuenta. Si no continúa, una persona autorizada marca manualmente al estudiante como **egresado**: conserva su usuario y expediente histórico, pero deja de tener acceso a la plataforma. El colegio puede consultar sus boletines y certificados bajo permisos institucionales (ver [[historico-y-anos-cerrados|Histórico y años cerrados]] y `RN-PR-007` en [[promocion-y-reprobacion|Promoción y reprobación]]).
 
 ## Notas y pendientes
 

@@ -66,13 +66,13 @@ Tras el cierre se preservan:
 | Docente | Sus propios datos: grupos en los que enseñó, observaciones que registró. |
 | Director de grupo | Datos del grupo dirigido en cada año. |
 | Estudiante (operado por su acudiente) | Datos del estudiante: notas, asistencia, boletines, pagos. |
-| Egresado | Acceso al portal con sus datos históricos (boletines y certificados). |
+| Egresado | Sin acceso a la plataforma; el colegio conserva y consulta su expediente histórico bajo sus permisos. |
 
 ## Egresados
 
-- Al graduarse, el estudiante pasa al rol de [[../02-usuarios-roles-y-permisos/roles/14-egresado\|Egresado]].
-- Conserva acceso a su histórico (boletines, certificados, paz y salvo).
-- Puede solicitar certificaciones desde su portal sin necesidad de presentarse físicamente.
+- El egreso no depende de graduarse ni del grado cursado: una persona autorizada lo marca manualmente cuando no continúa en el colegio.
+- El usuario mantiene su identidad y su rol histórico de estudiante, pero pasa al estado `egresado`, sin acceso a la plataforma. Sus sesiones se revocan y sus matrículas, boletines y certificados no se borran.
+- La eventual entrega o solicitud de certificados para egresados requiere un canal institucional aparte; no se promete acceso desde su portal.
 
 ## Reglas de negocio
 
@@ -80,7 +80,7 @@ Tras el cierre se preservan:
 - **RN-HA-002 — Inmutabilidad por defecto:** los datos del año cerrado no se modifican.
 - **RN-HA-003 — Reapertura motivada:** la reapertura requiere motivo, autorización y queda en log.
 - **RN-HA-004 — Configuración versionada por año:** un cambio en la configuración no altera años cerrados.
-- **RN-HA-005 — Egresados con portal:** los egresados conservan acceso a su histórico.
+- **RN-HA-005 — Histórico de egresados sin acceso:** el colegio conserva su expediente; el usuario egresado no puede iniciar sesión.
 - **RN-HA-006 — Boletines reimprimibles:** la reimpresión de boletines de años anteriores usa la configuración del año, no la actual.
 
 ## Notas y pendientes

@@ -84,7 +84,7 @@ La **acumulación de tardes / retardos en inasistencia** es **configurable por c
 
 Los **boletines se generan tras el cierre del periodo** o al cierre del año, son un **PDF persistente** (`RN-BR-001`, `RN-BR-005`) y se versionan fielmente con la configuración vigente cuando se generaron (`RN-BR-002`). Su descarga puede **bloquearse por paz y salvo** (`RN-BR-003`) y, cuando aplica, requiere **confirmación digital auditada** (`RN-BR-004`). La **personalización profunda de la plantilla** es **un servicio** del equipo de la plataforma (`RN-BR-006`); el **constructor visual de plantillas** es funcionalidad futura (`RN-RA-310`).
 
-La **promoción** se calcula automáticamente (`RN-PR-001`), validada por coordinador (`RN-PR-002`); la decisión del consejo académico **prevalece** (`RN-PR-003`). El **cierre del año dispara la generación del siguiente** (`RN-PR-004`); los **datos del año cerrado son inmutables** (`RN-PR-005`); los **egresados pasan al rol Egresado** (`RN-PR-007`); el **cierre exige que no queden habilitaciones pendientes** (`RN-PR-008`). Las **plantillas de constancia/certificado** se ofrecen base + personalización por servicio (`RN-PR-100`); la **reapertura intra-ventana** del año es por permiso (`RN-PR-101`).
+La **promoción** se calcula con notas y reglas institucionales (`RN-PR-001`) y se revisa sin votación ni sustitución del resultado (`RN-PR-002`, `RN-PR-003`). Aprobar define un grado destino para una **renovación explícita del año siguiente**, vinculada al mismo usuario; no crea matrícula automáticamente (`RN-PR-004`). Los **datos del año cerrado son inmutables** (`RN-PR-005`). El **egreso** es una salida institucional manual e independiente de la promoción; el usuario conserva su rol histórico y expediente, pero pierde acceso (`RN-PR-007`). El **cierre exige que no queden habilitaciones pendientes** (`RN-PR-008`). Las **plantillas de constancia/certificado** se ofrecen base + personalización por servicio (`RN-PR-100`); la **reapertura intra-ventana** del año es por permiso (`RN-PR-101`).
 
 ## 10. Observador y disciplina
 
@@ -144,7 +144,7 @@ Los **backups se aíslan por tenant**, se cifran en reposo, se restauran auditad
 
 ## 18. Histórico, cierre y egresados
 
-El **cierre del año lectivo es formal y único**, con auditoría completa (`RN-HA-001`). La **inmutabilidad por defecto** protege todos los datos del año cerrado (`RN-HA-002`); cualquier **reapertura debe estar motivada y registrada** (`RN-HA-003`). La **configuración relevante se versiona por año** —escalas, periodos, plantillas, plan de estudios— para que los reportes históricos sean fieles (`RN-HA-004`). Los **egresados conservan acceso al portal** con sus boletines y certificados (`RN-HA-005`); los **boletines son reimprimibles** (`RN-HA-006`).
+El **cierre del año lectivo es formal y único**, con auditoría completa (`RN-HA-001`). La **inmutabilidad por defecto** protege todos los datos del año cerrado (`RN-HA-002`); cualquier **reapertura debe estar motivada y registrada** (`RN-HA-003`). La **configuración relevante se versiona por año** —escalas, periodos, plantillas, plan de estudios— para que los reportes históricos sean fieles (`RN-HA-004`). Los **egresados no conservan acceso al portal**, pero el colegio conserva sus boletines y certificados (`RN-HA-005`); los **boletines son reimprimibles** (`RN-HA-006`).
 
 La **reapertura intra-ventana** del año es por rol (`RN-HC-280`); la reapertura **post-cierre fuera de ventana** queda **exclusivamente en manos del superadministrador**. Los **certificados de egresados** soportan **tarifa configurable** por colegio (`RN-HC-281`).
 
@@ -172,7 +172,7 @@ El **soporte y observabilidad** se apoya en el log de auditoría, los backups co
 
 Las **cuotas de almacenamiento** se calibran por plan (`RN-AC-250`); la **purga** siempre es soft-delete + cuarentena + notificación previa (`RN-AC-251`). La **gestión documental** institucional incluye flujo de revisión con aprobación/rechazo y notificación automática al vencimiento (`RN-GD-270`).
 
-La **reapertura del año cerrado** está controlada por permisos y limitada en ventana (`RN-HC-280`). Los **certificados de egresados** son emitibles desde el portal con cobro configurable (`RN-HC-281`).
+La **reapertura del año cerrado** está controlada por permisos y limitada en ventana (`RN-HC-280`). Los **certificados de egresados** podrán emitirse por un canal institucional con política de cobro configurable (`RN-HC-281`); el egresado no recupera por ello acceso a la plataforma.
 
 ## 22. Auditoría, seguridad, internacionalización y validaciones
 
