@@ -17,7 +17,7 @@ Catálogo de validaciones que el sistema aplica en formularios y flujos. Las val
 | Campo | Validación | Mensaje |
 | --- | --- | --- |
 | Identificación | Única dentro del tenant. | "Ya existe un estudiante con esta identificación". |
-| Fecha de nacimiento | Coherente con el grado al que se matricula según rangos de edad configurados (advertencia, no bloqueo por defecto). | "La edad sugiere otro grado". |
+| Fecha de nacimiento | Válida y no futura. En matrículas por enlace, el rango institucional habilitado del grado es obligatorio e inclusivo; deshabilitado no limita la edad. Cálculo a la fecha actual en zona horaria institucional, con conservación de la constancia de solicitudes enviadas según RN-MA-015/RN-MA-019. | "La edad no está dentro del rango configurado para el grado" cuando corresponde revalidar y el rango está habilitado. |
 | Acudiente operativo | Al menos un acudiente operativo registrado con datos completos en la ficha del estudiante (`RN-TU-410`: el acudiente no es usuario). | "Debe registrar al menos un acudiente operativo". |
 | EPS / tipo de sangre | Requeridos en colegios que lo configuran. | "Campo requerido por su colegio". |
 
@@ -53,6 +53,8 @@ Catálogo de validaciones que el sistema aplica en formularios y flujos. Las val
 | Justificación | Dentro de la ventana configurada (ej. 5 días). | "Fuera de la ventana de justificación". |
 
 ### Matrícula
+
+Para matrículas por enlace rige la política aceptada en [[../04-procesos-academicos/matriculas|Matrículas por enlace]]: un rango permanente por colegio/grado estable, sin copia anual ni fecha de corte arbitraria. Corregir otros datos después de un cumpleaños o de un cambio de política conserva la constancia de nacimiento/grado validados del envío; cambiar nacimiento o grado de destino exige revalidar con fecha actual y política vigente. El envío también compara la versión aceptada del aviso con la vigente y, si cambió, exige nueva aceptación antes de recibirlo. No es una simple advertencia de edad ni requiere pago o usuario de acudiente.
 
 | Campo | Validación | Mensaje |
 | --- | --- | --- |

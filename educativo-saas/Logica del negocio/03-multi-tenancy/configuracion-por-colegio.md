@@ -92,12 +92,14 @@ Detalle en [[../06-monetizacion-y-pagos/pagos-de-pensiones|Pagos de pensiones]] 
 
 ### 8. Configuración del proceso de matrícula
 
-- Campos obligatorios y opcionales del formulario de inscripción.
-- Documentos digitales requeridos por nivel educativo.
-- Días de vigencia del PIN tras el pago de matrícula.
-- Cupos disponibles por grado.
+- **Ajustes institucionales > Configuración de matrículas**, con acceso directo desde **Matrículas por enlace**: un solo rango permanente por colegio y grado estable, reutilizado entre años, y aviso de privacidad institucional versionado. Requiere `ingreso.configurar`, delegable según la matriz, y capacidad de plan `academico`.
+- Rango habilitado: mínimo y máximo inclusivos; deshabilitado: sin límite de edad para ese grado. La edad se calcula a la fecha actual en la zona horaria institucional, sin fecha de corte configurable ni copia anual. Las solicitudes enviadas conservan su constancia de nacimiento/grado validados; cambiar cualquiera de esos datos obliga a revalidar.
+- El envío acepta una versión concreta del aviso. Si cambia antes de enviar, se detiene el envío y se exige leer y aceptar el texto actualizado.
+- Hasta el primer guardado institucional se conservan los valores heredados de las convocatorias. Solo se sugieren valores existentes inequívocos; los conflictos requieren una elección explícita en el mismo formulario, sin deducir rangos ni escoger automáticamente un aviso.
+- **Por convocatoria:** campos obligatorios/opcionales, documentos comunes o por grado, grados ofrecidos y cupos opcionales. El año, fechas y habilitación del enlace siguen siendo propios de la convocatoria.
+- **Acceso privado sin pago:** enlace privado más PIN de cuatro dígitos, o desafío privado HttpOnly más PIN en el navegador que inició la solicitud. El vencimiento es una fecha fija opcional por convocatoria; sin fecha no caduca por tiempo. Sustituye la antigua vigencia de 15 días tras el pago. No se crean usuarios de acudiente.
 
-Detalle en [[../04-procesos-academicos/matriculas|Matrículas]].
+Política aceptada y reglas canónicas RN-MA-015 y RN-MA-018 a RN-MA-021 en [[../04-procesos-academicos/matriculas|Matrículas por enlace]]. Esta actualización documental no certifica despliegue ni pruebas de correo real.
 
 ### 9. Configuración de publicaciones
 
@@ -119,9 +121,11 @@ Detalle en [[../05-comunicacion/agenda-y-publicaciones|Agenda y publicaciones]].
 | Modelo pedagógico por nivel | Configuración | — | Administrador |
 | Plantilla de boletín | Selección + personalización | Plantilla base | Administrador |
 | Conceptos cobrables | Lista | — | Administrador / Secretaría |
-| Documentos requeridos en matrícula | Lista | — | Administrador |
-| Vigencia del PIN de matrícula | Entero (días) | 15 | Administrador |
-| Cupos por grado | Entero | — | Administrador / Coordinación |
+| Rangos institucionales de edad por grado estable | Habilitado + mínimo/máximo inclusivos | Sin edades predefinidas; deshabilitado = sin límite | `ingreso.configurar` + plan `academico` |
+| Aviso institucional de privacidad de matrículas | Texto versionado | Valores heredados hasta el primer guardado institucional | `ingreso.configurar` + plan `academico` |
+| Documentos requeridos en matrícula por enlace | Lista por convocatoria, común o por grado | — | `ingreso.configurar` + plan `academico` |
+| Vencimiento del enlace privado y PIN de cuatro dígitos | Fecha fija opcional por convocatoria | Sin fecha = sin caducidad por tiempo | `ingreso.configurar` + plan `academico` |
+| Cupos de convocatoria por grado | Entero opcional | Sin valor = sin tope propio del enlace | `ingreso.configurar` + plan `academico` |
 | Permisos de publicación por rol | Configuración | Defaults del sistema | Administrador |
 | Eventos notificables (activar/desactivar) | Booleano por evento | Defaults del sistema | Administrador |
 | Bloqueo de documentos por paz y salvo | Configuración | Ninguno | Administrador |
