@@ -65,7 +65,7 @@ Los roles dentro del tenant son asignados por el **Administrador del Colegio** (
 
 **Detalle:**
 - Un usuario puede tener **un solo rol principal** dentro del tenant.
-- El sistema permite **complementos** sobre el rol principal sin que eso cambie el rol base. El complemento estandarizado es [[roles/07-director-de-grupo|Director de Grupo]] sobre un Docente.
+- El sistema permite **complementos** sobre el rol principal sin que eso cambie el rol base. El complemento estandarizado es [[roles/07-director-de-grupo|Director de Grupo]] sobre un Docente; el rector también puede crear roles adicionales con permisos existentes, sujetos al cupo del plan. El complemento no amplía por sí mismo el alcance académico de las asignaciones.
 - La excepción al "asignación por el Rector" es el rol del propio Rector, que lo entrega el Superadmin al crear el tenant; cambios posteriores los hace el rector saliente o el Superadmin.
 
 **Aplica a:** todos los roles del tenant.

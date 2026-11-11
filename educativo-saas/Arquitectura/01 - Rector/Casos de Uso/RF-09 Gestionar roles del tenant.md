@@ -16,6 +16,8 @@ Como Rector necesito definir y ajustar los roles internos de mi colegio para que
 **Criterios de aceptacion:**
 El Rector puede ver el catalogo de roles del tenant y, para cada rol, activar o desactivar unicamente los permisos marcados como configurables y renombrar la etiqueta visible del rol. El sistema bloquea cualquier intento de crear un permiso inexistente, de quitar un permiso estructural o de removerse a si mismo permisos clave (RR-05), mostrando un mensaje claro. Toda modificacion de rol o permiso queda registrada en el log de auditoria inmutable del tenant con autor, fecha y valor anterior/nuevo (RR-03, RNF-03). El cambio se valida en frontend y backend (RR-02, RNF-02) y solo afecta al colegio actual, nunca a otro tenant (RR-01). Al guardar, los usuarios con ese rol reciben los nuevos permisos en su proxima sesion o refresco de sesion.
 
+Los roles adicionales, cuando el plan los permite, complementan el rol principal del usuario y no alteran sus asignaciones de grupos o materias. El límite es 0 en Esencial, 2 en Estándar e ilimitado en Premium; la rectora o el rector solo escoge permisos existentes y disponibles para el plan. Las sedes del mismo colegio heredan esta configuración. Véase [[../../../Logica del negocio/02-usuarios-roles-y-permisos/plan-autorizacion-por-colegio-2026-10-20|Autorización por plan, matriz y colegio]].
+
 **Documentacion:**
 - PRD: PRD-03 Rector
 - Flow: Gestion de roles y permisos del tenant

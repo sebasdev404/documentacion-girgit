@@ -51,7 +51,6 @@ Sobre el grupo dirigido:
 | --- | --- | --- |
 | Editar notas de materias que no dicta | desactivado | Algunos colegios lo permiten con justificación; otros lo prohíben totalmente |
 | Aprobar / firmar boletines del grupo | configurable | Puede quedar en el director, en el Coord. Académico o en el Rector |
-| Citar a acudientes formalmente | configurable | Puede ser potestad del Coord. de Convivencia |
 | Ver promedios históricos de los estudiantes del grupo | configurable | |
 
 ## Permisos explícitamente NO otorgados

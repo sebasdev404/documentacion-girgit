@@ -56,7 +56,6 @@ Hereda los permisos configurables de ambos roles. Aplican las mismas reglas:
 | --- | --- | --- |
 | Editar notas directamente | configurable | Hereda del Coord. Académico |
 | Aprobar / firmar boletines | configurable | Hereda del Coord. Académico |
-| Citaciones formales a acudientes | configurable | Hereda del Coord. de Convivencia |
 | Definir sanciones formales | configurable | Hereda del Coord. de Convivencia |
 
 ## Permisos explícitamente NO otorgados

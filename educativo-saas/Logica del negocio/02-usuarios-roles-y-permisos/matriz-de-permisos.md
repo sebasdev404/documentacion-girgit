@@ -98,7 +98,6 @@ Abreviaturas de columna:
 | Registrar anotación en el observador del grupo dirigido | — | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | Registrar anotaciones en el observador (cualquier estudiante) | — | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | Definir tipologías de anotación | — | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| Citar formalmente a acudientes | — | ✅ | ⚠️ | ⚠️ | ⚠️ | ❌ | ❌ | ⚠️❌ | ❌ |
 | Definir sanciones formales | — | ✅ | ❌ | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ❌ |
 | Generar reportes de convivencia | — | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | Ver observador disciplinario propio / del estudiante | — | ✅ | ❌ | ✅ | ✅ | ❌ | — | ✅ | ⚠️❌ |
@@ -142,32 +141,38 @@ La tabla siguiente mezcla funciones existentes y futuras de secretaría. No conc
 
 ## Boletines
 
-> La tabla general siguiente describe un objetivo histórico, **no todos los permisos ya operativos**. En desarrollo local existe emisión individual con PDF privado y publicación separada, pero no firma digital certificada. Aprobar una observación **no** aprueba el boletín. La extensión de consulta del boletín completo al docente asignado está planificada en `../04-procesos-academicos/plan-acceso-docente-y-filtros-2026-10-19.md`; todavía no se concede por esta tabla.
+> En desarrollo local existe emisión individual con PDF privado y publicación separada, pero no firma digital certificada. Aprobar una observación **no** aprueba el boletín. La consulta docente del boletín completo es de solo lectura y exige grupo asignado; no permite emitir ni ver expedientes sin publicar. Las claves operativas siguientes prevalecen sobre cualquier objetivo histórico.
 
 | Clave operativa | R | CA | CK | SE | DO | DG | EA | Estado |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `boletines.politica.gestionar` | ✅ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ | ❌ | API/UI local |
 | `boletines.observaciones.gestionar` | ✅ | ⚠️❌ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ | API/UI local; la interfaz actual se alcanza desde la vista preliminar autorizada |
 | `boletines.observaciones.aprobar` | ✅ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ | ❌ | Solo aprueba el texto; no emite documento |
-| `indicadores.base.gestionar` | ✅ | ⚠️❌ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ | Catálogo institucional local; concesión configurable según matriz |
-| `indicadores.grupo.editar` | ✅ | ⚠️❌ | ⚠️❌ | ❌ | ⚠️❌ | ⚠️❌ | ❌ | Variante local por materia y grupo asignados; exige permiso efectivo y política activa |
+| `indicadores.configurar` | ✅ | ⚠️❌ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ | Elegir alcance anual grado/grupo y habilitar edición docente; sujeto al plan académico |
+| `indicadores.base.gestionar` | ✅ | ⚠️❌ | ⚠️❌ | ⚠️❌ | ❌ | ❌ | ❌ | Gestionar todos los indicadores del alcance configurado |
+| `indicadores.grupo.ver` | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | Lectura de indicadores únicamente de la materia y grupo asignados |
+| `indicadores.grupo.editar` | ✅ | ⚠️❌ | ⚠️❌ | ❌ | ⚠️❌ | ⚠️❌ | ❌ | Crear y editar en modo grupo, solo para materia y grupo realmente asignados; dirigir el grupo no habilita otras materias. Requiere política anual activa. |
+| `boletines.grupo.ver` | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | Boletín preliminar completo del grupo con asignación docente o dirección vigente; emisión publicada visible, sin diseño ni preparación |
+| `boletines.emisiones.ver` | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | Expediente de emisiones, incluidas no publicadas |
+| `boletines.emisiones.preparar/aprobar/publicar` | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | Operaciones independientes; no se heredan de los permisos de lectura |
 
 | Acción | SA | R | CA | CC | CK | SE | DO | DG | EA |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Generar boletín del grupo dirigido | — | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| Aprobar / firmar boletines | — | ✅ | ⚠️ | ❌ | ⚠️ | ❌ | ❌ | ⚠️ | ❌ |
+| Preparar, aprobar y publicar boletín | — | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Consultar boletín completo preliminar autorizado | — | ✅ | ✅ | ❌ | ✅ | ❌ | ✅ | ✅ | ✅ |
 | Agregar observación general en boletín | — | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ |
 | Consultar boletines propios / del estudiante asociado | — | ✅ | ✅ | ❌ | ✅ | ✅ | — | — | ✅ |
-| Descargar boletín en PDF | — | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ | ⚠️ |
+| Descargar PDF ya publicado del grupo asignado o propio | — | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
 
 ## Comunicaciones y portal
 
 | Acción | SA | R | CA | CC | CK | SE | DO | DG | EA |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Enviar comunicados al colegio entero | — | ✅ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ❌ | ❌ | ❌ |
-| Comunicarse con acudientes vía portal | — | ✅ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ❌ |
 | Recibir notificaciones por correo | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ |
 | Acceder al portal | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️✅ |
+
+La app o portal independiente de acudientes no forma parte de los planes ni de esta matriz. Las claves antiguas `mensajes.acudientes` y `convivencia.citar_acudientes` se retiran. Los datos de contacto familiares permanecen en la ficha del estudiante; el acceso familiar a la información se realiza mediante la cuenta del estudiante, sin rol propio.
 
 ## Auditoría
 

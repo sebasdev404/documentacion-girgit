@@ -52,7 +52,6 @@ Es el actor **más numeroso y con el acceso más acotado**. Sin embargo, su comp
 | --- | --- | --- |
 | Editar notas después del cierre de período | desactivado | Algunos colegios lo permiten con ventana o con justificación |
 | Cargar archivos / evidencias de evaluaciones | configurable | Depende de si el colegio usa el módulo de evidencias |
-| Comunicarse con acudientes vía portal | configurable | Algunos colegios lo restringen y obligan a usar canales formales |
 | Ver el plan de estudios completo | configurable | Por defecto solo ve sus materias |
 
 ## Permisos explícitamente NO otorgados

@@ -64,7 +64,6 @@ El colegio asocia cada cuenta a **un perfil**, que determina qué módulo de ser
 | Perfil concreto y módulo de servicio habilitado | según contratación | Rector |
 | Nivel de visibilidad por defecto de sus anotaciones | interna (`RN-OB-081`) | Rector / coordinación |
 | Notificarse de remisiones internas dirigidas a su servicio | activado | Rector / coordinación |
-| Comunicarse con el acudiente vía portal | desactivado | Rector |
 
 ## Permisos explícitamente NO otorgados
 

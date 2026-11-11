@@ -50,7 +50,6 @@ Su ámbito es el **seguimiento del comportamiento y la convivencia escolar**. Ge
 | Permiso | Default | Notas |
 | --- | --- | --- |
 | Acceso al módulo académico (notas) | desactivado | El colegio puede activarlo si decide unificar coordinaciones |
-| Citaciones formales a acudientes | configurable | Puede ser exclusivo del Rector |
 | Definir sanciones formales | configurable | Algunos colegios lo separan en un comité de convivencia |
 
 ## Permisos explícitamente NO otorgados
