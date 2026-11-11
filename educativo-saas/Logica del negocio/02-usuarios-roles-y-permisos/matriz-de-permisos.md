@@ -10,6 +10,8 @@ tags: [permisos, autorizacion, matriz]
 
 Tabla rol × acción. Para cada acción del sistema, se indica qué roles pueden ejecutarla.
 
+Los permisos para corregir matrículas confirmadas, reconocer resultados anteriores e incorporar resultados en periodos cerrados se proponen en el [plan de novedades académicas](../04-procesos-academicos/plan-novedades-academicas-y-reconocimiento-de-resultados-2026-11-11.md). Su asignación y sus claves operativas están pendientes de revisión e incorporación al catálogo.
+
 ## Convenciones
 
 - ✅ Permitido (estructural — el colegio no lo puede desactivar)

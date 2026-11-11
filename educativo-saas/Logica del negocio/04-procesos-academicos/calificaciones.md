@@ -8,6 +8,8 @@ tags: [calificaciones, notas, proceso]
 
 # Calificaciones
 
+El [plan de novedades académicas y reconocimiento de resultados](plan-novedades-academicas-y-reconocimiento-de-resultados-2026-11-11.md) propone el tratamiento individual de notas anteriores, equivalencias, periodos no cursados y cambios de grupo o grado. Sus reglas de cálculo y permisos están pendientes de revisión.
+
 ## Descripción
 
 Proceso por el cual los docentes registran las notas de los estudiantes en las materias y grupos a los que están asignados, y el sistema calcula las notas finales del periodo y del año según la configuración del colegio.

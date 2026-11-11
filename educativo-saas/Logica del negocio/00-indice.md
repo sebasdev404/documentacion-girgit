@@ -67,6 +67,7 @@ Mapa de contenido (MOC) del vault. Cada enlace lleva a la sección correspondien
 
 - [[04-procesos-academicos/admisiones|Admisiones]]
 - [[04-procesos-academicos/matriculas|Matrículas]]
+- [Plan de novedades académicas y reconocimiento de resultados](04-procesos-academicos/plan-novedades-academicas-y-reconocimiento-de-resultados-2026-11-11.md), pendiente de revisión.
 - [[04-procesos-academicos/asistencia|Asistencia]]
 - [[04-procesos-academicos/calificaciones|Calificaciones]]
 - [[04-procesos-academicos/nivelaciones-y-habilitaciones|Nivelaciones y habilitaciones]]

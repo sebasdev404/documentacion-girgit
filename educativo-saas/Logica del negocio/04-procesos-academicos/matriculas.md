@@ -8,6 +8,8 @@ tags: [matriculas, ingreso-estudiantil, documentos, pin]
 
 # Matrículas por enlace — corte documental 14 de octubre de 2026
 
+El [plan de novedades académicas y reconocimiento de resultados](plan-novedades-academicas-y-reconocimiento-de-resultados-2026-11-11.md) desarrolla la propuesta para corregir grado o grupo después de confirmar la matrícula y atender ingresos durante el año. Su estado es pendiente de revisión e implementación.
+
 ## Alcance vigente
 
 El menú **Ingreso estudiantil** separa Matrículas por enlace, Matrículas académicas y Admisiones. Esta entrega permite matrícula directa de estudiantes nuevos. Admisiones con pruebas/entrevistas es una etapa futura, no un requisito artificial para el flujo actual.

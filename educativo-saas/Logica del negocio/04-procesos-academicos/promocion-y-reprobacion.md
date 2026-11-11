@@ -8,6 +8,8 @@ tags: [promocion, reprobacion, cierre-de-ano]
 
 # Promoción y reprobación
 
+Esta página desarrolla el cierre ordinario del año. La propuesta de promoción anticipada, sus condiciones normativas y los efectos sobre la trayectoria están en el [plan de novedades académicas y reconocimiento de resultados](plan-novedades-academicas-y-reconocimiento-de-resultados-2026-11-11.md), pendiente de revisión e implementación.
+
 > **Actualización vigente (15-10-2026):** la promoción se determina por notas y reglas configuradas por el colegio. No se decide por consenso ni votación y un consejo académico no puede sobreescribir el cálculo. Las propuestas históricas de esta página sobre consejo decisorio, promoción condicionada o traslado automático al año siguiente no están aprobadas para implementación. La revisión autorizada valida los insumos, sin cambiar el resultado. El traslado al año siguiente requiere un proceso explícito posterior.
 
 > **Corrección vigente (15-10-2026):** se descartó la marca de «grado de egreso» por confundir resultado académico con salida institucional. La propuesta de promoción calcula exclusivamente `promovido` o `reprobado` y su revisión no puede sustituirlos por `egresado`. Una persona puede dejar el colegio tras cualquier grado; su salida y posible renovación pertenecen a un flujo de trayectoria estudiantil separado. La columna local introducida para grado terminal se elimina mediante migración correctiva, sin alterar notas ni matrículas. Las referencias históricas de esta página que vinculen egreso al último grado no son reglas vigentes.

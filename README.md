@@ -2,6 +2,8 @@
 
 ## Estado y siguiente entrega
 
+- [Plan de novedades académicas y reconocimiento de resultados](<educativo-saas/Logica del negocio/04-procesos-academicos/plan-novedades-academicas-y-reconocimiento-de-resultados-2026-11-11.md>). Propuesta pendiente de revisión para correcciones posteriores a la matrícula, traslados, ingreso tardío, notas anteriores y promoción anticipada. Incluye permisos, auditoría, etapas y criterios de aceptación.
+
 - [Calendario, eventos y cierre del ciclo académico](<educativo-saas/Logica del negocio/04-procesos-academicos/plan-cierre-ciclo-academico-y-eventos-2026-10-14.md>): plan histórico y avances locales; los indicadores actuales son descriptivos y existe emisión individual de boletines.
 
 - [Plan de acceso docente y filtros por asignación](<educativo-saas/Logica del negocio/04-procesos-academicos/plan-acceso-docente-y-filtros-2026-10-19.md>): correcciones de navegación, permisos y selección automática aún no implementadas.
