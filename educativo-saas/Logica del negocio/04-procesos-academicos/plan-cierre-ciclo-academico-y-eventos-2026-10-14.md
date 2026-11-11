@@ -14,6 +14,8 @@ tags: [calendario, eventos, aula, indicadores, observaciones, boletines]
 
 **Corrección posterior del 19 de octubre de 2026:** las propuestas de este plan para valorar indicadores por estudiante, configurarles escala o filtrar «no alcanzados» quedaron descartadas. Los indicadores son exclusivamente textos descriptivos; la evaluación individual corresponde a notas SIEE y observaciones. Prevalece `logros-e-indicadores.md` en esos puntos.
 
+**Corrección posterior del 21 de octubre de 2026:** tampoco se distingue en la interfaz entre indicador «institucional», «variante» o «propio». El rector configura por año el alcance por grado o por grupo; los docentes solo gestionan materias realmente asignadas. Los cambios entre alcances conservan datos y exigen confirmación. Prevalece `logros-e-indicadores.md` sobre las propuestas históricas de la sección de indicadores de este plan.
+
 ## 1. Alcance y límites
 
 ### Avance local: eventos/calendario
