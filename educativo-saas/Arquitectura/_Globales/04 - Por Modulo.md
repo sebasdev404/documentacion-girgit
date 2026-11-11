@@ -237,7 +237,7 @@ Diferenciadores estandar (RF-80..86) que potencian la propuesta de valor de la p
 
 | ID | Requerimiento | Rol(es) | Prioridad |
 |---|---|---|---|
-| RF-80 | App / Portal de acudientes con push y vista multi-hijo | Multiples | Media |
+| RF-80 | App / Portal de acudientes: retirado del alcance actual | — | Retirado |
 | RF-81 | Pagos sin friccion (medios locales + debito recurrente) | ROL-09 | Media |
 | RF-82 | WhatsApp como canal oficial | Multiples | Media |
 | RF-83 | Firma electronica de documentos | ROL-09, ROL-06 | Media |

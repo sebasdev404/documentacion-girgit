@@ -127,7 +127,7 @@ aliases:
 | RF-77 | RF | Encuestas | Crear y consolidar encuestas institucionales | Anonimato irreversible; evaluacion docente siempre anonima | ROL-02, ROL-03 | | Baja | Pendiente | RN-EC-004 |
 | RF-78 | RF | Eventos y reservas | Crear eventos y reservar espacios sin doble ocupacion | Salida exige autorizacion firmada electronicamente | ROL-02, ROL-03 | | Baja | Pendiente | RN-EV-002 |
 | RF-79 | RF | Eventos y reservas | Gestionar cupo, lista de espera y cobro del evento | Cobro independiente de la pension; lista de espera por orden | ROL-02, ROL-03 | AC-27 | Baja | Pendiente | RN-EV-005 |
-| RF-80 | RF | Valor agregado | App / Portal de acudientes con push y vista multi-hijo | Selector multi-hijo sin fusionar expedientes | Multiples | | Media | Pendiente | RN-VA-001 |
+| RF-80 | RF | Valor agregado | App / Portal de acudientes con push y vista multi-hijo | Retirado del alcance; sin rol ni portal propio | Multiples | | — | Retirado | RN-VA-001 |
 | RF-81 | RF | Valor agregado | Pagos sin friccion (medios locales + debito recurrente) | PSE, Nequi, Daviplata, link de pago; medios configurables | ROL-09 | | Media | Pendiente | RN-VA-002 |
 | RF-82 | RF | Valor agregado | WhatsApp como canal oficial | Solo con opt-in y plantillas aprobadas | Multiples | | Media | Pendiente | RN-VA-003, RI-09 |
 | RF-83 | RF | Valor agregado | Firma electronica de documentos | Sello de tiempo, hash y trazabilidad legal inmutable | ROL-09, ROL-06 | AC-29 | Media | Pendiente | RN-VA-004, RI-08 |

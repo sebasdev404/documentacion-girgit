@@ -18,13 +18,15 @@ Cada diferenciador se describe con: **qué es**, **valor diferencial** frente a 
 
 ---
 
-## RN-VA-001 — App / Portal de acudientes (push + vista multi-hijo)
+## RN-VA-001 — Retirado del alcance: app / portal de acudientes
+
+> Esta propuesta histórica no se ofrece en ningún plan ni se mantiene como función futura comprometida. No habrá cuenta, rol, permisos ni portal independiente de acudientes. Se conservan sus datos de contacto dentro de la ficha del estudiante; la consulta familiar usa la cuenta del estudiante.
 
 - **Qué es:** aplicación móvil y portal responsive para que el usuario del estudiante consulte notas, asistencia, observador, estado de cuenta y comunicados, con **notificaciones push** y un **selector multi-hijo** cuando un mismo correo de acudiente está vinculado a varias cuentas de estudiante.
 - **Valor diferencial:** Phidias y Master2000 son fuertes en web pero débiles en app nativa con push; la **vista consolidada multi-hijo** (un solo acceso para ver a todos los hijos sin re-loguearse) adelanta una capacidad hoy diferida en el roadmap base.
 - **A quién beneficia:** acudientes (experiencia móvil real), colegio (mayor adopción y menos llamadas a secretaría).
 - **Dependencias:** [[../05-comunicacion/notificaciones|Notificaciones]], [[../02-usuarios-roles-y-permisos/portal-del-estudiante|Portal del estudiante]], [[../06-monetizacion-y-pagos/pagos-de-pensiones|Pagos de pensiones]].
-- **Prioridad:** P1.
+- **Prioridad:** retirada; el texto anterior se conserva solo como antecedente de producto.
 
 ## RN-VA-002 — Pagos sin fricción (medios locales + débito recurrente)
 
